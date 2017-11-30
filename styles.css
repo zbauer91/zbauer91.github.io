@@ -2,12 +2,16 @@ body {
     background-color: grey;
     display: flex;
     flex-direction: column;
+    margin: 0;
+
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 0;
+    height: 30vh;
 }
 
 img {
@@ -19,53 +23,45 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
-    max-height: 50px;
-    min-height: 50px;
+    height: 5vh;
 }
 
 button {
     margin: 0 20px;
-    background-color: black;
+    padding: 5px 15px;
+    background-color: darkblue;
     border: none;
-}
-.navButton {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18pt;
     color: white;
+    cursor: pointer;
 }
 
-section {
+main {
+    height: 60vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    min-height: 60vh;
-    flex-grow: 50;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25pt;
-    color: darkorange;
-    text-align: center;
+    color: white;
+    text-align: justify;
 }
 
 .aboutText {
     margin: 200;
     max-width: 40vh;
     font-size: 14pt;
-    text-align: justify;
+
 }
 
 footer {
-    flex-grow: 1;
-    max-height: 50px;
-    min-height: 50px;
-}
-
-section {
-    background-color: lightblue;
-}
-
-footer {
-    background-color: coral;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    height: 5vh;
+    width: 100vw;
+    color: white;
 }
