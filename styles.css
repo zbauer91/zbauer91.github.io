@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 
 body {
-  background-color: rgb(43, 43, 43);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
 }
 
 /* Nav Bar*/
@@ -15,10 +15,9 @@ nav ul {
     justify-content: flex-end;
     align-items: center;
     list-style-type: none;
-
 }
 nav li {
-  margin: 10px 30px;
+    margin: 10px 30px;
 }
 .header-label {
     margin: 0;
@@ -45,9 +44,7 @@ nav a {
 
 .glow:hover {
     border-color: firebrick;
-    box-shadow: 
-        0 0 5px 5px firebrick,
-        inset 0 0 2px 2px whitesmoke;
+    box-shadow: 0 0 5px 5px firebrick, inset 0 0 2px 2px whitesmoke;
 }
 
 .current-page {
@@ -67,7 +64,7 @@ nav a {
 /* Border */
 
 /* Main Content and Aside Content */
-.content-wrapper{ 
+.content-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -88,7 +85,7 @@ main p {
     font-size: 18px;
 }
 
-main h4{
+main h4 {
     font-size: 24px;
 }
 
@@ -125,7 +122,7 @@ img {
 
 .project-nav li {
     margin: 10px 30px;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .project-nav a {
@@ -157,14 +154,13 @@ footer p {
 
 /* Footer */
 
-
 /* Mobile View */
 
 @media screen and (max-width: 1500px) {
     img {
         height: 60vh;
     }
-    .project-nav ul{
+    .project-nav ul {
         flex-direction: column;
     }
 }
@@ -179,13 +175,13 @@ footer p {
     }
 } */
 
-@media screen and (max-width: 900px){
-    .content-wrapper{
+@media screen and (max-width: 900px) {
+    .content-wrapper {
         flex-direction: column;
         justify-content: center;
     }
 
-    nav ul{
+    nav ul {
         flex-direction: column;
         justify-content: center;
     }
@@ -204,11 +200,10 @@ footer p {
     main p {
         font-size: 14px;
     }
-    
-    main h4{
+
+    main h4 {
         font-size: 20px;
     }
-
 }
 
 /* Mobile View */
