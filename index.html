@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css" type="text/css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Red Rabbit Designs</title>
-</head>
-<body>
-    <header>
-        <img src="./rrdesigns.png" alt="A cute red rabbit logo" />
-    </header>
-    <nav>
-        <!-- HTML validator errored on nesting <a> inside <button>. Found this fix on:
-            https://stackoverflow.com/questions/6393827/can-i-nest-a-button-element-inside-an-a-using-html5 
-            I understand that this solution relies on JS and that I probably need to relearn how buttons work -->
-        <button type="button" onclick="location.href='http://pixelrabbit.me'">About</button>
-        <button type="button" onclick="location.href='http://redrabbitdesign.com'">GitHub</button>
-        <button type="button" onclick="location.href='https://www.linkedin.com/in/zachbauer/'">LinkedIn</button>
-        <button type="button" onclick="location.href='mailto:zbauer91@gmail.com'">Email</button>
-        <button type="button" onclick="location.href='tel:16145193442'">Call Me, Maybe</button>
-    </nav>
-    <main>
-        <h3>Welcome!</h3>
-        <p class="aboutText">
-            I am a novice coder expanding my career opportunities by engaging in the Web Development Immersive at General Assembly in Washington, D.C.
 
-            I have experience in HTML, CSS, Python, Java, MIPS Assembly, and JavaScript. I'm using this course to set me on the right track to attain a fulfilling career in web development, software engineering, or data science. Let's see what happens!
-        </p>
-    </main>
-    <footer>
-        <p>Copyright Zach Bauer 2017 GA</p>
-    </footer>
-</body>
+    <head>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Red Rabbit Designs</title>
+    </head>
+
+    <body>
+
+        <div class="top-border"></div>
+
+        <nav>
+            <ul>
+                <li class="header-label">
+                    Red Rabbit WebDev
+                </li>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./pages/about">About</a>
+                </li>
+                <li>
+                    <a href="https://github.com/zbauer91">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/zbauer91">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="./Tower-of-Hanoi">Tower of Hanoi</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <main>
+            <h3>Welcome!</h3>
+            <p class="aboutText">
+                I am a novice coder expanding my career opportunities by engaging in the Web Development Immersive at General Assembly in
+                Washington, D.C. I have experience in HTML, CSS, Python, Java, MIPS Assembly, and JavaScript. I'm using this
+                course to set me on the right track to attain a fulfilling career in web development, software engineering,
+                or data science. Let's see what happens!
+            </p>
+        </main>
+        <footer>
+            <p>Copyright Zach Bauer 2017 GA</p>
+        </footer>
+    </body>
+
 </html>
