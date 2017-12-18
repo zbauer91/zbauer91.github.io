@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito");
+/* http://paletton.com/#uid=7000u0kpTmlh7umlUq3tLibC0cT */
+/* Pallete for firebrick */
 
 body {
     background-color: rgb(43, 43, 43);
@@ -38,13 +40,13 @@ nav a {
     border: solid 1px whitesmoke;
     border-radius: 10px 5px;
     text-decoration: none;
-    color: whitesmoke;
+    color: #439191;
     font-size: 20px;
 }
 
 .glow:hover {
-    border-color: firebrick;
-    box-shadow: 0 0 5px 5px firebrick, inset 0 0 2px 2px whitesmoke;
+    border-color: #146b6b;
+    box-shadow: 0 0 5px 5px #146b6b, inset 0 0 2px 2px #003e3e;
 }
 
 .current-page {
@@ -57,7 +59,7 @@ nav a {
 /* Border */
 
 .top-border {
-    border-bottom: 3px solid firebrick;
+    border-bottom: 3px solid #b26322;
     width: 100vw;
 }
 
@@ -107,7 +109,7 @@ img {
     font-weight: 700;
     font-family: "Nunito", "Helvetica", sans-serif;
     font-size: 30px;
-    color: whitesmoke;
+    color: #439191;
 }
 
 /* Project Nav */
@@ -131,7 +133,7 @@ img {
     padding: 3px 30px;
     /* border: solid 1px whitesmoke;
     border-radius: 10px 5px; */
-    color: whitesmoke;
+    color: #439191;
     font-size: 15px;
     text-align: left;
     text-decoration: none;
