@@ -1,23 +1,28 @@
 <template>
   <v-app dark>
-    <toolbar v-if="this.nav" color="primary" app></toolbar>
+    <toolbar v-if="this.$route.path != '/'" color="primary" app></toolbar>
     <v-content>
       <v-container fluid>
         <router-view/>
       </v-container>
     </v-content>
-    <footer v-if="this.nav"></footer>
+    <foot v-if="this.$route.path != '/'"></foot>
   </v-app>
 </template>
 
 <script>
 import toolbar from './components/menu-components/ToolbarMenu.vue'
-import footer from './components/miscellaneous/Footer.vue'
+import foot from './components/miscellaneous/Footer.vue'
 export default {
   name: 'App',
+  data () {
+    return {
+      showNav: true
+    }
+  },
   components: {
     toolbar,
-    footer
+    foot
   }
 }
 </script>

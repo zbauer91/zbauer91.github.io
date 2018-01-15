@@ -14,8 +14,7 @@ export default new Router({
       component: Landing,
       props: {
         showNav: false
-      },
-      mode: 'history',
+      }
     },
     {
       path: '/home',
@@ -23,8 +22,7 @@ export default new Router({
       component: Home,
       props: {
         showNav: true
-      },
-      mode: 'history'
+      }
     },
     {
       path: '/experience',
@@ -32,8 +30,7 @@ export default new Router({
       component: Experience,
       props: {
         showNav: true
-      },
-      mode: 'history'
+      }
     }
   ]
 })

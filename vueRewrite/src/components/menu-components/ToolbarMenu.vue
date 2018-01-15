@@ -25,4 +25,8 @@ export default {
   .title-toolbar {
     font-family: 'Righteous';
   }
+
+  .colored-title {
+    color: #b71c1c;
+  }
 </style>

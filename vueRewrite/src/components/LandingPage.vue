@@ -7,7 +7,7 @@
       <div class='sub-header'>
         &lt;Classy Web Developer/&gt;
       </div>
-      <a href="/home" class="home-btn">
+      <a href="./#/home" class="home-btn">
         <span>Enter</span>
       </a>
     </div>
@@ -15,7 +15,13 @@
 </template>
 
 <script>
-
+export default {
+  data () {
+    return {
+      msg: 'Page Loaded'
+    }
+  }
+}
 </script>
 
 <style>
@@ -75,7 +81,7 @@
 
   /* For smaller screens, follows vuetify convention */
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 920px) {
     .name-header {
       font-size: 80px;
     }
@@ -89,5 +95,36 @@
       font-size: 15px;
     }
 
+    @media screen and (max-width: 600px) {
+      .name-header {
+        font-size: 60px;
+      }
+
+      .sub-header {
+        font-size: 10px;
+      }
+
+      .home-btn {
+        width: 15vw;
+        letter-spacing: 2px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .name-header {
+        font-size: 40px;
+      }
+
+      .sub-header {
+        font-size: 8px;
+      }
+
+      .home-btn {
+        width: 15vw;
+        letter-spacing: 1px;
+        margin-top: 15px;
+        font-size: 10px;
+      }
+    }
   }
 </style>
