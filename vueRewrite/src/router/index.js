@@ -11,26 +11,17 @@ export default new Router({
     {
       path: '/',
       name: 'Landing',
-      component: Landing,
-      props: {
-        showNav: false
-      }
+      component: Landing
     },
     {
       path: '/home',
       name: 'Home',
-      component: Home,
-      props: {
-        showNav: true
-      }
+      component: Home
     },
     {
       path: '/experience',
       name: 'Experience',
-      component: Experience,
-      props: {
-        showNav: true
-      }
+      component: Experience
     }
   ]
 })
