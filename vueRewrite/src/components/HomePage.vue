@@ -3,16 +3,18 @@
     <v-card>
       <h1>Hello World!</h1>
     </v-card>
+    <v-card>
+      <h1>Hello Flex!</h1>
+    </v-card>
   </v-container>
 </template>
 
 <script>
-
-  export default {
-    data() {
-      return {
-        msg: 'Home Page Loaded'
-      }
+export default {
+  data () {
+    return {
+      msg: 'Home Page Loaded'
     }
   }
+}
 </script>
