@@ -7,9 +7,9 @@
       </v-container>
     </v-content>
     <v-footer class="body-2" color="primary" app>
-      <div>Made with</div>
+      <div class="footer-text">Made with</div>
       <v-icon color="deep-orange darken-2" class="mx-1">favorite</v-icon>
-      <div>by Zach Bauer</div>
+      <div class="footer-text">by Zach Bauer</div>
       <v-spacer></v-spacer>
       <div>&copy; {{ new Date().getFullYear() }}</div>
     </v-footer>
@@ -26,3 +26,9 @@
     }
   }
 </script>
+
+<style>
+  .footer-text {
+    font-family: 'Special-Elite' !important;
+  }
+</style>

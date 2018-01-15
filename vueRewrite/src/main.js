@@ -4,7 +4,7 @@ import Vue from 'vue'
 import Vuetify from 'vuetify'
 import '../node_modules/vuetify/dist/vuetify.min.css'
 import App from './App'
-import Landing from './components/LandingPage.vue'
+import Home from './components/HomePage.vue'
 import router from './router'
 
 Vue.config.productionTip = false
@@ -18,7 +18,7 @@ Vue.use(Vuetify, {
     error: '#d50000'
   }
 })
-Vue.component('landing-page', Landing)
+Vue.component('home-page', Home)
 
 new Vue({
   el: '#app',

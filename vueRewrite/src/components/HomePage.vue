@@ -11,7 +11,7 @@
   export default {
     data() {
       return {
-        msg: 'Landing Page Loaded'
+        msg: 'Home Page Loaded'
       }
     }
   }
