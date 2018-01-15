@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import Vuetify from 'vuetify'
+import '../node_modules/vuetify/dist/vuetify.min.css'
 import App from './App'
 import Landing from './components/LandingPage.vue'
 import router from './router'
@@ -9,7 +10,14 @@ import router from './router'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+  theme: {
+    primary: '#546e7a',
+    secondary: '#819ca9',
+    accent: '#b71c1c',
+    error: '#d50000'
+  }
+})
 Vue.component('landing-page', Landing)
 
 new Vue({

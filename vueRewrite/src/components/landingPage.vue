@@ -1,19 +1,15 @@
 <template>
-  <v-parallax src="@/assets/pebbles.png">
-    <Menu></Menu>
-    <v-layout>
-      <v-card>
-        <h1>Hello World!</h1>
-      </v-card>
-    </v-layout>
-  </v-parallax>
+  <v-container>
+    <v-card>
+      <h1>Hello World!</h1>
+    </v-card>
+  </v-container>
 </template>
 
 <script>
-  import Menu from '@/components/menu-components/ToolbarMenu.vue'
 
   export default {
-    data () {
+    data() {
       return {
         msg: 'Landing Page Loaded'
       }

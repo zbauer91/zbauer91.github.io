@@ -1,23 +1,28 @@
 <template>
-  <div id="app">
-    <img src="./assets/red-rabbit.png">
-    <router-view/>
-  </div>
+  <v-app dark>
+    <toolbar color="primary" app></toolbar>
+    <v-content>
+      <v-container fluid>
+        <router-view/>
+      </v-container>
+    </v-content>
+    <v-footer class="body-2" color="primary" app>
+      <div>Made with</div>
+      <v-icon color="deep-orange darken-2" class="mx-1">favorite</v-icon>
+      <div>by Zach Bauer</div>
+      <v-spacer></v-spacer>
+      <div>&copy; {{ new Date().getFullYear() }}</div>
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
-</script>
+  import toolbar from './components/menu-components/ToolbarMenu.vue'
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  export default {
+    name: 'App',
+    components: {
+      toolbar
+    }
+  }
+</script>
