@@ -17,7 +17,7 @@ export default {
   name: 'App',
   data () {
     return {
-      showNav: true
+      msg: 'Page Loaded'
     }
   },
   components: {
