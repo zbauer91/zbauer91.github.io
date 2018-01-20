@@ -5,8 +5,8 @@
     <v-toolbar-title class="hidden-sm-and-up">Red Rabbit WebDev</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn flat to="experience">Experience</v-btn>
-      <v-btn flat>Projects</v-btn>
+      <v-btn flat to="/experience">Experience</v-btn>
+      <v-btn flat to="/projects">Projects</v-btn>
       <v-btn flat to="/home">Home</v-btn>
     </v-toolbar-items>
   </v-toolbar>

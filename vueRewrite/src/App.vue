@@ -11,18 +11,18 @@
 </template>
 
 <script>
-import toolbar from './components/menu-components/ToolbarMenu.vue'
-import foot from './components/miscellaneous/Footer.vue'
-export default {
-  name: 'App',
-  data () {
-    return {
-      msg: 'Page Loaded'
+  import toolbar from './components/Main-Components/ToolbarMenu.vue'
+  import foot from './components/Main-Components/Footer.vue'
+  export default {
+    name: 'App',
+    data() {
+      return {
+        msg: 'Page Loaded'
+      }
+    },
+    components: {
+      toolbar,
+      foot
     }
-  },
-  components: {
-    toolbar,
-    foot
   }
-}
 </script>

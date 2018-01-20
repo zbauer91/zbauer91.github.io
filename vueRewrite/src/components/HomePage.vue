@@ -7,29 +7,6 @@
           <v-card-media class="hidden-md-and-down" :src='this.personalPhoto.src' height='700px'></v-card-media>
         </v-card>
       </v-flex>
-      <v-flex xs12 sm6 order-sm1 order-xs2>
-        <v-layout row wrap>
-          <v-flex>
-            <v-card>
-              <v-card-text class="display-1 text-xs-center hidden-md-and-down">Zach Bauer</v-card-text>
-              <v-card-text class="subheading text-xs-center hidden-lg-and-up">Zach Bauer</v-card-text>
-            </v-card>
-          </v-flex>
-          <v-flex>
-            <v-card>
-              <v-card-text class="headline hidden-md-and-down">{{ this.personalInfo.partOne }}</v-card-text>
-              <v-card-text class="subheading hidden-lg-and-up">{{ this.personalInfo.partOne }}</v-card-text>
-            </v-card>
-          </v-flex>
-          <v-flex>
-            <v-card>
-              <v-card-text class="headline hidden-md-and-down">{{ this.personalInfo.partTwo }}</v-card-text>
-              <v-card-text class="subheading hidden-lg-and-up">{{ this.personalInfo.partTwo }}</v-card-text>
-            </v-card>
-          </v-flex>
-
-        </v-layout>
-      </v-flex>
     </v-layout>
   </v-container>
   <!-- Displays between medium and large viewports -->
@@ -37,6 +14,7 @@
 </template>
 
 <script>
+  import Post from './Main-Components/Post.vue'
   export default {
     created() {
       console.log(this.cardInfo.heightLg)

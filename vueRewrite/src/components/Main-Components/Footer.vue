@@ -9,17 +9,17 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      msg: 'Page Loaded'
+  export default {
+    data() {
+      return {
+        msg: 'Page Loaded'
+      }
     }
   }
-}
 </script>
 
 <style>
-    .footer-text {
-      font-family: 'Special-Elite' !important;
-    }
-  </style>
+  .footer-text {
+    font-family: 'Special-Elite' !important;
+  }
+</style>
