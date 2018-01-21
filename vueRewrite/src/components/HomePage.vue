@@ -9,8 +9,6 @@
       </v-flex>
     </v-layout>
   </v-container>
-  <!-- Displays between medium and large viewports -->
-  <!-- <v-card-media class="hidden-md-and-up":src='this.personalPhoto.src' height="250px"></v-card-media> -->
 </template>
 
 <script>
@@ -35,6 +33,7 @@
       }
     }
   }
+
 </script>
 
 <style>
@@ -43,4 +42,5 @@
     width: 100%;
     margin: 10px;
   }
+
 </style>
