@@ -10,9 +10,9 @@
 
 <script>
   export default {
-    data () {
+    data() {
       return {
-        msg: 'Page Loaded'
+        'msg': 'Page Loaded'
       }
     }
   }

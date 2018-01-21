@@ -1,26 +1,21 @@
-// https://eslint.org/docs/user-guide/configuring
-
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
+  parser: 'vue-eslint-parser',
   parserOptions: {
+    parser: 'babel-eslint',
     sourceType: 'module'
   },
   env: {
     browser: true
   },
-  // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-  extends: 'standard',
-  // required to lint *.vue files
-  plugins: ['html', 'eslint-plugin-vue'],
-  // add your custom rules here
+  extends: ['eslint:recommended', 'standard', 'plugin:vue/recommended'],
   rules: {
-    'no-multiple-empty-lines': 0,
-    // allow paren-less arrow functions
+    'no-multiple-empty-lines': ['warn', { max: 1 }],
+    indent: 0,
     'arrow-parens': 0,
-    // allow async-await
     'generator-star-spacing': 0,
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
-  }
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    'vue/script-indent': ['error', 'tab', { baseIndent: 0 }]
+  },
+  plugins: ['html', 'eslint-plugin-vue', 'eslint-plugin-html']
 }

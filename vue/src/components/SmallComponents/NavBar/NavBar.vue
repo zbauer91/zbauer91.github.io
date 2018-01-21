@@ -16,9 +16,9 @@
 
 <script>
   export default {
-    data () {
+    data() {
       return {
-        msg: 'Component Loaded'
+        'msg': 'Component Loaded'
       }
     }
   }

@@ -15,7 +15,7 @@
   import Footer from './components/SmallComponents/Footer/Footer.vue'
   export default {
     name: 'App',
-    data () {
+    data() {
       return {
         msg: 'Page Loaded'
       }
