@@ -5,34 +5,38 @@
 		<!-- PureCSS -->
 		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
 		  crossorigin="anonymous">
+		<!-- PureCSS Grids -->
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 		<!-- Google Fonts and Such -->
-		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Shrikhand" rel="stylesheet">
-		<!-- My CSS -->
-		<link rel='stylesheet' href='./css/index/style.css'>
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Shrikhand|Montserrat|Raleway" rel="stylesheet">
+		<!-- shared CSS -->
+		<link rel='stylesheet' href='./css/index/shared.css'>
+		<!-- Slot One CSS -->
+		<link rel='stylesheet' href='./css/index/top-level.css'>
+		<!-- Slot Two CSS -->
+		<link rel='stylesheet' href='./css/index/second-level.css'>
 		<meta charset='UTF-8'>
-		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv='X-UA-Compatible' content='ie=edge'>
 		<title>PixelRabbit Web Development</title>
 	</head>
 
 	<body>
-		<div class='top-level'>
-			<div class='centered-container'>
-				<div class='name-container'>
-					<div class='name-header white-text'>
-						Zach Bauer
-					</div>
-					<div class='sub-header white-text'>
-						&lt;Classy Web Developer/&gt;
-					</div>
-				</div>
-				<!-- <div class='button-container'>
-        <a href='#' class='home-btn hb-1'></a>
-        <a href='#' class='home-btn hb-2'></a>
-        <a href='#' class='home-btn hb-3'></a>
-        <a href='#' class='home-btn hb-4'></a>
-      </div> -->
+		<div class='pure-g'>
+			<div class='pure-u-1-2 pure-u-md-7-10 heading-container'>
+				<div class='heading'>Zach Bauer</div>
+				<div class='sub-heading'>&lt;Classy Web Developer/&gt;</div>
 			</div>
+			<div class='pure-u-1-2 pure-u-md-3-10 button-contaioner'>
+				<div class="pure-button-group top-level-nav" role="group" aria-label="...">
+					<button class="pure-button">A Pure Button</button>
+					<button class="pure-button">A Pure Button</button>
+					<button class="pure-button pure-button-active">A Pure Button</button>
+				</div>
+			</div>
+		</div>
+		<div class='second-level'>
+
 		</div>
 	</body>
 

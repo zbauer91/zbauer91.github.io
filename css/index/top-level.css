@@ -1,0 +1,33 @@
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(200, 200, 0, 0.5);
+}
+
+.heading {
+  font-family: 'Shrikhand', fantasy;
+  font-size: 130px;
+}
+
+.sub-heading {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: rgba(200, 0, 200, 0.5);
+}
+
+.top-level-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-level-nav button {
+  margin: 0 5px 0 5px;
+}
