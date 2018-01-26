@@ -1,9 +1,15 @@
+.pure-g {
+  height: 100vh;
+}
+
 .heading-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(200, 200, 0, 0.5);
+  /* Fallback for small screen rearrangement */
+  order: 2;
 }
 
 .heading {
@@ -21,6 +27,20 @@
   justify-content: flex-end;
   align-items: flex-start;
   background-color: rgba(200, 0, 200, 0.5);
+  flex-flow: row wrap;
+  /* Fallback for small screen rearrangement */
+  order: 1;
+}
+
+.button-container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 8vh;
+  padding: 10px;
+  margin: 5px;
+  border: 3px solid red;
 }
 
 .top-level-nav {
@@ -30,4 +50,15 @@
 
 .top-level-nav button {
   margin: 0 5px 0 5px;
+}
+
+@media screen and (min-width: 48em) {
+  /* medium and up */
+  .button-container {
+    order: 2;
+  }
+
+  .heading-container {
+    order: 1;
+  }
 }
