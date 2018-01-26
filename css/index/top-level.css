@@ -1,5 +1,8 @@
 .pure-g {
   height: 100vh;
+  /* background-color: rgba(200, 100, 200, 0.5); */
+  background: url('../../assets/images/bunny-cropped.jpg');
+  background-size: cover;
 }
 
 .heading-container {
@@ -10,37 +13,46 @@
   background-color: rgba(200, 200, 0, 0.5);
   /* Fallback for small screen rearrangement */
   order: 2;
+  height: 90vh;
 }
 
 .heading {
-  font-family: 'Shrikhand', fantasy;
-  font-size: 130px;
+  font-family: 'Shrikhand', cursive;
+  font-size: 65px;
+  color: #efc88b;
+  text-shadow: 2px 2px 2px #fff;
 }
 
 .sub-heading {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 30px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  color: #efc88b;
+  text-shadow: 2px 2px 2px #fff;
 }
 
 .button-container {
   display: flex;
+  /* flex-flow: row wrap; */
   justify-content: flex-end;
   align-items: flex-start;
   background-color: rgba(200, 0, 200, 0.5);
-  flex-flow: row wrap;
   /* Fallback for small screen rearrangement */
   order: 1;
+  height: 10vh;
 }
 
 .button-container .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 8vh;
-  width: 8vh;
-  padding: 10px;
-  margin: 5px;
-  border: 3px solid red;
+  height: 4vh;
+  width: 4vh;
+  margin: 20px;
+}
+
+.button-container .fa-5x {
+  height: 150%;
+  color: #a3320b;
 }
 
 .top-level-nav {
@@ -56,6 +68,11 @@
   /* medium and up */
   .button-container {
     order: 2;
+  }
+
+  .button-container .btn {
+    height: 8vh;
+    width: 8vh;
   }
 
   .heading-container {
