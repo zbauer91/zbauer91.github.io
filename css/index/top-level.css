@@ -1,3 +1,7 @@
+body {
+  background-color: #687c7c;
+}
+
 .pure-g {
   height: 100vh;
   /* background-color: rgba(200, 100, 200, 0.5); */
@@ -10,7 +14,6 @@
   justify-content: center;
   align-items: center;
   /* background-color: rgba(200, 200, 0, 0.5); */
-  /* Fallback for small screen rearrangement */
   height: 90vh;
 }
 

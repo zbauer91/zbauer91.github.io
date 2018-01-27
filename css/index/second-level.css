@@ -1,0 +1,30 @@
+.second-level {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway';
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+}
+
+.second-level h2 {
+  font-size: 5vh;
+}
+
+.second-level p {
+  font-size: 2.2vh;
+  line-height: 2.8vh;
+  letter-spacing: 1px;
+}
+
+.second-level .img-container {
+  width: 50vw;
+  height: 30vh;
+  background-color: maroon;
+}
+
+.second-level img {
+  height: inherit;
+}
