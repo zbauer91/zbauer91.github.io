@@ -1,8 +1,6 @@
 .pure-g {
   height: 100vh;
   /* background-color: rgba(200, 100, 200, 0.5); */
-  background: url('../../assets/images/bunny-cropped.jpg');
-  background-size: cover;
   flex-wrap: wrap;
 }
 
