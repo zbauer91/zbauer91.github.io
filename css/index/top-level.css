@@ -2,13 +2,13 @@ body {
   background-color: #687c7c;
 }
 
-.pure-g {
+.top-level .pure-g {
   height: 100vh;
   /* background-color: rgba(200, 100, 200, 0.5); */
   flex-wrap: wrap;
 }
 
-.heading-container {
+.top-level .heading-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,21 +17,21 @@ body {
   height: 90vh;
 }
 
-.heading {
+.top-level .heading {
   font-family: 'Shrikhand', cursive;
   font-size: 15vw;
   color: #efc88b;
   text-shadow: 4px 4px 2px #687c7c, 8px 8px 2px #3f5e5a, 12px 12px 2px #35322a;
 }
 
-.sub-heading {
+.top-level .sub-heading {
   font-family: 'Press Start 2P', monospace;
   font-size: 2.5vw;
   color: #efc88b;
   text-shadow: 2px 2px 0 #3f5e5a;
 }
 
-.button-container {
+.top-level .button-container {
   display: flex;
   /* flex-flow: row wrap; */
   justify-content: space-around;
@@ -41,7 +41,7 @@ body {
   height: 10vh;
 }
 
-.button-container .btn {
+.top-level .button-container .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,27 +49,23 @@ body {
   width: 5vh;
 }
 
-.button-container .fa-5x {
+.top-level .button-container .fa-5x {
   height: 100%;
   color: #a3320b;
 }
 
-.top-level-nav {
+.top-level .top-level-nav {
   display: flex;
   justify-content: flex-end;
 }
 
-.top-level-nav button {
+.top-level .top-level-nav button {
   margin: 0 5px 0 5px;
 }
 
 @media screen and (min-width: 64em) {
   /* large and up */
-  .button-container {
-    justify-content: flex-end;
-  }
-
-  .button-container .btn {
+  .top-level .button-container .btn {
     height: 7vh;
     width: 7vh;
     margin: 0 20px;

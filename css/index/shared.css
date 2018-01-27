@@ -21,11 +21,6 @@
   margin-bottom: 0;
 }
 
-.static {
-  height: 100vh;
-  background-color: ;
-}
-
 .parallax::after {
   /* Display and position the pseudo-element */
   content: " ";
