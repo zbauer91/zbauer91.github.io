@@ -49,7 +49,7 @@
 }
 
 .bg2::after {
-  background-image: url('https://placekitten.com/g/800/600');
+  background-image: url('../../assets/images/ga.png');
   background-size: cover;
 }
 
