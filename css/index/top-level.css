@@ -1,5 +1,8 @@
-.top-level .pure-g {
+.top-level {
   height: 100vh;
+}
+
+.top-level .pure-g {
   /* background-color: rgba(200, 100, 200, 0.5); */
   flex-wrap: wrap;
 }

@@ -24,7 +24,7 @@
 
 body {
   background-image: url('../../assets/images/pebbles-bg.png');
-  background-color: var(--col-steel-semi);
+  /* background-color: var(--col-steel-semi); */
 }
 
 .not-compatible {
@@ -49,62 +49,51 @@ body {
   display: none;
 }
 
-/* CSS for parallax movement. Taken from an online tutorial */
-.wrapper {
-  /* The height needs to be set to a fixed value for the effect to work.
-   * 100vh is the full height of the viewport. */
+/* Css for parallax - new tutorial */
+
+.main-container {
+  perspective: 1px;
+  transform-style: preserve-3d;
   height: 100vh;
-  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
   overflow-x: hidden;
-  /* Enable scrolling on the page. */
   overflow-y: auto;
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
-  margin-bottom: 0;
 }
 
-.section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
+.content-container {
   position: relative;
-  margin-bottom: 0;
+  display: block;
+  background-color: white;
+  z-index: 1;
 }
 
-.parallax::after {
-  /* Display and position the pseudo-element */
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
+.parallax-container {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
   z-index: -1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
 }
 
 /* Background setters for parallax */
-.bg1::after {
+.bg1 {
   background-image: url('../../assets/images/bunny-cropped.jpg');
   background-size: cover;
 }
 
-.bg2::after {
-  background-image: url('../../assets/images/ga.png');
+.bg2 {
+  background-image: url('../../assets/images/ga-cropped.png');
   background-size: cover;
 }
 
-.bg3::after {
+.bg3 {
   background-image: url('../../assets/Images/hanoi-sm.png');
   background-size: cover;
 }
 
-.bg4::after {
+.bg4 {
   background-image: url('../../assets/Images/motto-track.png');
   background-size: cover;
 }

@@ -1,66 +1,55 @@
-.wrapper {
-  /* The height needs to be set to a fixed value for the effect to work.
-   * 100vh is the full height of the viewport. */
-  height: 100vh;
-  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
-  /* Enable scrolling on the page. */
-  overflow-y: auto;
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
+html,
+body {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 28px;
 }
 
-.section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
-
-  /* For text formatting. */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+h1 {
+  letter-spacing: -15px;
+  font-family: Open Sans;
   color: white;
-  text-shadow: 0 0 5px #000;
+  text-align: center;
+  font-size: 200px;
+  font-weight: 800;
+  line-height: 200px;
 }
 
-.parallax::after {
-  /* Display and position the pseudo-element */
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 
-  /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
+.ContentContainer {
+  position: relative;
+  display: block;
+  background-color: white;
+  z-index: 1;
+}
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
   z-index: -1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/sakura.png);
+  background-color: rgb(250, 228, 216);
 }
 
-/* The styling for the static div. */
-.static {
-  height: 50vh;
-  background: navy;
+.Content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 75px 0;
 }
 
-/* Sets the actual background images to adorable kitties. This part is crucial. */
-.bg1::after {
-  background-image: url('https://placekitten.com/g/900/700');
-  background-size: cover;
+p {
+  margin: 75px 0;
 }
-
-.bg2::after {
-  background-image: url('https://placekitten.com/g/800/600');
-  background-size: cover;
-}
-
-.bg3::after {
-  background-image: url('./assets/Images/bunny.jpg');
-  background-size: cover;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
