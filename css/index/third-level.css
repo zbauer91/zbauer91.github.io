@@ -5,12 +5,45 @@
 }
 
 .third-level .container {
-  z-index: 2;
-  background-color: #3f5e5a;
+  background-color: var(--col-steel-semi);
   width: 100vw;
-  height: 30vh;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  height: 50vh;
+}
+
+.third-level img {
+  width: 70vw;
+  max-width: 600px;
+}
+
+@media screen and (min-width: 25em) {
+  /* small and up */
+  .third-level .container {
+    height: 45vh;
+  }
+}
+
+@media screen and (min-width: 35.5em) {
+  /* small and up */
+  .third-level .container {
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  /* medium and up */
+  .third-level .container {
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  /* large and up */
+  .third-level .container {
+    height: 25vh;
+  }
 }

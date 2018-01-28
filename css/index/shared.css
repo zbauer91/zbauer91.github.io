@@ -1,7 +1,55 @@
+:root {
+  /* Main Colors */
+  --col-brown: #35322a;
+  --col-teal: #3f5e5a;
+  --col-steel: #687c7c;
+  --col-orange: #a3320b;
+  --col-tan: #efc88b;
+
+  /* Main Colors, Semi-transparent @ cc */
+  --col-brown-semi: #35322add;
+  --col-teal-semi: #3f5e5add;
+  --col-steel-semi: #687c7cdd;
+  --col-orange-semi: #a3320bdd;
+  --col-tan-semi: #efc88bdd;
+
+  /* Font Stylings */
+  --font-p-weight: 600;
+  --font-p-spacing: 1.3px;
+  --font-p-size: 2.0vh;
+  --font-p-size-xs: 1.8vh;
+
+  /* Font Families */
+}
+
+body {
+  background-image: url('../../assets/images/pebbles-bg.png');
+  background-color: var(--col-steel-semi);
+}
+
+.not-compatible {
+  display: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: var(--col-orange);
+  color: var(--col-tan);
+  height: 250vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.not-compatible h1 {
+  font-family: 'Raleway', monospace;
+}
+
+/* helper class for hiding home page elements upon load*/
 .hidden {
   display: none;
 }
-/* Most of the CSS for parallax movement. Taken from an online tutorial */
+
+/* CSS for parallax movement. Taken from an online tutorial */
 .wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
    * 100vh is the full height of the viewport. */
@@ -40,6 +88,7 @@
   z-index: -1;
 }
 
+/* Background setters for parallax */
 .bg1::after {
   background-image: url('../../assets/images/bunny-cropped.jpg');
   background-size: cover;
@@ -51,12 +100,40 @@
 }
 
 .bg3::after {
-  background-image: url('./assets/Images/bunny.jpg');
+  background-image: url('../../assets/Images/hanoi-sm.png');
   background-size: cover;
 }
 
-/* @media screen and (min-width: 64em) {
-	.bg1::after {
-		background-image: url('../../assets/images/bunny.jpg')
-	}
-} */
+.bg4::after {
+  background-image: url('../../assets/Images/motto-track.png');
+  background-size: cover;
+}
+
+p {
+  color: var(--col-brown);
+  font-size: var(--font-p-size-xs);
+  font-weight: var(--font-p-weight);
+  letter-spacing: var(--font-p-spacing);
+}
+
+@media screen and (max-width: 16.8em) {
+  .not-compatible {
+    display: block;
+  }
+
+  .wrapper {
+    overflow-y: hidden;
+  }
+}
+
+@media screen and (min-width: 20em) {
+  p {
+    font-size: var(--font-p-size);
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .bg1::after {
+    background-image: url('../../assets/images/bunny.jpg');
+  }
+}

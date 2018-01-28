@@ -1,7 +1,3 @@
-body {
-  background-color: #687c7c;
-}
-
 .top-level .pure-g {
   height: 100vh;
   /* background-color: rgba(200, 100, 200, 0.5); */
@@ -20,14 +16,15 @@ body {
 .top-level .heading {
   font-family: 'Shrikhand', cursive;
   font-size: 15vw;
-  color: #efc88b;
-  text-shadow: 4px 4px 2px #687c7c, 8px 8px 2px #3f5e5a, 12px 12px 2px #35322a;
+  color: var(--col-tan);
+  text-shadow: 4px 4px 3px var(--col-steel), 8px 8px 3px var(--col-teal),
+    12px 12px 3px var(--col-brown);
 }
 
 .top-level .sub-heading {
   font-family: 'Press Start 2P', monospace;
   font-size: 2.5vw;
-  color: #efc88b;
+  color: var(--col-tan);
   text-shadow: 2px 2px 0 #3f5e5a;
 }
 
@@ -51,7 +48,7 @@ body {
 
 .top-level .button-container .fa-5x {
   height: 100%;
-  color: #a3320b;
+  color: var(--col-orange);
 }
 
 .top-level .top-level-nav {
@@ -63,11 +60,28 @@ body {
   margin: 0 5px 0 5px;
 }
 
+@media screen and (min-width: 35.5em) {
+  /* small and up */
+}
+
+@media screen and (min-width: 48em) {
+  /* medium and up */
+}
+
 @media screen and (min-width: 64em) {
   /* large and up */
+  .top-level .button-container {
+    justify-content: flex-end;
+  }
+
   .top-level .button-container .btn {
-    height: 7vh;
-    width: 7vh;
     margin: 0 20px;
+  }
+
+  .top-level .heading {
+    font-size: 12vw;
+  }
+  .top-level .sub-heading {
+    font-size: 1.8vw;
   }
 }

@@ -1,0 +1,25 @@
+.fourth-level .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 45vh;
+  background-color: var(--col-teal-semi);
+  color: var(--col-brown);
+}
+
+.fourth-level h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2vh;
+}
+
+.fourth-level h2 {
+  font-family: 'Shrikhand', monospace;
+  font-size: 6vh;
+}
+
+.fourth-level h3 {
+  font-family: Raleway;
+  font-weight: var(--font-p-weight);
+}
