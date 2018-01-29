@@ -64,6 +64,7 @@ body {
   display: block;
   background-color: white;
   z-index: 1;
+  height: 100vh;
 }
 
 .parallax-container {
@@ -71,10 +72,10 @@ body {
   flex: 1 0 auto;
   position: relative;
   z-index: -1;
-  height: 100vh;
   justify-content: center;
   align-items: center;
   transform: translateZ(-1px) scale(2);
+  height: 100vh;
 }
 
 /* Background setters for parallax */
@@ -122,7 +123,7 @@ p {
 }
 
 @media screen and (min-width: 64em) {
-  .bg1::after {
+  .bg1 {
     background-image: url('../../assets/images/bunny.jpg');
   }
 }

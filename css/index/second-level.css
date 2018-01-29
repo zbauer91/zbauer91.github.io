@@ -6,9 +6,8 @@
   font-family: 'Raleway';
   font-weight: var(--font-p-weight);
   text-align: center;
-  padding: 20px;
+  padding: 10vh 20px 0 20px;
   background-color: var(--col-steel-semi);
-  height: 76vh;
 }
 
 .second-level h2 {
@@ -33,13 +32,13 @@
 @media screen and (min-width: 48em) {
   /* medium and up */
   .second-level {
-    height: 71vh;
+    /* height: 71vh; */
   }
 }
 
 @media screen and (min-width: 64em) {
   /* large and up */
   .second-level {
-    height: 66vh;
+    /* height: 66vh; */
   }
 }

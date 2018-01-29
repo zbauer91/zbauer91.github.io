@@ -11,8 +11,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 45vh;
-  margin-top: 3vh;
+  margin: 20px 0 20px 0;
   background-color: var(--col-teal-semi);
   color: var(--col-brown);
 }
@@ -34,16 +33,27 @@
 
 .fourth-level .project1 {
   background-image: url('../../assets/images/hanoi-sm.png');
+  background-size: cover;
 }
 
 .fourth-level .project2 {
   background-image: url('../../assets/images/motto-track.png');
+  background-size: cover;
 }
 
 .fourth-level .project3 {
+  /* pic goes here */
+  background-size: cover;
 }
 
 .fourth-level .project4 {
+  /* pic goes here */
+  background-size: cover;
+}
+
+.fourth-level .project-text {
+  background-color: var(--col-teal-semi);
+  height: 100%;
 }
 
 @media screen and (min-width: 25em) {
