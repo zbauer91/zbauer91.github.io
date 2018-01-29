@@ -1,0 +1,23 @@
+.fifth-level {
+  height: 15vh !important;
+  background-color: var(--col-brown);
+  color: var(--col-orange);
+  font-family: 'Shrikhand', cursive;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: var(--font-p-size);
+}
+
+.fifth-level .copy {
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 5px;
+}
+
+.fifth-level .with-love {
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 5px;
+}

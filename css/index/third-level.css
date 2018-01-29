@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 50vh;
+  height: 35vh;
 }
 
 .third-level img {
@@ -20,29 +20,19 @@
   max-width: 600px;
 }
 
-.third-level .ga-container {
-  max-width: 700px;
-}
-
 @media screen and (min-width: 25em) {
   /* small and up */
   .third-level .container {
-    height: 45vh;
+    height: 31vh;
   }
 }
 
 @media screen and (min-width: 35.5em) {
   /* small and up */
-  .third-level .container {
-    height: 40vh;
-  }
 }
 
 @media screen and (min-width: 48em) {
   /* medium and up */
-  .third-level .container {
-    height: 30vh;
-  }
 }
 
 @media screen and (min-width: 64em) {

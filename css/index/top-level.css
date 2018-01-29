@@ -27,6 +27,10 @@
   text-shadow: 2px 2px 0 #3f5e5a;
 }
 
+.top-level p {
+  max-width: 800px;
+}
+
 .top-level .button-container {
   display: flex;
   /* flex-flow: row wrap; */

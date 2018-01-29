@@ -31,14 +31,8 @@
 
 @media screen and (min-width: 48em) {
   /* medium and up */
-  .second-level {
-    /* height: 71vh; */
-  }
 }
 
 @media screen and (min-width: 64em) {
   /* large and up */
-  .second-level {
-    /* height: 66vh; */
-  }
 }

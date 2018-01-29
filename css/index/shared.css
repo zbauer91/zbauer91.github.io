@@ -15,8 +15,10 @@
 
   /* Font Stylings */
   --font-p-weight: 600;
+  --font-text-width: 800px;
   --font-p-spacing: 1.3px;
   --font-p-size: 2.0vh;
+  --font-p-size-lg: 2.6vh;
   --font-p-size-xs: 1.8vh;
 
   /* Font Families */
@@ -106,6 +108,10 @@ p {
   letter-spacing: var(--font-p-spacing);
 }
 
+.text-container {
+  max-width: var(--font-text-width);
+}
+
 @media screen and (max-width: 16.8em) {
   .not-compatible {
     display: block;
@@ -125,5 +131,9 @@ p {
 @media screen and (min-width: 64em) {
   .bg1 {
     background-image: url('../../assets/images/bunny.jpg');
+  }
+
+  p {
+    font-size: var(--font-p-size-lg);
   }
 }

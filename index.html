@@ -23,6 +23,8 @@
 		<link rel='stylesheet' href='./css/index/third-level.css'>
 		<!-- Level Four CSS -->
 		<link rel='stylesheet' href='./css/index/fourth-level.css'>
+		<!-- Level Five CSS -->
+		<link rel='stylesheet' href='./css/index/fifth-level.css'>
 		<meta charset='UTF-8'>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv='X-UA-Compatible' content='ie=edge'>
@@ -49,7 +51,7 @@
 					<a href='tel:16145193442' class='btn'>
 						<i class="fas fa-phone fa-5x"></i>
 					</a>
-					<a href='./assets/resume.pdf' class='btn resume-container '>
+					<a href='./assets/resume.pdf' target='_blank' class='btn resume-container '>
 						<i class="fas fa-file-alt fa-5x"></i>
 					</a>
 				</nav>
@@ -70,7 +72,7 @@
 							The Overly Caffeinated Developer.</span>
 					</h2>
 				</div>
-				<div class='pure-u-1'>
+				<div class='pure-u-1 text-container'>
 					<p>I consistently look for creative, resourceful ways to solve new problems, which has led to great results in my work.
 						I feel empowered to find solutions, and people recognize me for what I can contribute to their work. Even when I don't
 						know the answer, I always know who to ask and where to look. I am always challenging myself to learn more and become
@@ -81,7 +83,7 @@
 			<section class='third-level pure-g bg2 content-container'>
 				<div class='container pure-u-1'>
 					<img src='./assets/images/ga-logo-2.png' alt='GA Logo'>
-					<div class='ga-container'>
+					<div class='text-container'>
 						<p>My most recent path in life has led me through the General Assembly Web Developer Immersive Program. This 12-week bootcamp
 							trained me to become a novice, full-stack developer.</p>
 						<p>Throughout the course, I will have completed four distinct websites, each designed to test a certain subset of skills
@@ -92,40 +94,68 @@
 			</section>
 			<!-- fourth-level CSS -->
 			<!-- Fourth level wraps up four distinct sections, one for each project.  -->
-			<section style="margin-top:70vh; height:200vh;"class='fourth-level pure-g parallax-container'>
+			<section style="margin-top:70vh; height:220vh;" class='fourth-level pure-g parallax-container'>
+				<!-- Project One -->
 				<div class='pure-u-1 pure-u-lg-1-2 project project1'>
 					<div class='project-text'>
 						<h1>Project One</h1>
 						<h2>Tower of Hanoi</h2>
-						<h3>A vanilla HTML, CSS and JavaScript clone of the popular Tower of Hanoi. The game can auto-solve itself inside the dev
-							console.
-						</h3>
+						<p>A non-responsive, vanilla HTML, CSS and JavaScript clone of the popular Tower of Hanoi. The game can auto-solve itself
+							inside the dev console. Best played on a full-size computer.
+						</p>
+						<div class='project-links'>
+							<a href='http://pixelrabbit.me/Tower-of-Hanoi/'>Game</a>
+							<a href='https://github.com/zbauer91/MottoTrack'>GitHub</a>
+						</div>
 					</div>
 				</div>
+				<!-- Project Two -->
 				<div class='pure-u-1 pure-u-lg-1-2 project project2'>
 					<div class='project-text'>
-						<h1>Project One</h1>
+						<h1>Project Two</h1>
 						<h2>MottoTrack</h2>
-						<h3>Vue.js + Vuetify application to CRUD entries into a remote database. Concepts of Vue.js and implementation achieved
-							in four days</h3>
+						<p>Vue.js + Vuetify application to CRUD entries into a remote database. Concepts of Vue.js and implementation achieved
+							in four days</p>
+						<div class='project-links'>
+							<a href='http://pixelrabbit.me/MottoTrack/#/'>Application</a>
+							<a href='https://github.com/zbauer91/MottoTrack'>Frontend Github</a>
+							<a href='https://github.com/zbauer91/project-two-api'>Backend Github</a>
+						</div>
 					</div>
 				</div>
+				<!-- Project Three -->
 				<div class='pure-u-1 pure-u-lg-1-2 project project3'>
 					<div class='project-text'>
 						<h1>Project Three</h1>
 						<h2>Barber Shop Finder</h2>
-						<h3>An in-progress review aggregator to help DC find a quaility barber. It is a full-stack MERN application with API connections
-							to Foursquare and Google Business reviews </h3>
+						<p>An in-progress review aggregator to help DC find a quaility barber. It is a full-stack MERN application with API connections
+							to Foursquare and Google Business reviews </p>
+						<div class='project-links'>
+							Links to come
+						</div>
 					</div>
 				</div>
+				<!-- Project Four -->
 				<div class='pure-u-1 pure-u-lg-1-2 project project4'>
 					<div class='project-text'>
 						<h1>Project Four</h1>
 						<h2>Upcoming Project</h2>
-						<h3>The fourth project will be an open-ended project built with on Ruby on Rails with a front-end of our choice. </h3>
+						<p>The fourth project will be an open-ended project built with a front-end of my choice on a Ruby on Rails back-end</p>
+						<div class='project-links'>
+							Links to come
+						</div>
 					</div>
 				</div>
 			</section>
+			<footer class="fifth-level pure-g content-container">
+				<div class='with-love pure-u-1'>
+					Made with
+					<i class="fas fa-heart fa-2x"></i> by Zach Bauer in Washington, D.C.
+				</div>
+				<div class='copy pure-u-1'>
+					&copy; 2018
+				</div>
+			</footer>
 		</main>
 		<!-- Index's JS -->
 		<script src='./js/index.js'></script>
