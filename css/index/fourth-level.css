@@ -1,10 +1,18 @@
+.fourth-level .pure-g {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .fourth-level .project {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 45vh;
+  margin-top: 3vh;
   background-color: var(--col-teal-semi);
   color: var(--col-brown);
 }
@@ -22,4 +30,38 @@
 .fourth-level h3 {
   font-family: Raleway;
   font-weight: var(--font-p-weight);
+}
+
+.fourth-level .project1 {
+  background-image: url('../../assets/images/hanoi-sm.png');
+}
+
+.fourth-level .project2 {
+  background-image: url('../../assets/images/motto-track.png');
+}
+
+.fourth-level .project3 {
+}
+
+.fourth-level .project4 {
+}
+
+@media screen and (min-width: 25em) {
+  /* small and up */
+}
+
+@media screen and (min-width: 35.5em) {
+  /* small and up */
+}
+
+@media screen and (min-width: 48em) {
+  /* medium and up */
+}
+
+@media screen and (min-width: 64em) {
+  /* large and up */
+  .fourth-level .project {
+    margin: 2vh 2vw;
+    width: 40vw;
+  }
 }

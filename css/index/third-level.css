@@ -21,6 +21,10 @@
   max-width: 600px;
 }
 
+.third-level .ga-container {
+  max-width: 700px;
+}
+
 @media screen and (min-width: 25em) {
   /* small and up */
   .third-level .container {
@@ -44,7 +48,4 @@
 
 @media screen and (min-width: 64em) {
   /* large and up */
-  .third-level .container {
-    height: 25vh;
-  }
 }
