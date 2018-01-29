@@ -37,4 +37,11 @@
 
 @media screen and (min-width: 64em) {
   /* large and up */
+  .third-level p {
+    font-size: var(--font-p-size) !important;
+  }
+
+  .third-level .container {
+    height: 32vh;
+  }
 }

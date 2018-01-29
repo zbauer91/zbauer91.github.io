@@ -133,8 +133,4 @@ p {
   .bg1 {
     background-image: url('../../assets/images/bunny.jpg');
   }
-
-  p {
-    font-size: var(--font-p-size-lg);
-  }
 }

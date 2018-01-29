@@ -112,5 +112,8 @@
     font-size: 3vw;
   }
 
+  .fourth-level p {
+    font-size: var(--font-p-size);
+  }
   /* style="margin-top:70vh; height:220vh;" */
 }

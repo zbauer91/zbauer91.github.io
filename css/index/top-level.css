@@ -73,6 +73,10 @@
 
 @media screen and (min-width: 64em) {
   /* large and up */
+
+  .top-level .heading-container {
+		margin-top: 15vh;
+  }
   .top-level .button-container {
     justify-content: flex-end;
   }
@@ -82,9 +86,11 @@
   }
 
   .top-level .heading {
-    font-size: 12vw;
+		font-size: 10vw;
+		margin-right: 20vw;
   }
   .top-level .sub-heading {
-    font-size: 1.8vw;
+		font-size: 1.5vw;
+		margin-right: 20vw;
   }
 }
