@@ -1,0 +1,38 @@
+.second-level {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Raleway';
+  font-weight: var(--font-p-weight);
+  text-align: center;
+  padding: 10vh 20px 0 20px;
+  background-color: var(--col-steel-semi);
+}
+
+.second-level h2 {
+  font-size: 2.9vh;
+  color: var(--col-brown);
+  font-family: 'Shrikhand';
+}
+
+.second-level img {
+  width: 45vw;
+  max-width: 250px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  box-shadow: 4px 4px 1px var(--col-orange), 8px 8px 2px var(--col-brown),
+    -4px -4px 1px var(--col-orange), -8px -8px 2px var(--col-brown);
+}
+
+@media screen and (min-width: 35.5em) {
+  /* small and up */
+}
+
+@media screen and (min-width: 48em) {
+  /* medium and up */
+}
+
+@media screen and (min-width: 64em) {
+  /* large and up */
+}

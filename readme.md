@@ -1,9 +1,2 @@
-# Personal Website
-
-##Purpose
-
-To document my personal projects and showcase mywork
-
-## Technologies Used
-
-HTMl and CSS (for now...)
+# Outline
+Portfolio page written entirely in HTML, CSS,and Vanilla JavaScript
