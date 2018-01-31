@@ -5,9 +5,18 @@
   font-family: 'Shrikhand', cursive;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   font-size: var(--font-p-size-sm);
 }
@@ -27,3 +36,5 @@
     height: 10vh !important;
   }
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2ZpZnRoLWxldmVsLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHdCQUF3QjtFQUN4QixtQ0FBbUM7RUFDbkMseUJBQXlCO0VBQ3pCLGtDQUFrQztFQUNsQyxZQUFZO0VBQ1osYUFBYTtFQUNiLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsNkJBQXlCO0VBQXpCLDhCQUF5QjtNQUF6Qiw2QkFBeUI7VUFBekIseUJBQXlCO0VBQ3pCLDBCQUErQjtNQUEvQix1QkFBK0I7VUFBL0IsK0JBQStCO0VBQy9CLHlCQUF3QjtNQUF4QixzQkFBd0I7VUFBeEIsd0JBQXdCO0VBQ3hCLGlDQUFpQztDQUNsQzs7QUFFRDtFQUNFLHVDQUF1QztFQUN2QyxtQkFBbUI7Q0FDcEI7O0FBRUQ7RUFDRSx1Q0FBdUM7RUFDdkMsZ0JBQWdCO0NBQ2pCOztBQUVEO0VBQ0U7SUFDRSx3QkFBd0I7R0FDekI7Q0FDRiIsImZpbGUiOiJmaWZ0aC1sZXZlbC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZmlmdGgtbGV2ZWwge1xuICBoZWlnaHQ6IDEydmggIWltcG9ydGFudDtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tY29sLWJyb3duKTtcbiAgY29sb3I6IHZhcigtLWNvbC1vcmFuZ2UpO1xuICBmb250LWZhbWlseTogJ1NocmlraGFuZCcsIGN1cnNpdmU7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZmxvdzogY29sdW1uIG5vd3JhcDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBhbGlnbi1pdGVtczogZmxleC1zdGFydDtcbiAgZm9udC1zaXplOiB2YXIoLS1mb250LXAtc2l6ZS1zbSk7XG59XG5cbi5maWZ0aC1sZXZlbCAuY29weSB7XG4gIGZvbnQtZmFtaWx5OiAnUHJlc3MgU3RhcnQgMlAnLCBjdXJzaXZlO1xuICBtYXJnaW4tYm90dG9tOiA1cHg7XG59XG5cbi5maWZ0aC1sZXZlbCAud2l0aC1sb3ZlIHtcbiAgZm9udC1mYW1pbHk6ICdQcmVzcyBTdGFydCAyUCcsIGN1cnNpdmU7XG4gIG1hcmdpbi10b3A6IDVweDtcbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNjRlbSkge1xuICAuZmlmdGgtbGV2ZWwge1xuICAgIGhlaWdodDogMTB2aCAhaW1wb3J0YW50O1xuICB9XG59XG4iXX0= */

@@ -1,0 +1,47 @@
+.third-level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-level .container {
+  background-color: var(--col-steel-semi);
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 35vh;
+}
+
+.third-level img {
+  width: 70vw;
+  max-width: 600px;
+}
+
+@media screen and (min-width: 25em) {
+  /* small and up */
+  .third-level .container {
+    height: 31vh;
+  }
+}
+
+@media screen and (min-width: 35.5em) {
+  /* small and up */
+}
+
+@media screen and (min-width: 48em) {
+  /* medium and up */
+}
+
+@media screen and (min-width: 64em) {
+  /* large and up */
+  .third-level p {
+    font-size: var(--font-p-size) !important;
+  }
+
+  .third-level .container {
+    height: 32vh;
+  }
+}

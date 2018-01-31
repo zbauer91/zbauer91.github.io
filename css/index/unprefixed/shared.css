@@ -1,0 +1,136 @@
+:root {
+  /* Main Colors */
+  --col-brown: #35322a;
+  --col-teal: #3f5e5a;
+  --col-steel: #687c7c;
+  --col-orange: #a3320b;
+  --col-tan: #efc88b;
+
+  /* Main Colors, Semi-transparent @ cc */
+  --col-brown-semi: #35322add;
+  --col-teal-semi: #3f5e5add;
+  --col-steel-semi: #687c7cdd;
+  --col-orange-semi: #a3320bdd;
+  --col-tan-semi: #efc88bdd;
+
+  /* Font Stylings */
+  --font-p-weight: 600;
+  --font-text-width: 800px;
+  --font-p-spacing: 1.3px;
+  --font-p-size: 2.0vh;
+  --font-p-size-lg: 2.6vh;
+  --font-p-size-xs: 1.8vh;
+
+  /* Font Families */
+}
+
+body {
+  background-image: url('../../assets/images/pebbles-bg.png');
+  /* background-color: var(--col-steel-semi); */
+}
+
+.not-compatible {
+  display: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: var(--col-orange);
+  color: var(--col-tan);
+  height: 250vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.not-compatible h1 {
+  font-family: 'Raleway', monospace;
+}
+
+/* helper class for hiding home page elements upon load*/
+.hidden {
+  display: none;
+}
+
+/* Css for parallax - new tutorial */
+
+.main-container {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.content-container {
+  position: relative;
+  display: block;
+  background-color: white;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.parallax-container {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  height: 100vh;
+}
+
+/* Background setters for parallax */
+.bg1 {
+  background-image: url('../../assets/images/bunny-cropped.jpg');
+  background-size: cover;
+}
+
+.bg2 {
+  background-image: url('../../assets/images/ga-cropped.png');
+  background-size: cover;
+}
+
+.bg3 {
+  background-image: url('../../assets/Images/hanoi-sm.png');
+  background-size: cover;
+}
+
+.bg4 {
+  background-image: url('../../assets/Images/motto-track.png');
+  background-size: cover;
+}
+
+p {
+  color: var(--col-brown);
+  font-size: var(--font-p-size-xs);
+  font-weight: var(--font-p-weight);
+  letter-spacing: var(--font-p-spacing);
+}
+
+.text-container {
+  max-width: var(--font-text-width);
+}
+
+@media screen and (max-width: 16.8em) {
+  .not-compatible {
+    display: block;
+  }
+
+  .wrapper {
+    overflow-y: hidden;
+  }
+}
+
+@media screen and (min-width: 20em) {
+  p {
+    font-size: var(--font-p-size);
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .bg1 {
+    background-image: url('../../assets/images/bunny.jpg');
+  }
+}
