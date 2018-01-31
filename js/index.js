@@ -6,6 +6,7 @@ function displayHomePage () {
   let head = document.getElementById('heading')
   let subHead = document.getElementById('subHeading')
   let nav = document.getElementById('buttonContainer')
+  let chevron = document.getElementById('downChevron')
 
   setTimeout(function () {
     // console.log('buttons')
@@ -24,4 +25,14 @@ function displayHomePage () {
     subHead.classList.remove('hidden')
     subHead.classList.add('fadeInLeft')
   }, 1250)
+
+  setTimeout(function () {
+    console.log(chevron)
+    chevron.classList.remove('hidden')
+    chevron.classList.add('fadeInUp')
+    chevron.classList.add('pulse')
+    chevron.classList.add('infinite')
+    chevron.classList.remove('fadeInUp')
+    console.log(chevron)
+  }, 1500)
 }
