@@ -68,6 +68,7 @@
   margin: 5px;
   text-decoration: none;
   color: var(--color-tan);
+  font-size: var(--font-p-size-sm);
 }
 
 .fourth-level .project-links a:visited {
