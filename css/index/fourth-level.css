@@ -31,10 +31,11 @@
   text-align: center;
   width: 100vw;
   height: 45vh;
-  margin: 20px 0 20px 0;
+  margin: 20px 15px 20px 5px;
   background-color: var(--col-teal-semi);
   overflow: auto;
   color: var(--col-brown);
+  box-shadow: var(--project-box-shadow);
 }
 
 .fourth-level h1 {

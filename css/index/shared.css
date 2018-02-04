@@ -20,12 +20,17 @@
   --font-p-size: 2.0vh;
   --font-p-size-lg: 2.6vh;
   --font-p-size-xs: 1.8vh;
+  --font-p-size-xxs: 1.2vh;
 
-  /* Font Families */
+  /* Shadowing */
+  --title-text-shadow: 4px 4px 3px var(--col-steel), 8px 8px 3px var(--col-teal),
+    12px 12px 3px var(--col-brown);
+  --project-box-shadow: 4px 4px 3px var(--col-steel),
+    8px 8px 3px var(--col-orange), 12px 12px 3px var(--col-brown);
 }
 
 body {
-  background-image: url('../../assets/images/pebbles-bg.png');
+  background-image: url('../../assets/images/wood-bg.jpg');
   /* background-color: var(--col-steel-semi); */
 }
 
@@ -94,7 +99,7 @@ body {
 
 /* Background setters for parallax */
 .bg1 {
-  background-image: url('../../assets/images/bunny-cropped.jpg');
+  background: url('../../assets/images/bunny-cropped-px.png');
   background-size: cover;
 }
 
@@ -146,6 +151,6 @@ p {
 
 @media screen and (min-width: 64em) {
   .bg1 {
-    background-image: url('../../assets/images/bunny.jpg');
+    background-image: url('../../assets/images/bunny-px.png');
   }
 }

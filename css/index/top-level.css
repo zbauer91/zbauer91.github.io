@@ -26,8 +26,7 @@
   font-family: 'Shrikhand', cursive;
   font-size: 15vw;
   color: var(--col-tan);
-  text-shadow: 4px 4px 3px var(--col-steel), 8px 8px 3px var(--col-teal),
-    12px 12px 3px var(--col-brown);
+  text-shadow: var(--title-text-shadow);
 }
 
 .top-level .sub-heading {
@@ -109,6 +108,7 @@
   /* large and up */
 
   .top-level .heading-container {
+    height: 65vh;
     margin-top: 15vh;
   }
   .top-level .button-container {
@@ -128,5 +128,9 @@
   .top-level .sub-heading {
     font-size: 1.5vw;
     margin-right: 20vw;
+  }
+
+  .top-level .chevron {
+    margin-bottom: 10vh !important;
   }
 }

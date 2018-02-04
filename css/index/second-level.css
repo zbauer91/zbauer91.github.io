@@ -20,9 +20,13 @@
 }
 
 .second-level h2 {
-  font-size: 2.9vh;
+  font-size: 3.5vh;
   color: var(--col-brown);
   font-family: 'Shrikhand';
+}
+
+.second-level p {
+  font-size: var(--font-p-size);
 }
 
 .second-level img {

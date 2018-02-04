@@ -1,5 +1,5 @@
 .fifth-level {
-  height: 12vh !important;
+  height: 7vh !important;
   background-color: var(--col-brown);
   color: var(--col-orange);
   font-family: 'Shrikhand', cursive;
@@ -18,7 +18,7 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  font-size: var(--font-p-size-xs);
+  font-size: var(--font-p-size-xxs);
 }
 
 .fifth-level .copy {
@@ -32,7 +32,4 @@
 }
 
 @media screen and (min-width: 64em) {
-  .fifth-level {
-    height: 10vh !important;
-  }
 }
