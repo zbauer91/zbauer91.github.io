@@ -19,7 +19,7 @@
   -ms-flex-align: center;
   align-items: center;
   /* background-color: rgba(200, 200, 0, 0.5); */
-  height: 80vh;
+  height: 70vh;
 }
 
 .top-level .heading {
@@ -40,7 +40,12 @@
   max-width: 800px;
 }
 
-.top-level .button-container {
+.button-container {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100vw;
+  background-color: rgba(50, 50, 50, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,7 +60,7 @@
   height: 10vh;
 }
 
-.top-level .button-container .btn {
+.button-container .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +74,7 @@
   width: 5vh;
 }
 
-.top-level .button-container .fa-5x {
+.button-container .fa-5x {
   height: 100%;
   color: var(--col-orange);
 }
@@ -111,13 +116,13 @@
     height: 65vh;
     margin-top: 15vh;
   }
-  .top-level .button-container {
+  .button-container {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
 
-  .top-level .button-container .btn {
+  .button-container .btn {
     margin: 0 20px;
   }
 
