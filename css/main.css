@@ -1,0 +1,15 @@
+/* global variables */
+:root {
+  /* Font families */
+  --ff-header: 'Shrikhand';
+  --ff-subhead: 'Press Start 2P';
+  --ff-p: 'Raleway';
+  --ff-p-alt: 'Montserrat';
+
+  /* Font sizes */
+
+  --fs-header: 2vw;
+  --fs-subhead: 2vw;
+  --fs-p: 2vw;
+  --fs-p-alt: 2vw;
+}
