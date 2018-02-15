@@ -20,6 +20,8 @@
 	<head>
 		<!-- main CSS -->
 		<link rel='stylesheet' href='./css/main.css'>
+		<!-- Materialize -->
+		<link rel='stylesheet' href='./css/materialize.css'>
 		<!-- PureCSS -->
 		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
 		  crossorigin="anonymous">
@@ -29,6 +31,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<!-- Google Fonts and Such -->
 		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Shrikhand|Montserrat|Raleway" rel="stylesheet">
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- FontAwesome JS -->
 		<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 		<meta charset='UTF-8'>
@@ -38,23 +42,14 @@
 	</head>
 
 	<body>
-		<div class="rellax">
-			I’m that default chill speed of "-2"
-		</div>
-		<div class="rellax" data-rellax-speed="7">
-			I’m super fast!!
-		</div>
-		<div class="rellax" data-rellax-speed="-4">
-			I’m extra slow and smooth
-		</div>
-
 
 		<!-- Scripts -->
 		<script src='./js/jquery-3.3.1.js'></script>
-		<script src='./js/jquery.rellax.js'></script>
+		<script src='./js/materialize.js'></script>
 		<script>
-			// Accepts any class name
-			var rellax = new Rellax('.rellax');
+			$(document).ready(function () {
+				$('.parallax').parallax();
+			});
 		</script>
 	</body>
 
