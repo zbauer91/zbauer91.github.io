@@ -13,3 +13,10 @@
   --fs-p: 2vw;
   --fs-p-alt: 2vw;
 }
+
+.rellax {
+  /* height: 100vh;
+  width: 100vw; */
+  font-size: 30px;
+  background-color: cornflowerblue;
+}

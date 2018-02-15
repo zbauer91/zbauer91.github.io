@@ -18,6 +18,8 @@
 
 
 	<head>
+		<!-- main CSS -->
+		<link rel='stylesheet' href='./css/main.css'>
 		<!-- PureCSS -->
 		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
 		  crossorigin="anonymous">
@@ -36,7 +38,24 @@
 	</head>
 
 	<body>
+		<div class="rellax">
+			I’m that default chill speed of "-2"
+		</div>
+		<div class="rellax" data-rellax-speed="7">
+			I’m super fast!!
+		</div>
+		<div class="rellax" data-rellax-speed="-4">
+			I’m extra slow and smooth
+		</div>
 
+
+		<!-- Scripts -->
+		<script src='./js/jquery-3.3.1.js'></script>
+		<script src='./js/jquery.rellax.js'></script>
+		<script>
+			// Accepts any class name
+			var rellax = new Rellax('.rellax');
+		</script>
 	</body>
 
 </html>
