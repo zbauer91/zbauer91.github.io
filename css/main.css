@@ -7,12 +7,12 @@
   --ff-p-alt: 'Montserrat';
 
   /* Font sizes */
-
   --fs-header: 10vw;
   --fs-subhead: 1.8vw; /* Specifically for the huge Press Start 2P text */
   --fs-p: 2vw;
   --fs-p-alt: 1.75vw;
   --fs-nav: 2.2vh;
+  --fs-menu: 3vh;
 
   /* old vars */
   /* Main Colors */
@@ -32,7 +32,10 @@
   /* Font Stylings */
   --font-p-weight: 600;
   --font-text-width: 800px;
-  --font-p-spacing: 1.3px;
+	--font-p-spacing: 1.3px;
+	
+	/* backgrounds */
+	--bg-card: url('../')
 
   /* Shadowing */
   --title-shadow: 4px 4px 3px var(--col-steel), 8px 8px 3px var(--col-teal),
@@ -74,6 +77,15 @@ body {
   height: 10vh;
 }
 
+.nav-logo {
+  margin-left: 2vw;
+}
+
 .nav-link {
   font-size: var(--fs-nav);
+}
+
+.menu-button {
+  margin-right: 2vw;
+  font-size: var(--fs-menu);
 }
