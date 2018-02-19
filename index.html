@@ -2,8 +2,6 @@
 <html lang='en'>
 	<!-- Notes:
 		Hint.css
-		jQuery Slim?
-		Parallax.js
 
 		much better css organization with better usage of global variables
 
@@ -26,10 +24,10 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<!-- Google Fonts and Such -->
 		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Shrikhand|Montserrat|Raleway" rel="stylesheet">
-		<!--Import Google Icon Font-->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Import Google Icon Font
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 		<!-- FontAwesome JS -->
-		<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 		<meta charset='UTF-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<meta http-equiv='X-UA-Compatible' content='ie=edge'>
@@ -37,11 +35,90 @@
 	</head>
 
 	<body>
+		<!-- parallax-container can hold anything. parallax is where the image goes -->
+		<div class='navbar-fixed'>
+			<nav>
+				<div class='nav-wrapper'>
+					<a href='#'>PixelRabbit WebDev</a>
+					<ul class='right hide-on-med-and-down'>
+						<li>
+							<a href='https://www.linkedin.com/in/zachbauer' class='nav-link'>
+								<i class="fab fa-linkedin"></i> LinkedIn
+							</a>
+						</li>
+						<li>
+							<a href='https://www.github.com/zbauer91' class='nav-link'>
+								<i class="fab fa-github"></i> GitHub
+							</a>
+						</li>
+						<li>
+							<a href='mailto:zbauer91@gmail.com' class='nav-link'>
+								<i class="fas fa-envelope"></i> Email
+							</a>
+						</li>
+						<li>
+							<a href='tel:16145193442' class='nav-link'>
+								<i class="fas fa-phone"></i> Phone
+							</a>
+						</li>
+						<li>
+							<a href='./assets/resume.pdf' target='_blank' class='nav-link resume-container '>
+								<i class="fas fa-file-alt"></i> Resume
+							</a>
+						</li>
+					</ul>
+					<!-- duplication of the above list -->
+					<ul class='right side-nav'>
+						<li>
+							<a href='https://www.linkedin.com/in/zachbauer' class='nav-link'>
+								<i class="fab fa-linkedin"></i> LinkedIn
+							</a>
+						</li>
+						<li>
+							<a href='https://www.github.com/zbauer91' class='nav-link'>
+								<i class="fab fa-github"></i> GitHub
+							</a>
+						</li>
+						<li>
+							<a href='mailto:zbauer91@gmail.com' class='nav-link'>
+								<i class="fas fa-envelope"></i> Email
+							</a>
+						</li>
+						<li>
+							<a href='tel:16145193442' class='nav-link'>
+								<i class="fas fa-phone"></i> Phone
+							</a>
+						</li>
+						<li>
+							<a href='./assets/resume.pdf' target='_blank' class='nav-link resume-container '>
+								<i class="fas fa-file-alt"></i> Resume
+							</a>
+						</li>
+					</ul>
+					<a href="#" data-activates="mobile-demo" class="button-collapse">
+						<i class="fas fa-chevron-circle-down"></i>
+					</a>
+				</div>
+			</nav>
+		</div>
 
-		<div class="parallax-container">
-			<div class='box'>Here's a little aside inside the parallax container</div>
+		<div class="title-section gray">
+			<div class="row container">
+				<section class=''>
+					<div class=''>
+						<div id='header' class='header animated'>Zach Bauer</div>
+						<div id='subHeader' class='sub-head animated'>&lt;Classy Web Developer/&gt;</div>
+					</div>
+					<div id="downChevron" class='chevron  hidden animated'>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div class="parallax-container plx-size">
+			<div class='box '>Here's a little aside inside the parallax container</div>
 			<div class="parallax">
-				<img src="https://img.purch.com/h/1000/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA1NC84Nzkvb3JpZ2luYWwvc2F0dXJuLWludGVyc3RlbGxhci1kdXN0LWNhc3NpbmkuanBn">
+				<img src="./rabbit.png">
 			</div>
 		</div>
 		<div class="section white">

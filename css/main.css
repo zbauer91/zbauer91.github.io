@@ -8,10 +8,37 @@
 
   /* Font sizes */
 
-  --fs-header: 2vw;
-  --fs-subhead: 2vw;
+  --fs-header: 10vw;
+  --fs-subhead: 1.8vw; /* Specifically for the huge Press Start 2P text */
   --fs-p: 2vw;
-  --fs-p-alt: 2vw;
+  --fs-p-alt: 1.75vw;
+  --fs-nav: 2.2vh;
+
+  /* old vars */
+  /* Main Colors */
+  --brown: #35322a;
+  --teal: #3f5e5a;
+  --steel: #687c7c;
+  --orange: #a3320b;
+  --tan: #efc88b;
+
+  /* Main Colors, Semi-transparent @ cc */
+  --browns: rgba(53, 50, 42, 0.85);
+  --teals: rgba(63, 94, 90, 0.85);
+  --steels: rgba(104, 124, 125, 0.85);
+  --oranges: rgba(163, 50, 11, 0.85);
+  --tans: rgba(239, 200, 139, 0.85);
+
+  /* Font Stylings */
+  --font-p-weight: 600;
+  --font-text-width: 800px;
+  --font-p-spacing: 1.3px;
+
+  /* Shadowing */
+  --title-shadow: 4px 4px 3px var(--col-steel), 8px 8px 3px var(--col-teal),
+    12px 12px 3px var(--col-brown);
+  --project-box-shadow: 4px 4px 3px var(--col-steel),
+    8px 8px 3px var(--col-orange), 12px 12px 3px var(--col-brown);
 }
 
 body {
@@ -19,8 +46,34 @@ body {
   overflow-x: hidden;
 }
 
+.title-section {
+  height: 92vh;
+}
+
 .section {
-  height: 100vh;
+  height: 92vh;
   width: 100vw;
-  background-color: cornflowerblue;
+}
+
+.plx-size {
+  height: 92vh;
+}
+
+.header {
+  font-size: var(--fs-header);
+  font-family: var(--ff-header);
+}
+
+.sub-head {
+  font-size: var(--fs-subhead);
+  font-family: var(--ff-subhead);
+}
+
+/* NavBar */
+.fixed-nav {
+  height: 10vh;
+}
+
+.nav-link {
+  font-size: var(--fs-nav);
 }
