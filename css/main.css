@@ -16,7 +16,7 @@
   --fs-subhead: 2.2vw; /* Specifically for the huge Press Start 2P text */
   --fs-p: 2vw;
   --fs-p-alt: 2.5vw;
-  --fs-nav: 2.16vh;
+  --fs-nav: 2vh;
   --fs-menu: 3vh;
 
   /* old vars */
@@ -49,24 +49,42 @@
     8px 8px 3px var(--col-orange), 12px 12px 3px var(--col-brown);
 }
 
+/* Jarallax Requirements */
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  /* support for plugin https://github.com/bfred-it/object-fit-images */
+  font-family: 'object-fit: cover;';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 body {
   /* hides horizontal overflow in parallax containers */
   overflow-x: hidden;
 }
 /* Header page */
-.parallax-container {
-  height: 93vh !important;
-}
 
 .header-container {
-  margin-top: 15vh;
   height: 100%;
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column wrap;
+  justify-content: space-between;
   align-items: center;
   color: white;
+  background-color: rgba(95, 158, 160, 0.1);
+}
+
+.main-headers {
+  margin-top: 30vh;
 }
 
 .header {
@@ -83,9 +101,11 @@ body {
   width: 85vw;
 }
 
-.fa-chevron-circle-down {
+.down-arrow {
+  margin-bottom: 2vh;
+  width: 100vw;
+  text-align: center;
   font-size: 4vh;
-  /* margin-bottom: 3vh; */
 }
 
 /* NavBar */
@@ -133,19 +153,17 @@ body {
 
 @media screen and (min-width: 993px) {
   /* Large screen are defined as having a min-width of 993px  */
-
+  :root {
+    /* Font sizes */
+    --fs-header: 10vw;
+    --fs-subhead: 1.6vw;
+    --fs-p: 2vw;
+    --fs-p-alt: 2.5vw;
+    --fs-nav: 2vh;
+    --fs-menu: 3vh;
+  }
   .main-headers {
-    margin: 20vh 30vw 0 0;
-  }
-  .header {
-    font-size: 8vw;
-  }
-  .sub-head {
-    font-size: 1.2vw;
-  }
-  .fa-chevron-circle-down {
-    font-size: 4vh;
-    margin-bottom: 10vh;
+    margin: 45vh 25vw 0 0;
   }
 }
 

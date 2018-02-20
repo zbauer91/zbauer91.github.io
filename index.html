@@ -79,17 +79,18 @@
 
 		<!-- parallax-container can hold anything. parallax is where the image goes -->
 
-		<div class='parallax-container'>
+		<div data-jarallax data-speed='0.3' style='height: 92vh' class='jarallax'>
+			<img class='jarallax-img' src='./assets/images/rabbit-bg.jpg' alt='rabbit'>
 			<section class='header-container'>
 				<div class='main-headers'>
 					<div id='header' class='header animated'>Zach Bauer</div>
 					<div id='subHeader' class='sub-head animated'>&lt;Classy Web Developer/&gt;</div>
 				</div>
-				<i id='downChevron' class="fas fa-chevron-circle-down animated"></i>
-			</section class='row'>
-			<div class='parallax'>
-				<img class='landing-image' src='./assets/images/rabbit-bg.jpg' alt='rabbit'>
-			</div>
+				<div class='down-arrow'>
+					<i id='downChevron' class="fas fa-chevron-circle-down animated"></i>
+				</div>
+
+			</section>
 		</div>
 
 		<section class='row'>
@@ -101,19 +102,19 @@
 				at home, I'm a practiced MacGyver.</p>
 		</section>
 
-		<div class='parallax-container'>
+		<div style='height: 50vh' data-jarallax data-speed='0.3' class='jarallax'>
+			<img class='jarallax-img' src='./assets/images/wood-bg.jpg' alt='wood background'>
 			<section>
 				<!-- Stuff -->
 			</section>
-			<div class='parallax'>
-				<img src='./assets/images/wood-bg.jpg' alt='wood background'>
-			</div>
+
 		</div>
 
 		<!-- Scripts -->
 		<script src='./js/jquery-3.3.1.js'></script>
 		<script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 		<script type="text/javascript" src='./js/materialize.js'></script>
+		<script src='./js/jarallax.js'></script>
 		<script src='./js/main.js'></script>
 	</body>
 
