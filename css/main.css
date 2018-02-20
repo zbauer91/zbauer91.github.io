@@ -32,10 +32,10 @@
   /* Font Stylings */
   --font-p-weight: 600;
   --font-text-width: 800px;
-	--font-p-spacing: 1.3px;
-	
-	/* backgrounds */
-	--bg-card: url('../')
+  --font-p-spacing: 1.3px;
+
+  /* backgrounds */
+  --bg-card: url('../assets/images/paper-bg.jpg');
 
   /* Shadowing */
   --title-shadow: 4px 4px 3px var(--col-steel), 8px 8px 3px var(--col-teal),
@@ -48,18 +48,14 @@ body {
   /* hides horizontal overflow in parallax containers */
   overflow-x: hidden;
 }
+/* Header page */
 
-.title-section {
-  height: 92vh;
-}
-
-.section {
-  height: 92vh;
-  width: 100vw;
-}
-
-.plx-size {
-  height: 92vh;
+.header-container {
+  height: 96vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
