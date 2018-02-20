@@ -54,6 +54,9 @@ body {
   overflow-x: hidden;
 }
 /* Header page */
+.parallax-container {
+  height: 93vh !important;
+}
 
 .header-container {
   margin-top: 15vh;
@@ -82,7 +85,7 @@ body {
 
 .fa-chevron-circle-down {
   font-size: 4vh;
-  margin-bottom: 5vh;
+  /* margin-bottom: 3vh; */
 }
 
 /* NavBar */
@@ -118,4 +121,34 @@ body {
 
 .tagline {
   font-size: var(--fs-p-alt);
+}
+
+@media screen and (max-width: 600px) {
+  /* Small screens are defined as having a max-width of 600px */
+}
+
+@media screen and (max-width: 992px) {
+  /* Medium screens are defined as having a max-width of 992px  */
+}
+
+@media screen and (min-width: 993px) {
+  /* Large screen are defined as having a min-width of 993px  */
+
+  .main-headers {
+    margin: 20vh 30vw 0 0;
+  }
+  .header {
+    font-size: 8vw;
+  }
+  .sub-head {
+    font-size: 1.2vw;
+  }
+  .fa-chevron-circle-down {
+    font-size: 4vh;
+    margin-bottom: 10vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Extra Large screen are defined as having a min-width of 1200px */
 }
