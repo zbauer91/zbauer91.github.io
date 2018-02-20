@@ -15,8 +15,8 @@
   --fs-header: 15vw;
   --fs-subhead: 2.2vw; /* Specifically for the huge Press Start 2P text */
   --fs-p: 2vw;
-  --fs-p-alt: 1.75vw;
-  --fs-nav: 2.2vh;
+  --fs-p-alt: 2.5vw;
+  --fs-nav: 2.16vh;
   --fs-menu: 3vh;
 
   /* old vars */
@@ -55,10 +55,6 @@ body {
 }
 /* Header page */
 
-.landing-page {
-  height: 91vh !important;
-}
-
 .header-container {
   margin-top: 15vh;
   height: 100%;
@@ -75,7 +71,6 @@ body {
   font-family: var(--ff-header);
   text-align: center;
   width: 100vw;
-  background-color: rgba(39, 11, 163, 0.4);
 }
 
 .sub-head {
@@ -83,18 +78,11 @@ body {
   font-family: var(--ff-subhead);
   text-align: center;
   width: 85vw;
-  /* margin-right: 15vw; */
-  background-color: rgba(163, 50, 11, 0.40);
 }
 
-.fa-chevron-down {
-  /* margin-top: 30vh; */
+.fa-chevron-circle-down {
   font-size: 4vh;
-  align-self: flex-end;
-  /* margin-top: -15vh; */
-  text-align: center;
-  width: 100vw;
-  background-color: rgba(16, 163, 11, 0.4);
+  margin-bottom: 5vh;
 }
 
 /* NavBar */
@@ -113,4 +101,21 @@ body {
 .menu-button {
   margin-right: 2vw;
   font-size: var(--fs-menu);
+}
+
+/* Personal section */
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-photo {
+  margin: 3vh 0;
+  height: 60vw;
+  max-height: 40vh;
+}
+
+.tagline {
+  font-size: var(--fs-p-alt);
 }

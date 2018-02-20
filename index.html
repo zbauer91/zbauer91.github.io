@@ -34,59 +34,77 @@
 	</head>
 
 	<body>
-		<nav>
-			<div class='nav-wrapper'>
-				<a href='#' class="nav-logo flow-text">PixelRabbit WebDev</a>
-				<!-- The nav bar list -->
-				<ul class='right hide-on-small-and-down'>
-					<li>
-						<a href='https://www.linkedin.com/in/zachbauer' class='nav-link flow-text'>
-							<i class="fab fa-linkedin"></i> LinkedIn
-						</a>
-					</li>
-					<li>
-						<a href='https://www.github.com/zbauer91' class='nav-link flow-text'>
-							<i class="fab fa-github"></i> GitHub
-						</a>
-					</li>
-					<li>
-						<a href='./assets/resume.pdf' target='_blank' class='nav-link flow-text resume-container '>
-							<i class="fas fa-file-alt"></i> Resume
-						</a>
-					</li>
-					<li>
-						<a href='#!' data-target='dropdown1' class='dropdown-trigger nav-link flow-text' btn>
-							<i class="fas fa-address-card"></i> Contact</a>
-					</li>
-					<ul id="dropdown1" class='dropdown-content'>
+		<div class='navbar-fixed'>
+			<nav>
+				<div class='nav-wrapper'>
+					<a href='#' class="nav-logo flow-text">PixelRabbit WebDev</a>
+					<!-- The nav bar list -->
+					<ul class='right hide-on-small-and-down'>
 						<li>
-							<a href='mailto:zbauer91@gmail.com' class='nav-link flow-text'>
-								<i class="fas fa-envelope"></i> Email
+							<a href='https://www.linkedin.com/in/zachbauer' class='nav-link'>
+								<i class="fab fa-linkedin"></i> LinkedIn
 							</a>
 						</li>
 						<li>
-							<a href='tel:16145193442' class='nav-link flow-text'>
-								<i class="fas fa-phone"></i> Phone
+							<a href='https://www.github.com/zbauer91' class='nav-link'>
+								<i class="fab fa-github"></i> GitHub
 							</a>
 						</li>
-					</ul>
+						<li>
+							<a href='./assets/resume.pdf' target='_blank' class='nav-link resume-container '>
+								<i class="fas fa-file-alt"></i> Resume
+							</a>
+						</li>
+						<li>
+							<a href='#!' data-target='dropdown1' class='dropdown-trigger nav-link' btn>
+								<i class="fas fa-address-card"></i> Contact</a>
+						</li>
+						<ul id="dropdown1" class='dropdown-content'>
+							<li>
+								<a href='mailto:zbauer91@gmail.com' class='nav-link'>
+									<i class="fas fa-envelope"></i> Email
+								</a>
+							</li>
+							<li>
+								<a href='tel:16145193442' class='nav-link'>
+									<i class="fas fa-phone"></i> Phone
+								</a>
+							</li>
+						</ul>
 
-				</ul>
-			</div>
-		</nav>
+					</ul>
+				</div>
+			</nav>
+		</div>
 
 		<!-- parallax-container can hold anything. parallax is where the image goes -->
 
-		<div class='parallax-container landing-page'>
+		<div style='height: 91vh' class='parallax-container'>
 			<section class='header-container'>
 				<div class='main-headers'>
 					<div id='header' class='header animated'>Zach Bauer</div>
 					<div id='subHeader' class='sub-head animated'>&lt;Classy Web Developer/&gt;</div>
 				</div>
-				<i id='downChevron' class="fas fa-chevron-down animated"></i>
+				<i id='downChevron' class="fas fa-chevron-circle-down animated"></i>
+			</section class='row'>
+			<div class='parallax'>
+				<img class='landing-image' src='./assets/images/rabbit-bg.png' alt='rabbit'>
+			</div>
+		</div>
+
+		<section class='row'>
+			<div class='photo-container'>
+				<img class='circle personal-photo z-depth-5' src='./assets/images/photo.jpg' alt='photo of my cute face!'>
+			</div>
+			<h4 class='center-align tagline'>An expert at turning caffeine and lack of sleep into websites</h4>
+		</section>
+
+		<div style='height: 60vh' class='parallax-container'>
+			<section>
+				<!-- Stuff -->
 			</section>
 			<div class='parallax'>
-				<img src='./assets/images/rabbit-bg.png' alt='rabbit'>
+				<img src='./assets/images/wood-bg.jpg' alt='wood background'>
 			</div>
 		</div>
 
