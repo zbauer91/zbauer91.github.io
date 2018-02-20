@@ -1,5 +1,10 @@
 /* global variables */
 :root {
+  /* Small screens are defined as having a max-width of 600px 
+		 Medium screens are defined as having a max-width of 992px 
+		 Large screen are defined as having a min-width of 993px 
+		 Extra Large screen are defined as having a min-width of 1200px
+  */
   /* Font families */
   --ff-header: 'Shrikhand';
   --ff-subhead: 'Press Start 2P';
@@ -7,8 +12,8 @@
   --ff-p-alt: 'Montserrat';
 
   /* Font sizes */
-  --fs-header: 10vw;
-  --fs-subhead: 1.8vw; /* Specifically for the huge Press Start 2P text */
+  --fs-header: 15vw;
+  --fs-subhead: 2.2vw; /* Specifically for the huge Press Start 2P text */
   --fs-p: 2vw;
   --fs-p-alt: 1.75vw;
   --fs-nav: 2.2vh;
@@ -50,22 +55,46 @@ body {
 }
 /* Header page */
 
+.landing-page {
+  height: 91vh !important;
+}
+
 .header-container {
-  height: 96vh;
+  margin-top: 15vh;
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .header {
   font-size: var(--fs-header);
   font-family: var(--ff-header);
+  text-align: center;
+  width: 100vw;
+  background-color: rgba(39, 11, 163, 0.4);
 }
 
 .sub-head {
   font-size: var(--fs-subhead);
   font-family: var(--ff-subhead);
+  text-align: center;
+  width: 85vw;
+  /* margin-right: 15vw; */
+  background-color: rgba(163, 50, 11, 0.40);
+}
+
+.fa-chevron-down {
+  /* margin-top: 30vh; */
+  font-size: 4vh;
+  align-self: flex-end;
+  /* margin-top: -15vh; */
+  text-align: center;
+  width: 100vw;
+  background-color: rgba(16, 163, 11, 0.4);
 }
 
 /* NavBar */

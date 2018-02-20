@@ -36,81 +36,54 @@
 	<body>
 		<nav>
 			<div class='nav-wrapper'>
-				<a href='#' class="nav-logo">PixelRabbit WebDev</a>
+				<a href='#' class="nav-logo flow-text">PixelRabbit WebDev</a>
 				<!-- The nav bar list -->
-				<ul class='right hide-on-med-and-down'>
+				<ul class='right hide-on-small-and-down'>
 					<li>
-						<a href='https://www.linkedin.com/in/zachbauer' class='nav-link'>
+						<a href='https://www.linkedin.com/in/zachbauer' class='nav-link flow-text'>
 							<i class="fab fa-linkedin"></i> LinkedIn
 						</a>
 					</li>
 					<li>
-						<a href='https://www.github.com/zbauer91' class='nav-link'>
+						<a href='https://www.github.com/zbauer91' class='nav-link flow-text'>
 							<i class="fab fa-github"></i> GitHub
 						</a>
 					</li>
 					<li>
-						<a href='mailto:zbauer91@gmail.com' class='nav-link'>
-							<i class="fas fa-envelope"></i> Email
-						</a>
-					</li>
-					<li>
-						<a href='tel:16145193442' class='nav-link'>
-							<i class="fas fa-phone"></i> Phone
-						</a>
-					</li>
-					<li>
-						<a href='./assets/resume.pdf' target='_blank' class='nav-link resume-container '>
+						<a href='./assets/resume.pdf' target='_blank' class='nav-link flow-text resume-container '>
 							<i class="fas fa-file-alt"></i> Resume
 						</a>
 					</li>
+					<li>
+						<a href='#!' data-target='dropdown1' class='dropdown-trigger nav-link flow-text' btn>
+							<i class="fas fa-address-card"></i> Contact</a>
+					</li>
+					<ul id="dropdown1" class='dropdown-content'>
+						<li>
+							<a href='mailto:zbauer91@gmail.com' class='nav-link flow-text'>
+								<i class="fas fa-envelope"></i> Email
+							</a>
+						</li>
+						<li>
+							<a href='tel:16145193442' class='nav-link flow-text'>
+								<i class="fas fa-phone"></i> Phone
+							</a>
+						</li>
+					</ul>
+
 				</ul>
-				<!-- dThe side nav list -->
-				<a href="#" data-target='side-nav-main' class='right sidenav-trigger menu-button hide-on-large-only'>
-					<i class="fas fa-bars"></i>
-				</a>
 			</div>
 		</nav>
-		<!-- Side nav for small viewports -->
-		<ul class='sidenav' edge="right" draggable id='side-nav-main'>
-			<li>
-				<a href='https://www.linkedin.com/in/zachbauer' class='nav-link'>
-					<i class="fab fa-linkedin"></i> LinkedIn
-				</a>
-			</li>
-			<li>
-				<a href='https://www.github.com/zbauer91' class='nav-link'>
-					<i class="fab fa-github"></i> GitHub
-				</a>
-			</li>
-			<li>
-				<a href='mailto:zbauer91@gmail.com' class='nav-link'>
-					<i class="fas fa-envelope"></i> Email
-				</a>
-			</li>
-			<li>
-				<a href='tel:16145193442' class='nav-link'>
-					<i class="fas fa-phone"></i> Phone
-				</a>
-			</li>
-			<li>
-				<a href='./assets/resume.pdf' target='_blank' class='nav-link resume-container '>
-					<i class="fas fa-file-alt"></i> Resume
-				</a>
-			</li>
-		</ul>
 
 		<!-- parallax-container can hold anything. parallax is where the image goes -->
 
-		<div class='parallax-container filler'>
+		<div class='parallax-container landing-page'>
 			<section class='header-container'>
 				<div class='main-headers'>
 					<div id='header' class='header animated'>Zach Bauer</div>
 					<div id='subHeader' class='sub-head animated'>&lt;Classy Web Developer/&gt;</div>
 				</div>
-				<div id='downChevron' class='chevron  hidden animated'>
-					<i class="fas fa-chevron-down"></i>
-				</div>
+				<i id='downChevron' class="fas fa-chevron-down animated"></i>
 			</section>
 			<div class='parallax'>
 				<img src='./assets/images/rabbit-bg.png' alt='rabbit'>
