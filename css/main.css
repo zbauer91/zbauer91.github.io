@@ -178,7 +178,10 @@ body {
 
 /* Projects */
 .project {
-  padding: 0 0 2vh 0;
+  width: 100vw;
+  border-top: 2px solid var(--teal);
+  border-bottom: 2px solid var(--teal);
+  padding: 0 3vw 2vh 3vw;
 }
 
 .project-title {
