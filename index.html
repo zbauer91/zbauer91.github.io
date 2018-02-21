@@ -39,7 +39,7 @@
 				<div class='nav-wrapper'>
 					<a href='#' class="nav-logo flow-text">PixelRabbit WebDev</a>
 					<!-- The nav bar list -->
-					<ul class='right hide-on-small-and-down'>
+					<ul class='right hide-on-small-only'>
 						<li>
 							<a href='https://www.linkedin.com/in/zachbauer' class='nav-link'>
 								<i class="fab fa-linkedin"></i> LinkedIn
@@ -73,6 +73,40 @@
 						</ul>
 
 					</ul>
+					<ul class='right hide-on-med-and-up'>
+						<li>
+							<a href='#!' data-target='dropdown2' class='dropdown-trigger nav-link' btn>
+								<i class="fas fa-at"></i>About</a>
+						</li>
+						<ul id='dropdown2' class='dropdown-content'>
+							<li>
+								<a href='https://www.linkedin.com/in/zachbauer' class='nav-link'>
+									<i class="fab fa-linkedin"></i> LinkedIn
+								</a>
+							</li>
+							<li>
+								<a href='https://www.github.com/zbauer91' class='nav-link'>
+									<i class="fab fa-github"></i> GitHub
+								</a>
+							</li>
+							<li>
+								<a href='./assets/resume.pdf' target='_blank' class='nav-link resume-container '>
+									<i class="fas fa-file-alt"></i> Resume
+								</a>
+							</li>
+							<li>
+								<a href='mailto:zbauer91@gmail.com' class='nav-link'>
+									<i class="fas fa-envelope"></i> Email
+								</a>
+							</li>
+							<li>
+								<a href='tel:16145193442' class='nav-link'>
+									<i class="fas fa-phone"></i> Phone
+								</a>
+							</li>
+						</ul>
+					</ul>
+
 				</div>
 			</nav>
 		</div>
@@ -93,21 +127,20 @@
 			</section>
 		</div>
 
-		<section class='row'>
-			<div class='photo-container'>
-				<img class='circle personal-photo z-depth-5' src='./assets/images/photo.jpg' alt='photo of my cute face!'>
+		<div class='pi-container container row'>
+			<img class='personal-photo z-depth-5 circle' src='./assets/images/photo.jpg' alt='photo of my cute face!'>
+			<div class='personal-info'>
+				<h2 class='tagline'>An expert at turning caffeine and lack of sleep into websites</h2>
+				<p class='about-text'>I'm always on the lookout for new, creative ways to solve problems. Whether that be in the work I do professionally,
+					or at home, I'm a practiced MacGyver of programming.</p>
 			</div>
-			<h2 class='center-align tagline'>An expert at turning caffeine and lack of sleep into websites</h2>
-			<p>I'm always on the lookout for new, creative ways to solve problems. Whether that be in the work I do professionally, or
-				at home, I'm a practiced MacGyver.</p>
-		</section>
+		</div>
 
-		<div style='height: 50vh' data-jarallax data-speed='0.3' class='jarallax'>
+		<div style='height: 30vh' data-jarallax data-speed='0.3' class='jarallax'>
 			<img class='jarallax-img' src='./assets/images/wood-bg.jpg' alt='wood background'>
 			<section>
 				<!-- Stuff -->
 			</section>
-
 		</div>
 
 		<!-- Scripts -->
