@@ -20,20 +20,7 @@
   --fs-menu: 3vh;
   --fs-text-head: 4vw;
 
-  /* old vars */
-  /* Main Colors */
-  --brown: #35322a;
-  --teal: #3f5e5a;
-  --steel: #687c7c;
-  --orange: #a3320b;
-  --tan: #efc88b;
-
-  /* Main Colors, Semi-transparent @ cc */
-  --browns: rgba(53, 50, 42, 0.85);
-  --teals: rgba(63, 94, 90, 0.85);
-  --steels: rgba(104, 124, 125, 0.85);
-  --oranges: rgba(163, 50, 11, 0.85);
-  --tans: rgba(239, 200, 139, 0.85);
+  --teal: rgb(0, 77, 64);
 
   /* Font Stylings */
   --font-p-weight: 600;
@@ -44,16 +31,16 @@
   --bg-card: url('../assets/images/paper-bg.jpg');
 
   /* Shadowing */
-  --title-shadow: 4px 4px 3px var(--col-steel), 8px 8px 3px var(--col-teal),
-    12px 12px 3px var(--col-brown);
-  --project-box-shadow: 4px 4px 3px var(--col-steel),
-    8px 8px 3px var(--col-orange), 12px 12px 3px var(--col-brown);
+  --title-shadow: 4px 4px 3px rgb(180, 180, 180), 8px 8px 3px rgb(120, 120, 120),
+    12px 12px 3px rgb(60, 60, 60);
 }
 
 /* Jarallax Requirements */
 .jarallax {
   position: relative;
   z-index: 0;
+  width: 100vw;
+  height: 35vh;
 }
 .jarallax > .jarallax-img {
   position: absolute;
@@ -93,6 +80,7 @@ body {
   font-family: var(--ff-header);
   text-align: center;
   width: 100vw;
+  text-shadow: var(--title-shadow);
 }
 
 .sub-head {
@@ -148,11 +136,63 @@ body {
 .tagline {
   font-size: var(--fs-text-head);
   text-align: center;
+  color: var(--teal);
 }
 
 .about-text {
   font-size: var(--fs-p);
   text-align: center;
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2vh 0;
+}
+
+.skill-header {
+  font-size: var(--fs-text-head);
+  color: var(--teal);
+  border-bottom: 2px solid var(--teal);
+  border-top: 2px solid var(--teal);
+  padding: 5px 0;
+}
+
+.skill-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skill {
+  font-size: var(--fs-p);
+  border-bottom: 0.5px solid var(--teal);
+  border-left: 0.5px solid var(--teal);
+  padding: 4px 8px;
+  margin: 1vh 2vw;
+}
+
+/* Projects */
+.project {
+  padding: 0 0 2vh 0;
+}
+
+.project-title {
+  color: var(--teal);
+}
+
+.project-links {
+  margin: 8px 0;
+}
+
+.project-link {
+  margin: 0 10px;
+  padding: 0 10px;
+  border-bottom: 1px solid var(--teal);
 }
 
 @media screen and (max-width: 600px) {
@@ -176,7 +216,7 @@ body {
     --fs-p-alt: 2.5vw;
     --fs-nav: 2vh;
     --fs-menu: 3vh;
-    --fs-text-head: 3vw;
+    --fs-text-head: 2.5vw;
   }
   .main-headers {
     margin: 45vh 25vw 0 0;
