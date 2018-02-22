@@ -1,0 +1,240 @@
+/* global variables */
+:root {
+  /* Small screens are defined as having a max-width of 600px 
+		 Medium screens are defined as having a max-width of 992px 
+		 Large screen are defined as having a min-width of 993px 
+		 Extra Large screen are defined as having a min-width of 1200px
+  */
+  /* Font families */
+  --ff-header: 'Shrikhand';
+  --ff-subhead: 'Press Start 2P';
+  --ff-p: 'Raleway';
+  --ff-p-alt: 'Montserrat';
+
+  /* Font sizes */
+  --fs-header: 15vw;
+  --fs-subhead: 2.2vw; /* Specifically for the huge Press Start 2P text */
+  --fs-p: 2vw;
+  --fs-p-alt: 2.5vw;
+  --fs-nav: 2vh;
+  --fs-menu: 3vh;
+  --fs-text-head: 4vw;
+
+  --teal: rgb(0, 77, 64);
+
+  /* Font Stylings */
+  --font-p-weight: 600;
+  --font-text-width: 800px;
+  --font-p-spacing: 1.3px;
+
+  /* backgrounds */
+  --bg-card: url('../assets/images/paper-bg.jpg');
+
+  /* Shadowing */
+  --title-shadow: 4px 4px 3px rgb(180, 180, 180), 8px 8px 3px rgb(120, 120, 120),
+    12px 12px 3px rgb(60, 60, 60);
+}
+
+/* Jarallax Requirements */
+.jarallax {
+  position: relative;
+  z-index: 0;
+  width: 100vw;
+  height: 35vh;
+}
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  /* support for plugin https://github.com/bfred-it/object-fit-images */
+  font-family: 'object-fit: cover;';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+body {
+  /* hides horizontal overflow in parallax containers */
+  overflow-x: hidden;
+}
+/* Header page */
+
+.header-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: rgba(95, 158, 160, 0.1);
+}
+
+.main-headers {
+  margin-top: 30vh;
+}
+
+.header {
+  font-size: var(--fs-header);
+  font-family: var(--ff-header);
+  text-align: center;
+  width: 100vw;
+  text-shadow: var(--title-shadow);
+}
+
+.sub-head {
+  font-size: var(--fs-subhead);
+  font-family: var(--ff-subhead);
+  text-align: center;
+  width: 85vw;
+  text-shadow: 4px 4px 3px rgb(26, 25, 25);
+}
+
+.down-arrow {
+  margin-bottom: 2vh;
+  width: 100vw;
+  text-align: center;
+  font-size: 4vh;
+}
+
+/* NavBar */
+.fixed-nav {
+  height: 10vh;
+}
+
+.nav-logo {
+  margin-left: 2vw;
+}
+
+.nav-link {
+  font-size: var(--fs-nav);
+}
+
+.menu-button {
+  margin-right: 2vw;
+  font-size: var(--fs-menu);
+}
+
+/* Personal section */
+
+.pi-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-photo {
+  width: 20vh;
+  margin: 2vh 0;
+}
+
+.personal-info {
+  margin: 0 2vw;
+}
+
+.tagline {
+  font-size: var(--fs-text-head);
+  text-align: center;
+  color: var(--teal);
+}
+
+.about-text {
+  font-size: var(--fs-p);
+  text-align: center;
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2vh 0;
+}
+
+.skill-header {
+  font-size: var(--fs-text-head);
+  color: var(--teal);
+  border-bottom: 2px solid var(--teal);
+  border-top: 2px solid var(--teal);
+  padding: 5px 0;
+}
+
+.skill-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skill {
+  font-size: var(--fs-p);
+  border-bottom: 0.5px solid var(--teal);
+  border-left: 0.5px solid var(--teal);
+  padding: 4px 8px;
+  margin: 1vh 2vw;
+}
+
+/* Projects */
+.project {
+  width: 100vw;
+  border-top: 2px solid var(--teal);
+  border-bottom: 2px solid var(--teal);
+  padding: 0 3vw 2vh 3vw;
+}
+
+.project-title {
+  color: var(--teal);
+}
+
+.project-links {
+  margin: 8px 0;
+}
+
+.project-link {
+  margin: 0 10px;
+  padding: 0 10px;
+  border-bottom: 1px solid var(--teal);
+}
+
+@media screen and (max-width: 600px) {
+  /* Small screens are defined as having a max-width of 600px */
+}
+
+@media screen and (max-width: 992px) {
+  /* Medium screens are defined as having a max-width of 992px  */
+  .personal-photo {
+    width: 25vh;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  /* Large screen are defined as having a min-width of 993px  */
+  :root {
+    /* Font sizes */
+    --fs-header: 10vw;
+    --fs-subhead: 1.6vw;
+    --fs-p: 1.5vw;
+    --fs-p-alt: 2.5vw;
+    --fs-nav: 2vh;
+    --fs-menu: 3vh;
+    --fs-text-head: 2.5vw;
+  }
+  .main-headers {
+    margin: 45vh 25vw 0 0;
+  }
+
+  .pi-container {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .personal-photo {
+    width: 30vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Extra Large screen are defined as having a min-width of 1200px */
+}

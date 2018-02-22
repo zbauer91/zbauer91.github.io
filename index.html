@@ -1,164 +1,252 @@
 <!DOCTYPE html>
 <html lang='en'>
+	<!-- Notes:
+		Hint.css
+
+		much better css organization with better usage of global variables
+
+		fix footer issues
+
+		sliding header with page
+
+		hover callouts for buttons	
+
+		new colors? Ask Mary
+	 -->
+
 
 	<head>
-		<!-- PureCSS -->
-		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
-		  crossorigin="anonymous">
-		<!-- PureCSS Grids -->
-		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+		<!-- main CSS -->
+		<link rel='stylesheet' href='./css/main.css'>
+		<!-- Materialize -->
+		<link rel='stylesheet' href='./css/materialize.css'>
 		<!-- AnimateCSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<!-- Google Fonts and Such -->
 		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Shrikhand|Montserrat|Raleway" rel="stylesheet">
+		<!-- Import Google Icon Font
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 		<!-- FontAwesome JS -->
-		<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-		<!-- shared CSS -->
-		<link rel='stylesheet' href='./css/index/shared.css'>
-		<!-- Level One CSS -->
-		<link rel='stylesheet' href='./css/index/top-level.css'>
-		<!-- Level Two CSS -->
-		<link rel='stylesheet' href='./css/index/second-level.css'>
-		<!-- Level Three CSS -->
-		<link rel='stylesheet' href='./css/index/third-level.css'>
-		<!-- Level Four CSS -->
-		<link rel='stylesheet' href='./css/index/fourth-level.css'>
-		<!-- Level Five CSS -->
-		<link rel='stylesheet' href='./css/index/fifth-level.css'>
-		<link rel="shortcut icon" href="favicon.ico" />
 		<meta charset='UTF-8'>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<meta http-equiv='X-UA-Compatible' content='ie=edge'>
-		<title>PixelRabbit Web Development</title>
+		<title>PixelRabbit WebDev</title>
 	</head>
 
 	<body>
-		<div class='not-compatible'>
-			<h1>This screen is too small to view this website. please visit on a device with a larger screen</h1>
+		<div class='navbar-fixed'>
+			<nav class='teal darken-4'>
+				<div class='nav-wrapper'>
+					<a href='#' class="nav-logo flow-text">PixelRabbit WebDev</a>
+					<!-- The nav bar list -->
+					<ul class='right hide-on-small-only'>
+						<li>
+							<a href='https://www.linkedin.com/in/zachbauer' class='nav-link'>
+								<i class="fab fa-linkedin"></i> LinkedIn
+							</a>
+						</li>
+						<li>
+							<a href='https://www.github.com/zbauer91' class='nav-link'>
+								<i class="fab fa-github"></i> GitHub
+							</a>
+						</li>
+						<li>
+							<a href='./assets/resume.pdf' target='_blank' class='nav-link resume-container '>
+								<i class="fas fa-file-alt"></i> Resume
+							</a>
+						</li>
+						<li>
+							<a href='#!' data-target='dropdown1' class='dropdown-trigger nav-link' btn>
+								<i class="fas fa-address-card"></i> Contact</a>
+						</li>
+						<ul id="dropdown1" class='dropdown-content'>
+							<li>
+								<a href='mailto:zbauer91@gmail.com' class='nav-link'>
+									<i class="fas fa-envelope"></i> Email
+								</a>
+							</li>
+							<li>
+								<a href='tel:16145193442' class='nav-link'>
+									<i class="fas fa-phone"></i> Phone
+								</a>
+							</li>
+						</ul>
+
+					</ul>
+					<ul class='right hide-on-med-and-up'>
+						<li>
+							<a href='#!' data-target='dropdown2' class='dropdown-trigger nav-link' btn>
+								<i class="fas fa-at"></i>About</a>
+						</li>
+						<ul id='dropdown2' class='dropdown-content'>
+							<li>
+								<a href='https://www.linkedin.com/in/zachbauer' class='nav-link'>
+									<i class="fab fa-linkedin"></i> LinkedIn
+								</a>
+							</li>
+							<li>
+								<a href='https://www.github.com/zbauer91' class='nav-link'>
+									<i class="fab fa-github"></i> GitHub
+								</a>
+							</li>
+							<li>
+								<a href='./assets/resume.pdf' target='_blank' class='nav-link resume-container '>
+									<i class="fas fa-file-alt"></i> Resume
+								</a>
+							</li>
+							<li>
+								<a href='mailto:zbauer91@gmail.com' class='nav-link'>
+									<i class="fas fa-envelope"></i> Email
+								</a>
+							</li>
+							<li>
+								<a href='tel:16145193442' class='nav-link'>
+									<i class="fas fa-phone"></i> Phone
+								</a>
+							</li>
+						</ul>
+					</ul>
+
+				</div>
+			</nav>
 		</div>
-		<main class='main-container'>
-			<!-- top-level CSS -->
-			<section class='top-level pure-g bg1 content-container'>
-				<nav id='buttonContainer' class='animated pure-u-1 button-container hidden'>
-					<a href='https://linkedin.com/in/zachbauer' class='btn'>
-						<i class="fab fa-linkedin fa-5x"></i>
-					</a>
-					<a href='https://www.github.com/zbauer91' class='btn'>
-						<i class="fab fa-github fa-5x"></i>
-					</a>
-					<a href='mailto:zbauer91@gmail.com' class='btn'>
-						<i class="far fa-envelope fa-5x"></i>
-					</a>
-					<a href='tel:16145193442' class='btn'>
-						<i class="fas fa-phone fa-5x"></i>
-					</a>
-					<a href='./assets/resume.pdf' target='_blank' class='btn resume-container '>
-						<i class="fas fa-file-alt fa-5x"></i>
-					</a>
-				</nav>
-				<div class='pure-u-1 heading-container'>
-					<div id='heading' class='heading animated hidden'>Zach Bauer</div>
-					<div id='subHeading' class='sub-heading animated hidden'>&lt;Classy Web Developer/&gt;</div>
+
+		<!-- Landing Page -->
+		<div data-jarallax data-speed='0.3' style='height: 92vh' class='jarallax'>
+			<img class='jarallax-img' src='./assets/images/rabbit-bg.jpg' alt='rabbit'>
+			<section class='header-container'>
+				<div class='main-headers'>
+					<div id='header' class='header animated'>Zach Bauer</div>
+					<div id='subHeader' class='sub-head animated'>&lt;Classy Web Developer/&gt;</div>
 				</div>
-				<div id="downChevron" class='chevron  hidden animated'>
-					<i class="fas fa-chevron-down"></i>
+				<div class='down-arrow'>
+					<i id='downChevron' class="fas fa-chevron-circle-down animated"></i>
 				</div>
+
 			</section>
-			<!-- second-level CSS -->
-			<section class='second-level pure-g parallax-container'>
-				<img class='pure-u-1' src='./assets/images/photo.jpg' alt="zach's beautiful face">
-				<div class='pure-u-1'>
-					<h2>Expert at turning caffeine and lack of sleep into websites.
-					</h2>
-				</div>
-				<div class='pure-u-1 text-container'>
-					<p>I consistently look for creative, resourceful ways to solve new problems, which has led to great results in my work.
-						I feel empowered to find solutions, and people recognize me for what I can contribute to their work. Even when I don't
-						know the answer, I know who to ask and where to look. I am always challenging myself to learn more and become better
-						at what I love to do.</p>
-				</div>
-			</section>
-			<!-- third-level CSS -->
-			<section class='third-level pure-g bg2 content-container'>
-				<div class='container pure-u-1'>
-					<img src='./assets/images/ga-logo-2.png' alt='GA Logo'>
-					<div class='text-container'>
-						<p>My most recent path in life has led me through the General Assembly Web Developer Immersive Program. This 12-week bootcamp
-							provided the training and inspiration to become a full-stack developer.</p>
-						<p>Throughout the course, I will have completed four distinct websites, each designed to test a certain subset of skills
-							taught in the course, as well as push me to learn new topics outside of the curriculum.
-						</p>
-					</div>
-				</div>
-			</section>
-			<!-- fourth-level CSS -->
-			<!-- Fourth level wraps up four distinct sections, one for each project.  -->
-			<section style="margin-top:80vh; height:250vh;" class='fourth-level pure-g parallax-container'>
-				<!-- Project One -->
-				<div class='pure-u-1 pure-u-lg-1-2 project project1'>
-					<div class='project-text'>
-						<h1>Project One</h1>
-						<h2>Tower of Hanoi</h2>
-						<p>A non-responsive, vanilla HTML, CSS and JavaScript clone of the popular Tower of Hanoi. The game can auto-solve itself
-							inside the dev console. Best played on a full-size computer.
-						</p>
-						<div class='project-links'>
-							<a href='http://pixelrabbit.me/Tower-of-Hanoi/'>Game</a>
-							<a href='https://github.com/zbauer91/MottoTrack'>GitHub</a>
-						</div>
-					</div>
-				</div>
-				<!-- Project Two -->
-				<div class='pure-u-1 pure-u-lg-1-2 project project2'>
-					<div class='project-text'>
-						<h1>Project Two</h1>
-						<h2>MottoTrack</h2>
-						<p>Vue.js + Vuetify application to CRUD entries into a remote database. Concepts of Vue.js and implementation achieved
-							in four days</p>
-						<div class='project-links'>
-							<a href='http://pixelrabbit.me/MottoTrack/#/'>Application</a>
-							<a href='https://github.com/zbauer91/MottoTrack'>Frontend Github</a>
-							<a href='https://github.com/zbauer91/project-two-api'>Backend Github</a>
-						</div>
-					</div>
-				</div>
-				<!-- Project Three -->
-				<div class='pure-u-1 pure-u-lg-1-2 project project3'>
-					<div class='project-text'>
-						<h1>Project Three</h1>
-						<h2>BarberHub DC</h2>
-						<p>An in-progress review aggregator to help DC find a quality barber. It will be a full-stack MERN application with API
-							connections to Foursquare and Google Business reviews </p>
-						<div class='project-links'>
-							<a href='https://github.com/zbauer91/barber-find-dc'>Frontend Github</a>
-							<a href='https://github.com/zbauer91/barber-find-api'>Backend Github</a>
-						</div>
-					</div>
-				</div>
-				<!-- Project Four -->
-				<div class='pure-u-1 pure-u-lg-1-2 project project4'>
-					<div class='project-text'>
-						<h1>Project Four</h1>
-						<h2>Upcoming Project</h2>
-						<p>The fourth project will be an open-ended project built with a front-end of my choice on a Ruby on Rails back-end</p>
-						<div class='project-links'>
-							<a href='' class="disableClick">Links to Come</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<footer class="fifth-level pure-g content-container">
-				<div class='with-love pure-u-1'>
-					Made with
-					<i class="fas fa-heart fa-2x"></i> by Zach Bauer in Washington, D.C.
-				</div>
-				<div class='copy pure-u-1'>
-					&copy; 2018
-				</div>
-			</footer>
-		</main>
-		<!-- Index's JS -->
-		<script src='./js/index.js'></script>
+		</div>
+
+		<!-- Personal Section -->
+		<div class='pi-container container row'>
+			<img class='personal-photo z-depth-5 circle' src='./assets/images/photo.jpg' alt='photo of my cute face!'>
+			<div class='personal-info'>
+				<h2 class='tagline'>An expert at turning caffeine and lack of sleep into websites</h2>
+				<p class='about-text'>I'm always on the lookout for new, creative ways to solve problems. Whether that be in the work I do professionally,
+					or at home, I'm a practiced MacGyver of programming.</p>
+			</div>
+		</div>
+
+		<!-- Mac Parallax Photo -->
+		<div data-jarallax data-speed='0.3' class='jarallax'>
+			<img class='jarallax-img' src='./assets/images/macbook.jpg' alt='wood background'>
+		</div>
+
+		<!-- SKills Section -->
+		<div class='container skills-container'>
+			<p class='skill-header'>Dev Skills</p>
+			<div class='skill-row'>
+				<div class='skill'>React.js</div>
+				<div class='skill'>Vue.js</div>
+				<div class='skill'>HTML5</div>
+				<div class='skill'>CSS3</div>
+				<div class='skill'>Materialize</div>
+				<div class='skill'>Bootstrap</div>
+				<div class='skill'>Handlebars.js</div>
+				<div class='skill'>Node.js</div>
+				<div class='skill'>Express.js</div>
+				<div class='skill'>Axios</div>
+				<div class='skill'>Ruby</div>
+				<div class='skill'>Rails</div>
+				<div class='skill'>Devise Authentication</div>
+				<div class='skill'>MongoDB</div>
+				<div class='skill'>PostgreSQL</div>
+				<div class='skill'>SAP HANA</div>
+				<div class='skill'>Markdown</div>
+				<div class='skill'>Java</div>
+				<div class='skill'>Python 3</div>
+				<div class='skill'>Whitespace</div>
+			</div>
+		</div>
+
+		<!-- Hanoi Picture -->
+		<div data-jarallax data-speed='0.3' class='jarallax'>
+			<img class='jarallax-img' src='./assets/images/hanoi.png' alt='Tower of Hanoi Screenshot'>
+		</div>
+
+		<!-- Tower of Hanoi -->
+		<div class='project z-depth-4'>
+			<h3 class='project-title right-align'>Tower of Hanoi</h3>
+			<p class='project-text'>A non-responsive, vanilla HTML, CSS and JavaScript clone of the popular Tower of Hanoi. The game can auto-solve itself
+				inside the dev console. Best played on a full-size computer.</p>
+			<div class='divider'></div>
+			<div class='project-links right-align'>
+				<a href='http://pixelrabbit.me/Tower-of-Hanoi/' class='project-link'>Game</a>
+				<a href='https://github.com/zbauer91/Tower-of-Hanoi' class='project-link'>GitHub Repo</a>
+			</div>
+		</div>
+
+		<!-- Mottotrack Picture -->
+		<div data-jarallax data-speed='0.3' class='jarallax'>
+			<img class='jarallax-img' src='./assets/images/mottotrack.png' alt='MottoTrack Screenshot'>
+		</div>
+
+		<!-- Motto Track -->
+		<div class='project z-depth-4'>
+			<h3 class='project-title left-align'>MottoTrack</h3>
+			<p class='project-text'>Vue.js + Vuetify application to CRUD entries into a remote database. Concepts of Vue.js and implementation achieved in
+				four days</p>
+			<div class='divider'></div>
+			<div class='project-links left-align'>
+				<a href='http://pixelrabbit.me/MottoTrack/#/' class='project-link'>Application</a>
+				<a href='https://github.com/zbauer91/MottoTrack' class='project-link'>Frontend Repo</a>
+				<a href='https://github.com/zbauer91/project-two-api' class='project-link'>Backend Repo</a>
+			</div>
+		</div>
+
+		<!-- BarberHub Picture -->
+		<div data-jarallax data-speed='0.3' class='jarallax'>
+			<img class='jarallax-img' src='./assets/images/barberhub.png' alt='BarberHub Dc Screenshot'>
+		</div>
+
+		<!-- Barber Hub -->
+		<div class='project z-depth-4'>
+			<h3 class='project-title right-align'>BarberHub DC</h3>
+			<p class='project-text'>A review aggregator to help DC find a quality barber. It is a full-stack MERN application with an express API that connects
+				to Foursquare and Google Maps.</p>
+			<div class='divider'></div>
+			<div class='project-links right-align'>
+				<a href='http://pixelrabbit.me/barber-find-dc/' class='project-link'>Application</a>
+				<a href='https://github.com/zbauer91/barber-find-dc' class='project-link'>Frontend Repo</a>
+				<a href='https://github.com/zbauer91/barber-find-api' class='project-link'>Backend Repo</a>
+			</div>
+		</div>
+
+		<!-- GA Picture, placeholder for  -->
+		<div data-jarallax data-speed='0.3' class='jarallax'>
+			<img class='jarallax-img' src='./assets/images/ga.jpg' alt='wood background'>
+		</div>
+
+		<!-- HabiTrack -->
+		<div class='project z-depth-4'>
+			<h3 class='project-title left-align'>HabiTrack</h3>
+			<p class='project-text'>A React-on-Rails application that will allow users to easily set up and record habits throughout the day, week, and month.
+				It will have features to allow for separate user accounts, tracking mileage on certain exercises, and adding/removing
+				custom habits.</p>
+			<div class='divider'></div>
+			<div class='project-links left-align'>
+				<p class='project-link'>Links coming soon!</p>
+			</div>
+		</div>
+
+
+
+		<!-- Scripts -->
+		<!-- <script src='./js/jquery-3.3.1.js'></script> -->
+		<script type="text/javascript" src='./js/materialize.js'></script>
+		<script src='./js/jarallax.js'></script>
+		<script src='./js/jarallax-element.js'></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+		<script src='./js/main.js'></script>
 	</body>
 
 </html>
