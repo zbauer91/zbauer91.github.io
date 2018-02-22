@@ -1,0 +1,19 @@
+{
+  "name": "zbauer91.github.io",
+  "version": "1.2.0",
+  "description": "Personal website built with a templating engine of some sort...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbauer91/zbauer91.github.io.git"
+  },
+  "author": "ZBauer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zbauer91/zbauer91.github.io/issues"
+  },
+  "homepage": "https://github.com/zbauer91/zbauer91.github.io#readme"
+}
