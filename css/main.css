@@ -193,6 +193,10 @@ body {
   margin: 8px 0;
 }
 
+.project-text {
+  font-size: var(--fs-p-alt);
+}
+
 .project-link {
   margin: 0 10px;
   padding: 0 10px;
@@ -232,6 +236,10 @@ body {
   }
   .personal-photo {
     width: 30vh;
+  }
+
+  .project-text {
+    font-size: var(--fs-p);
   }
 }
 
