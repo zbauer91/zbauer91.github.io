@@ -104,6 +104,7 @@ body {
 }
 
 .nav-logo {
+  font-family: var(--ff-header);
   margin-left: 2vw;
 }
 
