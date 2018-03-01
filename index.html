@@ -40,70 +40,29 @@
 					<a href='#' class="nav-logo flow-text">PixelRabbit WebDev</a>
 					<!-- The nav bar list -->
 					<ul class='right hide-on-small-only'>
-						<li>
-							<a href='https://www.linkedin.com/in/zachbauer' class='nav-link'>
-								<i class="fab fa-linkedin"></i> LinkedIn
-							</a>
-						</li>
-						<li>
-							<a href='https://www.github.com/zbauer91' class='nav-link'>
-								<i class="fab fa-github"></i> GitHub
-							</a>
-						</li>
-						<li>
-							<a href='./assets/resume.pdf' target='_blank' class='nav-link resume-container '>
-								<i class="fas fa-file-alt"></i> Resume
-							</a>
-						</li>
+						<li id="linkedIn"></li>
+						<li id="gitHub"></li>
+						<li id="resume"></li>
 						<li>
 							<a href='#!' data-target='dropdown1' class='dropdown-trigger nav-link' btn>
 								<i class="fas fa-address-card"></i> Contact</a>
 						</li>
 						<ul id="dropdown1" class='dropdown-content'>
-							<li>
-								<a href='mailto:zbauer91@gmail.com' class='nav-link'>
-									<i class="fas fa-envelope"></i> Email
-								</a>
-							</li>
-							<li>
-								<a href='tel:16145193442' class='nav-link'>
-									<i class="fas fa-phone"></i> Phone
-								</a>
-							</li>
+							<li id="email"></li>
+							<li id="phone"> </li>
 						</ul>
-
 					</ul>
 					<ul class='right hide-on-med-and-up'>
-						<li>
+						<li id="contact">
 							<a href='#!' data-target='dropdown2' class='dropdown-trigger nav-link' btn>
 								<i class="fas fa-at"></i>About</a>
 						</li>
 						<ul id='dropdown2' class='dropdown-content'>
-							<li>
-								<a href='https://www.linkedin.com/in/zachbauer' class='nav-link'>
-									<i class="fab fa-linkedin"></i> LinkedIn
-								</a>
-							</li>
-							<li>
-								<a href='https://www.github.com/zbauer91' class='nav-link'>
-									<i class="fab fa-github"></i> GitHub
-								</a>
-							</li>
-							<li>
-								<a href='./assets/resume.pdf' target='_blank' class='nav-link resume-container '>
-									<i class="fas fa-file-alt"></i> Resume
-								</a>
-							</li>
-							<li>
-								<a href='mailto:zbauer91@gmail.com' class='nav-link'>
-									<i class="fas fa-envelope"></i> Email
-								</a>
-							</li>
-							<li>
-								<a href='tel:16145193442' class='nav-link'>
-									<i class="fas fa-phone"></i> Phone
-								</a>
-							</li>
+							<li id="linkedIn"></li>
+							<li id="gitHub"></li>
+							<li id="resume"></li>
+							<li id="email"></li>
+							<li id="phone"></li>
 						</ul>
 					</ul>
 
@@ -116,7 +75,7 @@
 			<img class='jarallax-img' src='./assets/images/rabbit-bg.jpg' alt='rabbit'>
 			<section class='header-container'>
 				<div class='main-headers'>
-					<div id='header' class='header animated'>Zach Bauer</div>
+					<div id='header' class='header animated'></div>
 					<div id='subHeader' class='sub-head animated'>&lt;Classy Web Developer/&gt;</div>
 				</div>
 				<div class='down-arrow'>
@@ -241,6 +200,7 @@
 
 
 		<!-- Scripts -->
+		<script type="text/javascript" src="./assets/text/lifeStory.js"></script>
 		<!-- <script src='./js/jquery-3.3.1.js'></script> -->
 		<script type="text/javascript" src='./js/materialize.min.js'></script>
 		<script src='./js/jarallax.min.js'></script>
