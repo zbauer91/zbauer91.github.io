@@ -8,12 +8,12 @@ var lifeStory = {
     resume: {
       link: 'http://pixelrabbit.me/assets/resume.pdf',
       icon: 'fas fa-file-alt',
-      inner: 'Resume'
+      text: 'Resume'
     },
     gitHub: {
       link: 'https://www.github.com/zbauer91',
       icon: 'fab fa-github',
-      inner: 'GitHub'
+      text: 'GitHub'
     },
     email: {
       link: 'mailto:zbauer91@gmail.com',

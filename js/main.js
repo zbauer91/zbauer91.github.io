@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // programmatically populate links to avoid duplication in as many places as possible
   for (let element in data.navBar) {
     listItem = document.querySelector(`#${element}`)
-    listItem.innerHTML = `<a href="${element.link}" target="_blank" class="nav-link"><i class="${element.icon}"></i>${element.text}</a>`
+    object = data.navBar[element]
+    listItem.innerHTML = `<a href="${object.link}" target="_blank" class="nav-link"><i class="${object.icon}"></i>${object.text}</a>`
   }
 })
