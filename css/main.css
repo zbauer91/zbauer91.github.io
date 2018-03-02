@@ -104,11 +104,12 @@ body {
 
 .nav-logo {
   font-family: var(--ff-header);
-  margin-left: 2vw;
+  margin-left: 1vw;
 }
 
 .nav-link {
   font-size: var(--fs-nav);
+  border: 2px solid red;
 }
 
 .menu-button {

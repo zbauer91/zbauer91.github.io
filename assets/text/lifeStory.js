@@ -3,27 +3,27 @@ var lifeStory = {
     linkedIn: {
       link: 'https://www.linkedin.com/in/zachbauer',
       icon: 'fab fa-linkedin',
-      text: '  LinkedIn'
+      text: ' LinkedIn'
     },
     resume: {
       link: 'http://pixelrabbit.me/assets/resume.pdf',
       icon: 'fas fa-file-alt',
-      text: '  Resume'
+      text: ' Resume'
     },
     gitHub: {
       link: 'https://www.github.com/zbauer91',
       icon: 'fab fa-github',
-      text: '  GitHub'
+      text: ' GitHub'
     },
     email: {
       link: 'mailto:zbauer91@gmail.com',
       icon: 'fas fa-envelope',
-      text: '  Email'
+      text: ' Email'
     },
     phone: {
       link: 'tel:16145193442',
       icon: 'fas fa-phone',
-      text: '  Phone'
+      text: ' Phone'
     }
   },
   landing: {
