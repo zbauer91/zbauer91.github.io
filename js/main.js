@@ -50,8 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
     for (i in links) {
       let anchor = element.querySelector(`.${links[i]}`)
       if (anchor) {
-        console.log(obj[links[i]].link)
-        console.log(obj[links[i]].title)
         anchor.setAttribute('href', obj[links[i]].link)
         anchor.innerHTML = obj[links[i]].title
       }

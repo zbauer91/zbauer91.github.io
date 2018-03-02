@@ -19,16 +19,11 @@
   --fs-nav: 2vh;
   --fs-menu: 3vh;
   --fs-text-head: 4vw;
+  --fs-link: 2vw;
 
   --teal: rgb(0, 77, 64);
 
-  /* Font Stylings */
-  --font-p-weight: 600;
-  --font-text-width: 800px;
-  --font-p-spacing: 1.3px;
-
-  /* backgrounds */
-  --bg-card: url('../assets/images/paper-bg.jpg');
+  --border: 2px solid var(--teal);
 
   /* Shadowing */
   --title-shadow: 4px 4px 3px rgb(180, 180, 180), 8px 8px 3px rgb(120, 120, 120),
@@ -57,6 +52,10 @@
 body {
   /* hides horizontal overflow in parallax containers */
   overflow-x: hidden;
+}
+
+.restrict-width {
+  max-width: 42em;
 }
 /* Header page */
 
@@ -113,7 +112,7 @@ body {
 }
 
 .menu-button {
-  margin-right: 2vw;
+  margin-right: 1.5vw;
   font-size: var(--fs-menu);
 }
 
@@ -124,6 +123,9 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  border-top: var(--border);
+  border-bottom: var(--border);
+  padding: 2vh 0;
 }
 
 .personal-photo {
@@ -152,41 +154,51 @@ body {
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
-  margin: 2vh 0;
+  height: 42vh;
+  width: 100vw;
+  border-top: var(--border);
+  border-bottom: var(--border);
 }
 
 .skill-header {
   font-size: var(--fs-text-head);
   color: var(--teal);
-  border-bottom: 2px solid var(--teal);
-  border-top: 2px solid var(--teal);
+  border-bottom: var(--border);
+  border-top: var(--border);
   padding: 5px 0;
 }
 
 .skill-row {
+  max-width: 80vw;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .skill {
   font-size: var(--fs-p);
-  border-bottom: 0.5px solid var(--teal);
-  border-left: 0.5px solid var(--teal);
+  border-bottom: var(--border);
+  border-left: var(--border);
   padding: 4px 8px;
   margin: 1vh 2vw;
 }
 
 /* Projects */
 .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100vw;
-  border-top: 2px solid var(--teal);
-  border-bottom: 2px solid var(--teal);
+  border-top: var(--border);
+  border-bottom: var(--border);
   padding: 0 3vw 2vh 3vw;
+  text-align: center;
 }
 
 .project-title {
+  font-size: 5vw;
   color: var(--teal);
 }
 
@@ -202,10 +214,14 @@ body {
   margin: 0 10px;
   padding: 0 10px;
   border-bottom: 1px solid var(--teal);
+  font-size: var(--fs-link);
 }
 
 @media screen and (max-width: 600px) {
   /* Small screens are defined as having a max-width of 600px */
+  .project-link {
+    font-size: var(--fs-link);
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -226,6 +242,7 @@ body {
     --fs-nav: 2vh;
     --fs-menu: 3vh;
     --fs-text-head: 2.5vw;
+    --fs-link: 1.2vw;
   }
   .main-headers {
     margin: 45vh 25vw 0 0;
@@ -241,6 +258,10 @@ body {
 
   .project-text {
     font-size: var(--fs-p);
+  }
+
+  .project-title {
+    font-size: 4vw;
   }
 }
 
