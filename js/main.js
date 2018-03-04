@@ -16,9 +16,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // programmatically populate links to avoid duplication in as many places as possible
   for (let element in data.navBar) {
-    let listItem = document.querySelector(`#${element}`)
-    object = data.navBar[element]
-    listItem.innerHTML = `<a href="${object.link}" target="_blank" class="nav-link"><i class="${object.icon}"></i>${object.text}</a>`
+    let listItem = document.querySelectorAll(`#${element}`)
+    for (let item in listItem) {
+      let object = data.navBar[element]
+      listItem[
+        item
+      ].innerHTML = `<a href="${object.link}" target="_blank" class="nav-link"><i class="${object.icon}"></i>${object.text}</a>`
+    }
   }
   // photo
   let photo = document.querySelector('.personal-photo')
