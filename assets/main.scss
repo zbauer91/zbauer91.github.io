@@ -2,9 +2,45 @@
 
 ---
 
-@import "variables";
-@import "bootstrap/scss/bootstrap";
+@import "../_sass/_variables.scss";
+
+body {
+  margin-bottom: 12em;
+  // background: url('../assets/paperbg.png') repeat;
+}
 
 .content {
   font-size: $custom-font-size;
+}
+
+.navbar-brand {
+  font-family: $custom-header-font;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 12em;
+  z-index: -1;
+}
+
+.footer-container {
+  margin-top: 2em;
+  height: 10em;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-left: .4em;
+
+  a {
+    margin: 0 0.5em;
+  }
 }

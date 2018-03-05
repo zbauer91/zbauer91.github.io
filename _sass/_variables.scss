@@ -1,3 +1,14 @@
+// color change
+$orange: #ff8700;
+$primary: $orange;
+
+// Custom font size
 $custom-font-size: 20px;
-@import "../node_modules/bootstrap/scss/_functions.scss";
-@import "../node_modules/bootstrap/scss/_variables.scss";
+
+// enable gradients
+$enable-gradients: true;
+
+// font change
+$custom-header-font: "Shrikhand";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
