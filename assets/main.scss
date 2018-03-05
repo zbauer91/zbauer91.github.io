@@ -6,7 +6,11 @@
 
 body {
   margin-bottom: 12em;
-  // background: url('../assets/paperbg.png') repeat;
+
+}
+
+.home {
+  background-color: $white;
 }
 
 .content {
@@ -38,9 +42,8 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  margin-left: .4em;
 
   a {
-    margin: 0 0.5em;
+    margin-right: 2em;
   }
 }
