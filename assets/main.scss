@@ -6,12 +6,27 @@
 
 body {
   margin-bottom: 12em;
-
+  overflow-x: hidden;
 }
 
 .home {
   background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
 }
+
+.card-container{
+  margin: 2em;
+  border: 2px solid blue;
+
+  .card {
+    margin: 2em 0.5em;
+  }
+}
+
+
 
 .content {
   font-size: $custom-font-size;
@@ -46,4 +61,8 @@ body {
   a {
     margin-right: 2em;
   }
+}
+
+.post-card {
+  
 }
