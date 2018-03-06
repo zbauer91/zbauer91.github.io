@@ -5,28 +5,42 @@
 @import "../_sass/_variables.scss";
 
 body {
-  margin-bottom: 12em;
   overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.page-content {
+  background-color: $white;
+  margin-bottom: 14em;
+  padding-bottom: 5em;
 }
 
 .home {
-  background-color: $white;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
 }
 
 .card-container{
-  margin: 2em;
-  border: 2px solid blue;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 
   .card {
+    // border: 2px solid blue;
+    max-width: 30em;
+    min-height: 18em;
     margin: 2em 0.5em;
+    padding: 0.5em;
+    border: 1px solid $orange;
+
   }
+
+  img {
+    width: 8em;
+  }
+
 }
-
-
 
 .content {
   font-size: $custom-font-size;
@@ -43,14 +57,17 @@ body {
   position: fixed;
   bottom: 0;
   width: 100vw;
-  height: 12em;
+  height: 14em;
   z-index: -1;
+  opacity: 0.99;
+
+  .container {
+    margin-top: 2em;
+    height: 10em;
+  }
 }
 
-.footer-container {
-  margin-top: 2em;
-  height: 10em;
-}
+
 
 .contact-links {
   display: flex;
@@ -61,8 +78,9 @@ body {
   a {
     margin-right: 2em;
   }
+
+  i {
+    font-size: 4em;
+  }
 }
 
-.post-card {
-  
-}
