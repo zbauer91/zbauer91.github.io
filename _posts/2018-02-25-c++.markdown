@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "C++"
+subtitle: "I have to do what with my arrays?"
+date:   2018-02-24 17:00:00 -0500
+categories: c++ new_language learning
+img: https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png
+---
+
+I've been on a crusade to learn languages, frameworks, libraries, etc. Today, I spent some time learning the very basics of C++ to both learn a new systems language, and to gain a better understanding for how things used to be done.
+
+#### Backstory
+
+I know a little MIPS assembly, and I know some Java, so I figured this would be a good middle-ground
+
+#### First Impressions
+
+#### Takeaway
+
+#### Continuing education
+
