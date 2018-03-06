@@ -2,20 +2,25 @@
 layout: post
 title:  "C++"
 subtitle: "I have to do what with my arrays?"
-date:   2018-02-24 17:00:00 -0500
+date:   2018-02-25 17:00:00 -0500
 categories: learning new_language c++
 img: https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png
 ---
 
 I've been on a crusade to learn languages, frameworks, libraries, etc. Today, I spent some time learning the very basics of C++ to both learn a new systems language, and to gain a better understanding for how things used to be done.
 
+{:.section-header .container .h3}
 #### Backstory
 
-I know a little MIPS assembly, and I know some Java, so I figured this would be a good middle-ground
+I wanted to learn a new systems language, I know a little MIPS assembly, and I know some Java, so I figured this would be a good middle-ground. Something that's still relevant, but has definitely declined in favor of easier to use languages.
 
+It also gave me a chance to work on something with my classmate, [Cliff](https://www.linkedin.com/in/clifford-patterson2/). He's a pretty smart dude and if any employers are reading this, you'd be lucky to have him ;)
+
+{:.section-header .container .h3}
 #### First Impressions
+THere isn't a ton of information to put here, because I didn't get very far. I made fizzbuzz that took arguments for how far the game should go. I suppose my biggest impression is how fast this runs! I've taken basic programming for granted in the regard when it comes to languages like JavaScript. Yeah, it runs fast, but not compiled-to-machine-code fast.
 
+{:.section-header .container .h3}
 #### Takeaway
 
-#### Continuing education
-
+I need a lot of work with this, still. This is in my favor however, because I have a lot of time ahead of me to learn languages like this and see if I can make them useful professionally. 
