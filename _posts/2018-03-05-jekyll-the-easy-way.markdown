@@ -3,7 +3,7 @@ layout: post
 title:  "Jekyll, the easy way"
 subtitle: "What Dr. Jekyll would be complete without Mr. Hyde?"
 date:   2018-03-05 17:00:00 -0500
-categories: jekyll new_language learning
+categories: learning new_language jekyll
 img: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLtaVfX_ZOC3go_Iu9ByQKFFd6hPjNWZzns8drogrhmAVbEdlC
 ---
 

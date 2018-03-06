@@ -3,7 +3,7 @@ layout: post
 title:  "Bootstrap and Me"
 subtitle: "You just have to pull yourself up by your shoelaces."
 date:   2018-03-06 09:00:00 -0500
-categories: bootstrap design learning
+categories: learning design bootstrap
 img: http://syndicode.co/wp-content/uploads/2018/01/Bootrap4-arrived-e1516612818493.png
 ---
 

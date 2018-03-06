@@ -20,8 +20,8 @@ email: zach@pixelrabbit.me
 defaultIMG: "https://www.lorecentral.org/2017/11/advantages-disadvantages-javascript.html"
 description: >- # this means to ignore newlines until "baseurl:"
   A blog dedicated to one <del>rabbit</del> person learning as much as he possibly can.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "www.pixelrabbit.me" # the subpath of your site, e.g. /blog
+url: "jekyll-blog" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: PixelRabbitCode
 github_username:  zbauer91
 linkedin_username: zachbauer
@@ -35,6 +35,7 @@ sass:
   load_paths:
     - _sass
     - node_modules
+include: [/vendor/]
 exclude: [vendor/bundle]
 
 
