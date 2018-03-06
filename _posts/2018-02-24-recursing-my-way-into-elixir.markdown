@@ -7,7 +7,9 @@ categories: learning new_language elixir
 img: https://avatars0.githubusercontent.com/u/1481354?s=400&v=4
 ---
 
-Today I learned [elixir!](https://github.com/elixir-lang/elixir) and got my first true taste of a functional programming language
+Today I learned [elixir](https://github.com/elixir-lang/elixir) and got my first true taste of a functional programming language!
+
+![elixir]({{page.img}})
 
 {:.section-header .container .h3}
 #### Backstory

@@ -9,6 +9,8 @@ img: https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.
 
 I've been on a crusade to learn languages, frameworks, libraries, etc. Today, I spent some time learning the very basics of C++ to both learn a new systems language, and to gain a better understanding for how things used to be done.
 
+![C++]({{page.img}})
+
 {:.section-header .container .h3}
 #### Backstory
 
