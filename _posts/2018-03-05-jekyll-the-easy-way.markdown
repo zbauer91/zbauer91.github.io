@@ -5,7 +5,7 @@ subtitle: "Dr. Jekyll would never be complete without Mr. Hyde"
 date:   2018-03-05 17:00:00 -0500
 categories: learning new_framework
 tags: new_framework jekyll
-img: https://silentcomics.com/images/jekyll-logo-black-red-transparent.png
+img: https://talk.jekyllrb.com/uploads/jekyllrb/original/1X/4f9bd5334246d33651e846aed812280fbff586ba.png
 ---
 
 I had to come up with a project idea for the General Assembly showcase, and I was stumped...
