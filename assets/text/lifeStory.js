@@ -112,13 +112,17 @@ var lifeStory = {
         title: 'Backend Repo'
       }
     },
-    habit: {
-      title: 'HabiTrack',
+    jekyll: {
+      title: 'Jekyll Blog',
       description:
-        'A React-on-Rails application that will allow users to easily set up and record habits throughout the day, week, and month. It will have features to allow for separate user accounts, tracking mileage on certain exercises, and adding/removing custom habits.',
+        "A Jekyll Blog themed with the latest Bootstrap 4. It's intention is to be a showcase for all of the things I have and will continue to learn outside the curriculum of General Assembly.",
       deploy: {
-        link: '',
-        title: 'Links coming soon!'
+        link: 'http://pixelrabbit.me/jekyll/blog',
+        title: 'Jekyll Blog'
+      },
+      front: {
+        link: 'https://github.com/zbauer91/jekyll-blog',
+        title: 'Blog Repo'
       }
     }
   }
