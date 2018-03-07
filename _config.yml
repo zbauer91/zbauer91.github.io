@@ -21,7 +21,7 @@ defaultIMG: "https://www.lorecentral.org/2017/11/advantages-disadvantages-javasc
 description: >- # this means to ignore newlines until "baseurl:"
   A blog dedicated to one <del>rabbit</del> person learning as much as he possibly can.
 baseurl: "/jekyll-blog" # the subpath of your site, e.g. /blog
-url: "http://pixelrabbit.me/jekyll-blog" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://pixelrabbit.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: PixelRabbitCode
 github_username:  zbauer91
 linkedin_username: zachbauer
