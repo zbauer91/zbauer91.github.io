@@ -53,12 +53,16 @@ body {
     max-height: 8em;
     width: auto;
   }
-
+  
 }
 
-// .content {
-//   font-size: $custom-font-size;
-// }
+.page-img {
+  display: flex;
+  justify-content: center;
+  img {
+    max-height: 12em;
+  }
+}
 
 .navbar-brand {
   font-family: $custom-header-font;

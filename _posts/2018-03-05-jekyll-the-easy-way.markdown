@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Jekyll, the easy way"
-subtitle: "What Dr. Jekyll would be complete without Mr. Hyde?"
+title:  "Jekyll, The Easy Way"
+subtitle: "Dr. Jekyll would never be complete without Mr. Hyde"
 date:   2018-03-05 17:00:00 -0500
 categories: learning new_language jekyll
 img: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLtaVfX_ZOC3go_Iu9ByQKFFd6hPjNWZzns8drogrhmAVbEdlC
@@ -9,7 +9,8 @@ img: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLtaVfX_ZOC3go_Iu9ByQ
 
 I had to come up with a project idea for the General Assembly showcase, and I was stumped...
 
-![jekyll]({{page.img}})
+
+<span class="page-img container">![jekyll]({{page.img}})</span>
 
 
 {:.section-header .container .h3}

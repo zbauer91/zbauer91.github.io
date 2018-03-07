@@ -9,7 +9,8 @@ img: http://syndicode.co/wp-content/uploads/2018/01/Bootrap4-arrived-e1516612818
 
 I figured the best way to style my [new jekyll blog]({{site.baseurl}}{%post_url 2018-03-05-jekyll-the-easy-way%}) was to use a design framework. It ended up being a frustratingly cool look into how to cram things together to make a viable product
 
-![bootstrap]({{page.img}})
+
+<span class="page-img container">![bootstrap]({{page.img}})</span>
 
 {:.section-header .container .h3}
 ### Bootstrap

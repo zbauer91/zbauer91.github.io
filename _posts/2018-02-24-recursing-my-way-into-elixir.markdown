@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Recursing my way into Elixir"
+title:  "Recursing My Way into Elixir"
 subtitle: "How I learned to stop worrying and love permanent state"
 date:   2018-02-24 17:00:00 -0500
 categories: learning new_language elixir 
@@ -9,7 +9,7 @@ img: https://avatars0.githubusercontent.com/u/1481354?s=400&v=4
 
 Today I learned [elixir](https://github.com/elixir-lang/elixir) and got my first true taste of a functional programming language!
 
-![elixir]({{page.img}})
+<span class="page-img container">![elixir]({{page.img}})</span>
 
 {:.section-header .container .h3}
 #### Backstory
