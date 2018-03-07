@@ -3,7 +3,8 @@ layout: post
 title:  "C++"
 subtitle: "I have to do what with my arrays?"
 date:   2018-02-25 17:00:00 -0500
-categories: learning new_language c++
+categories: learning new_language
+tags: new_language c++
 img: https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png
 ---
 
