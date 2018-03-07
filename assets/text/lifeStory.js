@@ -10,6 +10,11 @@ var lifeStory = {
       icon: 'fas fa-file-alt',
       text: ' Resume'
     },
+    blog: {
+      link: 'http://pixelrabbit.me/jekyll-blog',
+      icon: 'fas fa-rss-square',
+      text: ' Blog'
+    },
     gitHub: {
       link: 'https://www.github.com/zbauer91',
       icon: 'fab fa-github',
