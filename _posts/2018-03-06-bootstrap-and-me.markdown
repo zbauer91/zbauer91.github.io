@@ -13,20 +13,20 @@ I figured the best way to style my [new Jekyll blog]({{site.baseurl}}{%post_url 
 
 <span class="page-img container">![bootstrap]({{page.img}})</span>
 
-{:.section-header .container .h3}
+{:.section-header .container}
 ### Bootstrap
 
 I've had some experience with it before, but only with the LESS version. Since bumping to version 4.0, the team behind Bootstrap has migrated to SASS, making it a little easier to integrate into a Jekyll project. 
 
 
 
-{:.section-header .container .h3}
+{:.section-header .container}
 ### The big problem
 the bootstrap gem is not on the approved list of approved gems for building a static GitHub pages website. That means that I can't just install the gem and be on my merry way with styling components. I had to get a little creative.
 
 
 
-{:.section-header .container .h3}
+{:.section-header .container}
 ### The solution
 [This article](https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/) gave me a great starting point for getting bootstrap integrated into Jekyll. The tl;dr is that I needed to install bootstrap as a `node_module`, and tell Jekyll to include the folder in the build. I had to keep some things in mind, however:
 

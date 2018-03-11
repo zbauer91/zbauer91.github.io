@@ -13,18 +13,18 @@ This mini post highlights some of the things I learned about the Kramdown supers
 
 <span class="page-img container">![markdown]({{page.img}}) ![gh-pages]({{page.extra_img}})</span>
 
-{:.section-header .container .h3}
+{:.section-header .container}
 ### Kramdown
 
 `{:}` <-- this is the _block inline attribute list_ label, and boy is it useful. I can use it to define classes and other options on some eventual HTML element, a la
 <pre><code>
-&#9;{:.section-header .container .h3}
+&#9;{:.section-header .container}
 &#9;### Kramdown
 </code></pre>
 I used this to define my header, which is what makes it look so fancy. Add a little SCSS behind the scenes, and you can completely change the way the markdown content is rendered. 
 
 
-{:.section-header .container .h3}
+{:.section-header .container}
 ### Deployment
 
 This was a challenge in understanding the difference between absolute and relative URLs, how to configure my `site.url` in `_config.yml`, and playing nicely with GitHub Pages. 
