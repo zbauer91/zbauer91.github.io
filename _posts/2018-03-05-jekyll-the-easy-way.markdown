@@ -28,7 +28,7 @@ I wanted to do something complete, ambitious (sort of), and interesting enough t
 
 I couldn't just show them my twitter, right?....right?
 
-I had known about Jekyll for some time now and decided to give it a go and see if I could make a functioning blog! It turns out you can, but woe is you if you try and integrate things outside the github allow-o-sphere.
+I had known about Jekyll for some time now and decided to give it a go and see if I could make a functioning blog! It turns out you can, but woe is you if you try and integrate things outside the GitHub allow-o-sphere.
 
 {:.section-header .container}
 #### Concepts Learned:
@@ -41,8 +41,8 @@ I had known about Jekyll for some time now and decided to give it a go and see i
 #### Design Decisions:
 * bootstrap: This was an easy choice. I hadn't worked much with it [until recently]({{site.baseurl}}{%post_url 2018-03-06-bootstrap-and-me%}), and wanted to see how I liked it compared to material design. Turns out I'm lukewarm to it. It's super powerful, but ultimately requires more theming that I would like. <strong>Please, change my mind</strong>
 * minima: Jekyll comes reinstalled with this theme. I was careful to leave the MIT license attached to this project, because I did use some of the assets in the gem to build up this website. 
-* File structure - I feel I need to defend this one. I technically copy the entirety of Bootstrap and all dependencies to jekyll during build. Terrible? yes, necessary? I think so...I can't really seem to get it built on GitHub-Pages any other way
-* For now, I'm keeping this website and [my portfolio website]() as separate entities. This will make it a lot easier to find the time to further update the design, look, and feel of this site, while maintaining a more polished portfolio
+* File structure - I feel I need to defend this one. I technically copy the entirety of Bootstrap and all dependencies to Jekyll during build. Terrible? yes, necessary? I think so...I can't really seem to get it built on GitHub Pages any other way
+* For now, I'm keeping this website and [my profile website]({{site.url}}) as separate entities. This will make it a lot easier to find the time to further update the design, look, and feel of this site, while maintaining a more polished portfolio
 
 
 
