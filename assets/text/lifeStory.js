@@ -117,7 +117,7 @@ var lifeStory = {
       description:
         "A Jekyll Blog themed with the latest Bootstrap 4. It's intention is to be a showcase for all of the things I have and will continue to learn outside the curriculum of General Assembly.",
       deploy: {
-        link: 'http://pixelrabbit.me/jekyll/blog',
+        link: 'http://pixelrabbit.me/jekyll-blog',
         title: 'Jekyll Blog'
       },
       front: {
