@@ -37,3 +37,6 @@ I also tried thunderbird, but the dated UI and the overwhelming configuration op
 I settled on Airmail, the current reigning champ of Mac email clients. It's only mildly expensive and has enough features and integrations to make me happy.
 
 Here's to getting below 5k saved emails!
+
+
+Update 3-16-18: I got it below 1,000! Woo!
