@@ -26,6 +26,8 @@ twitter_username: PixelRabbitCode
 github_username:  zbauer91
 linkedin_username: zachbauer
 phone: 6145193442
+home_page:
+  hero_image: "./assets/hero.jpg"
 
 # Build settings
 markdown: kramdown
