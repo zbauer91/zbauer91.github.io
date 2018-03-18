@@ -5,6 +5,8 @@ description: A blog dedicated to one <del>rabbit</del> person learning as much a
 ---
 
 
+{% include header.html title=layout.title%}
+
 <div class="blog">
   {{ content }} 
   {% if site.posts.size > 0 %}
@@ -27,3 +29,5 @@ description: A blog dedicated to one <del>rabbit</del> person learning as much a
     {% endif %}
   </div>
 </div>
+
+{% include footer.html title=layout.title description=layout.description%}
