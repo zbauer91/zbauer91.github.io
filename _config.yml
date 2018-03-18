@@ -26,6 +26,8 @@ linkedin_username: zachbauer
 phone: 6145193442
 home_page:
   hero_image: "./images/hero.jpg"
+  header: "Zach Bauer"
+  subheader: "<Awesome Web Developer/>"
 
 # Build settings
 markdown: kramdown

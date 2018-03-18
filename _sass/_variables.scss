@@ -3,6 +3,8 @@
 // $primary: $orange;
 
 // Custom font size
+$fs-header: calc(6vw + 4vh);
+$fs-subheader: calc(1vw + 1vh);
 $custom-font-size: 20px;
 
 // enable gradients
@@ -11,5 +13,6 @@ $enable-gradients: true;
 // font change
 $shrikhand: "Shrikhand";
 $raleway: "Raleway";
+$ps2p: "Press Start 2P";
 
 @import "../assets/vendor/bootstrap/scss/bootstrap.scss";

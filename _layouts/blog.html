@@ -19,7 +19,7 @@ description: A blog dedicated to one <del>rabbit</del> person learning as much a
           <div class="card-body">
             <h5 class="card-title">{{ post.title | escape }}</h5>
             <h6 class="card-subtitle text-muted post-meta">{{ post.date | date: date_format }}</h6>
-            <p class="card-text mb-auto">{% if site.show_excewrpts %} {{ post.excerpt }} {% endif %}</p>
+            <p class="card-text mb-auto">{% if site.show_excerpts %} {{ post.excerpt }} {% endif %}</p>
           </div>
           <div class="card-footer">
             <a href="{{ post.url | relative_url }}" class="btn">Read More!</a>

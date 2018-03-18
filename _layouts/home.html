@@ -1,11 +1,25 @@
 --- 
-title: PixelRabbit's Profile
 layout: default 
+title: PixelRabbit's Profile
 description: The personal profile of Zach Bauer, chronicalling his journey from basic HTML and CSS, to a full blog and portolio website built with Jekyll to show off his work!
 ---
 
+
+
 {% include header.html title=layout.title%}
 
-<div class='hero-image'></div>
+  <div class='hero-image'>
+    <section class='header-container'>
+      <div class='main-headers'>
+        <h1 class='text-white'>{{ site.home_page.header | escape }}</h1>
+        <h2 class='text-white'>{{ site.home_page.subheader | escape}}</h2>
+      </div>
+      <div class='divider'></div>
+      <a class="btn btn-secondary" href="#" role="button">Learn More</a>
+    </section>
+  </div>
+
+
+
 
 {% include footer.html title=layout.title description=layout.description%}

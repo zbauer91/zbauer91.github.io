@@ -26,30 +26,67 @@
     padding: 0 5px;
   }
 }
+// required to place content on top of footer adn have it appear from 'under' the page
 body {
   overflow-x: hidden;
   min-height: 100vh;
+  .page-content {
+    margin-bottom: 20em;
+    padding-bottom: 5em;
+  }
 }
 
-.page-content {
-  background-color: $white;
-  margin-bottom: 20em;
-  padding-bottom: 5em;
-}
-
+// landing page
 .hero-image {
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   z-index: 2;
-  background-image: url({{site.home_page.hero_image}});
+  background: url({{site.home_page.hero_image}}) no-repeat center top;
   background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+  // flex settings
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .header-container {
+    background-color: turquoise;
+    display: flex;
+    flex-flow: column nowrap;
+  .divider {
+    width: 40%;
+    border-radius: 15px;
+    border-bottom: 2px solid white;
+    align-self: center;
+    margin: 2vh 0;
+  }
+    .btn {
+      width: 30%;
+      align-self: center;
+    }
+  }
+
+  .main-headers{
+    @media screen and (min-width: 321px) {
+      margin: 10vh 12vw 0 0;
+    }
+    margin: 1px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    h1 {
+      font-size: $fs-header;
+      font-family: $shrikhand, 
+    }
+    h2 {
+      font-size: $fs-subheader;
+      font-family: $ps2p;
+
+    }
+  }
 }
 
 
 // SASS for common site footer
-
 .site-footer {
   display: flex;
   flex-flow: row wrap;
