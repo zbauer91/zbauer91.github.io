@@ -4,6 +4,28 @@
 
 @import "../_sass/_variables.scss";
 
+// prevents terrible rendering on very small viewports
+.hidden {
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h2 {
+    padding: 0 5px;
+  }
+}
 body {
   overflow-x: hidden;
   min-height: 100vh;
@@ -17,7 +39,12 @@ body {
 
 .hero-image {
   height: 100vh;
-  background: url({{site.home_page.hero_image}}) cover no-repeat;
+  width: 100vw;
+  z-index: 2;
+  background-image: url({{site.home_page.hero_image}});
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 
@@ -56,6 +83,7 @@ body {
     font-family: $shrikhand;
   }
 }
+
 
 
 

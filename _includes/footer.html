@@ -1,9 +1,11 @@
 <footer class="site-footer bg-secondary">
   <div class='container'>
-    <h2 class="footer-heading text-dark">{{ site.title | escape }}</h2>
+    <h2 class="footer-heading text-dark">{{ include.title }}</h2>
+    {% if include.description %}
     <div class="text-dark">
-      {{ site.description }}
+      {{ include.description }}
     </div>
+    {% endif %}
     <div class="contact-links text-dark">
       {% include contact.html dropdown=false %}
     </div>

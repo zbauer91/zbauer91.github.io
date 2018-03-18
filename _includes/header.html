@@ -1,19 +1,18 @@
-<nav class='navbar navbar-expand-sm navbar-light bg-primary'>
-  <a href="{{ '/' | relative_url }}" class='navbar-brand'>{{ site.title | escape}}</a>
+<nav class='navbar navbar-expand-sm navbar-light bg-secondary'>
+  <a href="{{ '/' | relative_url }}" class='navbar-brand'>{{ include.title }}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
     <span class="navbar-toggler-icon"></span>
   </button>
-  
   <div class="collapse navbar-collapse" id="navbarContent">
     <ul class='navbar-nav ml-auto'>
-      <li class='nav-item {{ page.home }}'>
-        <a href='{{site.url}}' class='nav-link'>Home</a>
+      <li class='nav-item'>
+        <a href='{{site.url}}' class={% if page.name == 'index.md' %}"nav-link active" {% else %} "nav-link" {% endif %}>Home</a>
       </li>
-      <li class='nav-item {{ page.blog }}'>
-        <a href='{{site.baseurl}}/blog' class='nav-link'>Blog</a>
+      <li class='nav-item'>
+        <a href='{{site.baseurl}}/blog' class={% if page.name == 'blog.md' %}"nav-link active" {% else %} "nav-link" {% endif %}>Blog</a>
       </li>
-      <li class='nav-item {{ page.projects }}'>
-        <a href='{{site.baseurl}}/projects' class='nav-link'>Projects</a>
+      <li class='nav-item'>
+        <a href='{{site.baseurl}}/projects' class={% if page.name == 'projects.md' %}"nav-link active" {% else %} "nav-link" {% endif %}>Projects</a>
       </li>
       <li class="nav-item dropdown dropdown-menu-left">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
@@ -26,3 +25,8 @@
     </ul>
   </div>
 </nav>
+
+<script> 
+  console.log('{{ page.name }}')
+  console.log('{{ include.active }}')
+</script>

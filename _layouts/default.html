@@ -5,15 +5,14 @@
 
   <body>
 
-    {% include header.html %}
-
+    <div class="content-cover hidden">
+      <h2>Viewport to small for content. Please view on a larger device.</h2>
+    </div>
     <main class="page-content bg-dark">
       <div class="wrapper">
         {{ content }}
       </div>
     </main>
-
-    {% include footer.html %}
 
     <!-- Bootstrap locations -->
     <script src="{{ site.baseurl }}/assets/vendor/jquery.slim.min.js"></script>
