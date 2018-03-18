@@ -7,20 +7,18 @@
 
     {% include header.html %}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+    <main class="page-content">
+      <div class="wrapper bg-dark">
         {{ content }}
       </div>
     </main>
 
     {% include footer.html %}
 
-
-
     <!-- Bootstrap locations -->
-    <script src="{{site.baseurl}}/assets/vendor/jquery.slim.min.js"></script>
-    <script src="{{site.baseurl}}/assets/vendor/popper.min.js"></script>
-    <script src="{{site.baseurl}}/assets/vendor/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/vendor/jquery.slim.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/vendor/popper.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/vendor/bootstrap.min.js"></script>
   </body>
 
 </html>

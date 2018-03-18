@@ -2,24 +2,4 @@
 layout: default 
 ---
 
-<div class="home">
 
-  {{ content }} {% if site.posts.size > 0 %}
-  <div class="card-container container">
-    {% for post in site.posts %} {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-    <div class="card text-center">
-      {% if post.img %}
-      <img class="card-img-top mx-auto" src="{{ post.img }}" alt="{{ post.title | escape }}">
-      {% endif %}
-      <div class="card-body">
-        <h5 class="card-title">{{ post.title | escape }}</h5>
-        <h6 class="card-subtitle text-muted post-meta">{{ post.date | date: date_format }}</h6>
-        <p class="card-text mb-auto">{% if site.show_excerpts %} {{ post.excerpt }} {% endif %}</p>
-      </div>
-      <div class="card-footer">
-        <a href="{{ post.url | relative_url }}" class="btn">Read More!</a>
-      </div>
-    </div>
-    {% endfor %} {% endif %}
-  </div>
-</div>

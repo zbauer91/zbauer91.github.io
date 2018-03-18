@@ -1,18 +1,21 @@
 <nav class='navbar navbar-expand-sm navbar-light bg-primary'>
   <a href="{{ '/' | relative_url }}" class='navbar-brand'>{{ site.title | escape}}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
-    <span class='navbar-toggler-icon'></span>
+    <span class="navbar-toggler-icon"></span>
   </button>
-
+  
   <div class="collapse navbar-collapse" id="navbarContent">
     <ul class='navbar-nav ml-auto'>
-      <li class='nav-item'>
-        <a href='{{site.url}}{{site.baseurl}}' class='nav-link active'>Blog</a>
+      <li class='nav-item {{ page.home }}'>
+        <a href='{{site.url}}' class='nav-link'>Home</a>
       </li>
-      <li class='nav-item'>
-        <a href='{{site.url}}' class='nav-link'>Profile</a>
+      <li class='nav-item {{ page.blog }}'>
+        <a href='{{site.baseurl}}/blog' class='nav-link'>Blog</a>
       </li>
-      <li class="nav-item dropdown dropdown-menu-right">
+      <li class='nav-item {{ page.projects }}'>
+        <a href='{{site.baseurl}}/projects' class='nav-link'>Projects</a>
+      </li>
+      <li class="nav-item dropdown dropdown-menu-left">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
           Contact
         </a>
