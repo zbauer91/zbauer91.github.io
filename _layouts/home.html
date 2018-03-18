@@ -8,8 +8,8 @@ description: The personal profile of Zach Bauer, chronicalling his journey from 
 
 {% include header.html title=layout.title%}
 
-  <div class='hero-image'>
-    <section class='header-container'>
+  <section class='hero-image'>
+    <section>
       <div class='main-headers'>
         <h1 class='text-white'>{{ site.home_page.header | escape }}</h1>
         <h2 class='text-white'>{{ site.home_page.subheader | escape}}</h2>
@@ -17,9 +17,17 @@ description: The personal profile of Zach Bauer, chronicalling his journey from 
       <div class='divider'></div>
       <a class="btn btn-secondary" href="#" role="button">Learn More</a>
     </section>
-  </div>
+  </section>
 
-
+  <section class='about-me'>
+    <section>
+  		<img src="" alt="A picture of Zach's beautiful face!!">
+  		<div>
+  			<h2></h2>
+  			<p></p>
+      </div>
+    </section>
+  </section>
 
 
 {% include footer.html title=layout.title description=layout.description%}

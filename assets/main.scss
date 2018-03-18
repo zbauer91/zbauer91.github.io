@@ -28,6 +28,7 @@
 }
 // required to place content on top of footer adn have it appear from 'under' the page
 body {
+  font-family: $raleway;
   overflow-x: hidden;
   min-height: 100vh;
   .page-content {
@@ -47,44 +48,41 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  .header-container {
-    background-color: turquoise;
+  section {
     display: flex;
     flex-flow: column nowrap;
+    width: 100vw;
+    .main-headers {
+      margin: 2px;
+      text-align: center;
+      h1 {
+        font-size: $fs-header;
+        font-family: $shrikhand;
+      }
+      h2 {
+        font-size: $fs-subheader;
+        font-family: $ps2p;
+      }
+    }
+  }
   .divider {
     width: 40%;
-    border-radius: 15px;
-    border-bottom: 2px solid white;
+    height: 2vh;
+    border-bottom: 3px solid white;
     align-self: center;
-    margin: 2vh 0;
+    margin-bottom: 2vh;
   }
-    .btn {
-      width: 30%;
-      align-self: center;
-    }
-  }
-
-  .main-headers{
-    @media screen and (min-width: 321px) {
-      margin: 10vh 12vw 0 0;
-    }
-    margin: 1px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    h1 {
-      font-size: $fs-header;
-      font-family: $shrikhand, 
-    }
-    h2 {
-      font-size: $fs-subheader;
-      font-family: $ps2p;
-
-    }
+  .btn {
+    width: 30%;
+    align-self: center;
   }
 }
 
+// about me page
+
+.about-me {
+
+}
 
 // SASS for common site footer
 .site-footer {
@@ -115,13 +113,8 @@ body {
     color: white;
     margin: 1em 1em 0 0;
   }
-  
+
   h2 {
     font-family: $shrikhand;
   }
 }
-
-
-
-
-
