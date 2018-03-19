@@ -71,6 +71,7 @@ body {
     .main-headers {
       margin: 2px;
       text-align: center;
+      text-shadow: 3px 3px grey, 6px 6px black;
       h1 {
         font-size: $fs-header;
         font-family: $shrikhand;

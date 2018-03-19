@@ -4,46 +4,63 @@ title: PixelRabbit's Profile
 description: The personal profile of Zach Bauer, chronicalling his journey from basic HTML and CSS, to a full blog and portolio website built with Jekyll to show off his work!
 ---
 
+ {% include header.html title=layout.title%}
 
-
-{% include header.html title=layout.title%}
-
-  <section class='hero-image'>
-    <section>
-      <div class='main-headers'>
-        <h1 class='text-white'>{{ site.home_page.header | escape }}</h1>
-        <h2 class='text-white'>{{ site.home_page.subheader | escape}}</h2>
-      </div>
-      <div class='divider'></div>
-      <a class="btn btn-secondary" href="#" role="button">Learn More</a>
-    </section>
+<section class='hero-image'>
+  <section>
+    <div class='main-headers'>
+      <h1 class='text-white'>{{ site.home_page.header | escape }}</h1>
+      <h2 class='text-white'>{{ site.home_page.subheader | escape}}</h2>
+    </div>
+    <div class='divider'></div>
+    <button id="learnMore" class="btn btn-secondary">Learn More</button>
   </section>
+</section>
 
-  <section class='about-me'>
-    <section>
-      <div>
-  		  <img src="{{site.about_me.photo}}" alt="{{site.about_me.photo_alt | escape}}">
-      </div>
-  		<div class="text-light">
-  			<h2>{{site.about_me.tagline | escape}}</h2>
-  			<p>{{site.about_me.brand | escape}}</p>
-      </div>
-      <a class="btn btn-secondary" href="#" role="button">See My Work</a>
-    </section>
+<section class='about-me'>
+  <section>
+    <div>
+      <img src="{{site.about_me.photo}}" alt="{{site.about_me.photo_alt | escape}}">
+    </div>
+    <div class="text-light">
+      <h2>{{site.about_me.tagline | escape}}</h2>
+      <p>{{site.about_me.brand | escape}}</p>
+    </div>
+    <button id="myWork" class="btn btn-secondary" >See My Work</button>
   </section>
+</section>
 
-  <section class='my-work'>
-      <div class='projects'>
-  		  <a href='#'><span class="text-light">Projects</span></a>
-      </div>
-      <div class='blog'>
-        <a href='#'><span class="text-light">Blog</span></a>
-      </div>
-  </section>
+<section class='my-work'>
+  <div class='projects'>
+    <a href='#'>
+      <span class="text-light">Projects</span>
+    </a>
+  </div>
+  <div class='blog'>
+    <a href='#'>
+      <span class="text-light">Blog</span>
+    </a>
+  </div>
+</section>
 
 {% include footer.html title=layout.title description=layout.description%}
 
 
 <script>
-  
+  document.querySelector("#learnMore").addEventListener("click", function() {
+    easingFunction(".about-me")
+  })
+  document.querySelector("#myWork").addEventListener("click", function() {
+    easingFunction(".my-work")
+  })
+
+  function easingFunction (query) {
+    // anime.remove("html", "body")
+    anime({
+      duration: 1200,
+      targets: "html, body",
+      scrollTop: [window.pageYOffset, document.querySelector(query).offsetTop],
+      easing: 'easeInOutSine'
+    })
+  }
 </script>
