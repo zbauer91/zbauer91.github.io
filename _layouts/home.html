@@ -21,13 +21,20 @@ description: The personal profile of Zach Bauer, chronicalling his journey from 
 
   <section class='about-me'>
     <section>
-  		<img src="" alt="A picture of Zach's beautiful face!!">
+      <div>
+  		  <img src="{{site.about_me.photo}}" alt="{{site.about_me.photo_alt | escape}}">
+      </div>
   		<div>
-  			<h2></h2>
-  			<p></p>
+  			<h2>{{site.about_me.tagline | escape}}</h2>
+  			<p>{{site.about_me.brand | escape}}</p>
       </div>
     </section>
   </section>
 
 
 {% include footer.html title=layout.title description=layout.description%}
+
+
+<script>
+  
+</script>

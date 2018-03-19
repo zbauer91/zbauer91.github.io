@@ -28,11 +28,14 @@ phone: 6145193442
 # I first abstracted it out of HTML into an JS object. Now it's finding it's home in my YAML config file.
 # Times sure do change :P
 home_page:
-  hero_image: "assets/images/hero.jpg"
+  hero_image: "/jekyll-blog/assets/images/hero.jpg"
   header: "Zach Bauer"
   subheader: "<Awesome Web Developer/>"
-about_me
-  photo: "assets/images/photo/.jpg"
+about_me:
+  photo: "/jekyll-blog/assets/images/photo.jpg"
+  photo_alt: "A photo of Zach's cute face!"
+  tagline: "An expert at turning caffeine and lack of sleep into code"
+  brand: "I'm always on the lookout for new, creative ways to solve problems. Whether that be in the work I do professionally, or at home, I'm a practiced MacGyver of programming."
 
 
 # Build settings
