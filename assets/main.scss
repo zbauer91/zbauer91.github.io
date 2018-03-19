@@ -42,10 +42,20 @@ body {
 }
 
 // Navbar
+// .navbar {
+//   height: 8vh;
+//   .nav-link {
+//     font-size: $fs-navlink;
+//   }
+//   .navbar-brand {
+//     font-family: $shrikhand;
+//     font-size: $fs-paragraph;
+//   }
+// }
 
 // landing page
 .hero-image {
-  height: 93vh;
+  height: 92vh;
   width: 100vw;
   z-index: 2;
   background: url('{{site.home_page.hero_image}}') no-repeat center top;
@@ -122,12 +132,56 @@ body {
       text-align: center;
     }
     h2 {
-      max-width: 800px;
+      max-width: 35em;
       font-size: $fs-section-header;
     }
   }
 }
 
+.my-work {
+  section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    div {
+      margin: 2vh 2vw;
+      background-color: rebeccapurple;
+      width: 80vw;
+      height: 40vh;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      a {
+        font-size: $fs-paragraph;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(50, 50, 50, 0.7);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        letter-spacing: 0.7em;
+        text-decoration: none;
+        span {
+          height: 15%;
+          width: 100%;
+        }
+
+      }
+      a::after {
+        text-decoration: none;
+      }
+    }
+    .projects {
+      background: url('{{site.projects.project_image}}') no-repeat center top;
+      background-size: cover;
+    }
+    .blog {
+      background: url('{{site.projects.blog_image}}') no-repeat center top;
+      background-size: cover;
+    }
+  }
+}
 // SASS for common site footer
 .site-footer {
   display: flex;

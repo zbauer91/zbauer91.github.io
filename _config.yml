@@ -18,7 +18,7 @@ title: PixelRabbit's Ponderings
 author: Zach Bauer
 email: zach@pixelrabbit.me
 defaultIMG: "https://www.lorecentral.org/2017/11/advantages-disadvantages-javascript.html"
-baseurl: "/jekyll-blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://pixelrabbit.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: PixelRabbitCode
 github_username:  zbauer91
@@ -28,15 +28,17 @@ phone: 6145193442
 # I first abstracted it out of HTML into an JS object. Now it's finding it's home in my YAML config file.
 # Times sure do change :P
 home_page:
-  hero_image: "/jekyll-blog/assets/images/hero.jpg"
+  hero_image: "/assets/images/hero.jpg"
   header: "Zach Bauer"
   subheader: "<Awesome Web Developer/>"
 about_me:
-  photo: "/jekyll-blog/assets/images/photo.jpg"
+  photo: "/assets/images/photo.jpg"
   photo_alt: "A photo of Zach's cute face!"
   tagline: "An expert at turning caffeine and lack of sleep into code"
   brand: "I'm always on the lookout for new, creative ways to solve problems. Whether that be in the work I do professionally, or at home, I'm a practiced MacGyver of programming."
-
+projects:
+  project_iamge: "/assets/images/barberhub.png"
+  blog_image: "/assets/images/jekyll.png"
 
 # Build settings
 markdown: kramdown
