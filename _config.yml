@@ -37,7 +37,7 @@ about_me:
   tagline: "An expert at turning caffeine and lack of sleep into code"
   brand: "I'm always on the lookout for new, creative ways to solve problems. Whether that be in the work I do professionally, or at home, I'm a practiced MacGyver of programming."
 projects:
-  project_iamge: "/assets/images/barberhub.png"
+  project_image: "/assets/images/barberhub.png"
   blog_image: "/assets/images/jekyll.png"
 
 # Build settings

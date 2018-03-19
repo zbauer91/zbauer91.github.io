@@ -10,8 +10,8 @@
     display: none;
   }
   display: block;
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 1000vh;
+  min-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -19,9 +19,9 @@
   color: white;
   z-index: 1000;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
   h2 {
     padding: 0 5px;
   }
@@ -123,7 +123,6 @@ body {
       max-height: 40vh;
     }
     div {
-
       display: flex;
       justify-content: center;
       align-items: center;
@@ -139,47 +138,51 @@ body {
 }
 
 .my-work {
-  section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  div {
+    margin: 2vh 2vw;
+    background-color: rebeccapurple;
+    width: 80vw;
+    height: 40vh;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    div {
-      margin: 2vh 2vw;
-      background-color: rebeccapurple;
-      width: 80vw;
-      height: 40vh;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    a {
+      height: 100%;
+      width: 100%;
       display: flex;
-      flex-flow: column nowrap;
       justify-content: flex-end;
-      a {
-        font-size: $fs-paragraph;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(50, 50, 50, 0.7);
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
+      align-items: flex-end;
+      text-decoration: none;
+      z-index: 2;
+      span {
+        font-size: $fs-project;
+        font-weight: bolder;
+        padding-top: 2px;
         letter-spacing: 0.7em;
-        text-decoration: none;
-        span {
-          height: 15%;
-          width: 100%;
-        }
-
+        background-color: black;
+        height: 15%;
+        width: 100%;
+        text-align: right;
       }
-      a::after {
+      &:hover {
+        cursor: pointer;
+      }
+      &:after {
         text-decoration: none;
       }
     }
-    .projects {
-      background: url('{{site.projects.project_image}}') no-repeat center top;
-      background-size: cover;
-    }
-    .blog {
-      background: url('{{site.projects.blog_image}}') no-repeat center top;
-      background-size: cover;
-    }
+  }
+  .projects {
+    background: url('{{site.projects.project_image}}') no-repeat center top;
+    background-size: cover;
+  }
+  .blog {
+    background: url('{{site.projects.blog_image}}') no-repeat center top;
+    background-size: cover;
   }
 }
 // SASS for common site footer
