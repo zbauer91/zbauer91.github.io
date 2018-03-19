@@ -10,8 +10,8 @@
     display: none;
   }
   display: block;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -41,9 +41,11 @@ body {
   }
 }
 
+// Navbar
+
 // landing page
 .hero-image {
-  height: 90vh;
+  height: 93vh;
   width: 100vw;
   z-index: 2;
   background: url('{{site.home_page.hero_image}}') no-repeat center top;
@@ -87,22 +89,40 @@ body {
 .about-me {
   height: 100vh;
   width: 100vw;
-  background-color: sienna;
+  @media screen and (min-width: 600px) {
+    section {
+      flex-flow: row nowrap;
+      img {
+        border-radius: 40px;
+        max-height: 60vh;
+      }
+      div {
+        margin: 2vh 0;
+        text-align: center;
+      }
+    }
+  }
   section {
-    padding: 2vh 0;
+    padding: 3vh 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
     img {
-      border-radius: 20px;
-      max-height: 30vh;
+      border-radius: 40px;
+      max-height: 40vh;
     }
     div {
-      min-width: 25em;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      margin: 2vh 0;
       text-align: center;
     }
     h2 {
+      max-width: 800px;
       font-size: $fs-section-header;
     }
   }
