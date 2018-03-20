@@ -30,13 +30,14 @@
 body {
   font-family: $raleway;
   p {
+    font-family: $roboto;
     font-size: $fs-paragraph;
   }
   overflow-x: hidden;
   min-height: 100vh;
   max-width: 100%;
   .page-content {
-    margin-bottom: 20em;
+    margin-bottom: 25em;
     padding-bottom: 5em;
   }
 }
@@ -174,19 +175,22 @@ body {
 }
 // SASS for common site footer
 .site-footer {
+  * {
+    border: 1px solid red;
+  }
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   position: fixed;
   bottom: 0;
   width: 100vw;
-  height: 20em;
+  height: 25em;
   z-index: -1;
   opacity: 0.99;
 
   .container {
-    margin-top: 2em;
+    margin-top: 1em;
     height: 10em;
   }
 
@@ -203,11 +207,32 @@ body {
   }
 
   h2 {
+    font-size: $fs-section-header;
     font-family: $shrikhand;
+  }
+
+  p {
+    max-width: 37.5em;
   }
 }
 
-// card styles
+// blog post listing styles
+
+.blog {
+
+  h2 {
+    font-size: $fs-section-header;
+  }
+
+  h4 {
+    
+  }
+
+  h6 {
+    
+  }
+
+}
 
 .card-container{
   display: flex;

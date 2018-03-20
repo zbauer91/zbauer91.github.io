@@ -6,7 +6,8 @@ $blog: $orange;
 $fs-header: calc(6vw + 4vh);
 $fs-subheader: calc(1vw + 1vh);
 $fs-section-header: calc(3.2vw + 1.6vh);
-$fs-paragraph: calc(1.4vw + 1.1vh);
+// $fs-paragraph: calc(1.2vw + 0.9vh);
+$fs-paragraph: calc(0.5em + 0.5vw + 1vh);
 $fs-navlink: calc(1.1vw + 1.1vh);
 $fs-project: calc(1.9vw + 1.3vh);
 
@@ -14,8 +15,9 @@ $fs-project: calc(1.9vw + 1.3vh);
 $enable-gradients: true;
 
 // font change
-$shrikhand: "Shrikhand";
-$raleway: "Raleway";
-$ps2p: "Press Start 2P";
+$shrikhand: "Shrikhand", cursive;
+$raleway: "Raleway", sans-serif;
+$ps2p: "Press Start 2P", monospace;
+$roboto: "Roboto", sans-serif;
 
 @import "../assets/vendor/bootstrap/scss/bootstrap.scss";
