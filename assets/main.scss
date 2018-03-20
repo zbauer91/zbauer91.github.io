@@ -32,7 +32,7 @@ body {
   p {
     font-size: $fs-paragraph;
   }
-  // overflow-x: hidden;
+  overflow-x: hidden;
   min-height: 100vh;
   max-width: 100%;
   .page-content {
@@ -40,18 +40,6 @@ body {
     padding-bottom: 5em;
   }
 }
-
-// Navbar
-// .navbar {
-//   height: 8vh;
-//   .nav-link {
-//     font-size: $fs-navlink;
-//   }
-//   .navbar-brand {
-//     font-family: $shrikhand;
-//     font-size: $fs-paragraph;
-//   }
-// }
 
 // landing page
 .hero-image {
@@ -90,13 +78,11 @@ body {
     margin-bottom: 2vh;
   }
   .btn {
-    width: 30%;
     align-self: center;
   }
 }
 
 // about me page
-
 .about-me {
   height: 100vh;
   width: 100vw;
@@ -132,20 +118,20 @@ body {
       text-align: center;
     }
     h2 {
-      max-width: 35em;
+      max-width: 20em;
       font-size: $fs-section-header;
     }
   }
 }
 
+// Page detailing my work
 .my-work {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   div {
     margin: 2vh 2vw;
-    background-color: rebeccapurple;
     width: 80vw;
     height: 40vh;
     display: flex;
@@ -218,5 +204,39 @@ body {
 
   h2 {
     font-family: $shrikhand;
+  }
+}
+
+// card styles
+
+.card-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  .card {
+    // border: 2px solid blue;
+    max-width: 25em;
+    min-height: 18em;
+    margin: 2em 0.5em;
+    padding: 0.5em;
+    border: 1px solid $primary;
+
+  }
+
+  img {
+    max-height: 8em;
+    width: auto;
+  }
+  
+}
+
+.page-img {
+  display: flex;
+  justify-content: center;
+  img {
+    max-height: 12em;
+    margin: 0 1em;
+    // spreads out images
   }
 }

@@ -13,8 +13,13 @@
       <li class='nav-item'>
         <a href='{{site.baseurl}}/projects' class={% if page.name == 'projects.md' %}"nav-link active" {% else %} "nav-link" {% endif %}>Projects</a>
       </li>
-      <li class='nav-item'>
-        <button id="contact" class="nav-link">Contact</button>
+      <li class="nav-item dropdown dropdown-menu-left">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+          Contact
+        </a>
+        <div class=" nav-item dropdown-menu">
+          {% include contact.html dropdown=true %}
+        </div>
       </li>
     </ul>
   </div>
