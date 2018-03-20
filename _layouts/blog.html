@@ -4,35 +4,35 @@ title: PixelRabbit's Ponderings
 description: A blog dedicated to one <del>rabbit</del> person learning as much as he possibly can.
 ---
 
- {% include header.html %}
+{% include header.html %}
 
+<div class='branding'>{{ layout.title }}</div>
 <div class='blog'>
-  {{ content }} 
-  {% if site.posts.size > 0 %} 
-  {% assign date_format = "%A - %b %d, %Y" %}
-  
-  {% for post in site.posts %}
+  {{ content }} {% if site.posts.size > 0 %} {% assign date_format = "%A - %b %d, %Y" %} {% for post in site.posts %}
   <div class='post container'>
     <a href='{{ post.url | relative_url }}'>
       <h2>{{post.title | escape }}</h2>
     </a>
     <a href='{{ post.url | relative_url }}'>
-      <h4 class='text-light'>{{ post.subtitle | escape }}</h4>
+      <h4>{{ post.subtitle | escape }}</h4>
     </a>
-    <h6 class='text-light'>{{ post.date | date: date_format }}</h6>
-    {% if post.img %}
+    <h6>{{ post.date | date: date_format }}</h6>
     <div class='img-excerpt'>
-      <a href='{{ post.url | relative_url }}'>
-        <img src="{{ post.img }}" alt="{{ post.title | escape }}">
-      </a>
-    {% endif %} 
-    {% if site.show_excerpts %}
+      {% if site.show_excerpts %}
+      <div>
         <p>{{ post.excerpt }}</p>
-    {% endif %}
+      </div>
+      {% endif %} {% if post.img %}
+      <div>
+        <a href='{{ post.url | relative_url }}'>
+          <img src="{{ post.img }}" alt="{{ post.title | escape }}">
+        </a>
+      </div>
+      {% endif %}
     </div>
+    <div class='divider container'></div>
   </div>
-  {% endfor %} 
-  {% endif %}
+  {% endfor %} {% endif %}
 </div>
 
 {% include footer.html title=layout.title description=layout.description%}

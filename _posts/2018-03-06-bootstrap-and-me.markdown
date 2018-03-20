@@ -10,7 +10,6 @@ img: http://syndicode.co/wp-content/uploads/2018/01/Bootrap4-arrived-e1516612818
 
 I figured the best way to style my [new Jekyll blog]({{site.baseurl}}{%post_url 2018-03-05-jekyll-the-easy-way%}) was to use a design framework. It ended up being a frustratingly cool look into how to cram things together to make a viable product
 
-
 <span class="page-img container">![bootstrap]({{page.img}})</span>
 
 {:.section-header .container}
@@ -18,13 +17,9 @@ I figured the best way to style my [new Jekyll blog]({{site.baseurl}}{%post_url 
 
 I've had some experience with it before, but only with the LESS version. Since bumping to version 4.0, the team behind Bootstrap has migrated to SASS, making it a little easier to integrate into a Jekyll project. 
 
-
-
 {:.section-header .container}
 ### The big problem
 the bootstrap gem is not on the approved list of approved gems for building a static GitHub pages website. That means that I can't just install the gem and be on my merry way with styling components. I had to get a little creative.
-
-
 
 {:.section-header .container}
 ### The solution

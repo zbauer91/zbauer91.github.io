@@ -9,6 +9,10 @@ $fs-section-header: calc(3.2vw + 1.6vh);
 // $fs-paragraph: calc(1.2vw + 0.9vh);
 $fs-paragraph: calc(0.5em + 0.5vw + 1vh);
 $fs-project: calc(1.9vw + 1.3vh);
+$fs-blog-header: calc(0.9em + 1vw + 1vh);
+$fs-blog-date: calc(0.1em + 0.3vw + 1vh);
+$fs-blog-paragraph: calc(0.2em + 0.25vw + 1vh);
+$fs-blog-subheader: calc(0.5em + 0.3vw + 1vh);
 
 // enable gradients
 $enable-gradients: true;

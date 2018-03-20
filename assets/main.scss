@@ -174,66 +174,142 @@ body {
   }
 }
 
+// Branding on blog site
+.branding {
+  position: absolute;;
+  top: 5vh;
+  left: 30vw;
+  width: 40vw;
+  height: 8vh;
+  background-color: $secondary;
+  color: $light;
+  border: 3px solid $dark;
+  border-radius: 0 0 30px 30px;
+  font-family: $shrikhand;
+  font-size: $fs-project;
+  text-align: center;
+}
+
 // blog post listing styles
 .blog {
+  color: $light;
+  margin-top: 5vh;
+
   .post {
-    .img-excerpt {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      img {
-        max-height: 100px;
-        // ?????
-      }
-    }
+    margin-bottom: 4vh;
+    font-size: $fs-blog-paragraph;
 
     h2 {
-      color: $orange;
-      font-size: $fs-section-header;
+      font-size: $fs-blog-header;
+    }
+
+    h4 {
+      font-size: $fs-blog-subheader;
     }
 
     h6 {
+      font-size: $fs-blog-date;
       text-transform: uppercase;
       font-family: $roboto;
+      color: grey;
+    }
+
+    p {
+      flex-grow: 1;
+      font-family: $roboto;
+      
+    }
+  }
+
+  a {
+    
+    text-decoration: none;
+    &:link {
+      text-decoration: none;
+      color: $light;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $secondary;
+      cursor: pointer;
+
+    }
+    &:visited {
+      text-decoration: none;
+      color: $light;
+    }
+  }
+
+  .img-excerpt {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    div:nth-child(1) {
+      margin: 1vh 1vw 0 0;
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    div:nth-child(2) {
+      min-width: 20vw;
+      flex-basis: 20vw;
+      display: flex;
+      justify-content: center;
+      margin: 1vh 1vw;
+      
+      a {
+        width: auto;
+      }
+
+      img {
+        max-width: 28vw;
+        max-height: 13vh;
+      }
+    }
+    @media screen and (min-width: 600px) {
+      flex-flow: row nowrap;
+      div:nth-child(2) {
+        width: 80vw;
+        flex-grow: 2;
+        border-left: 2px solid $secondary;
+        img {
+          max-width: 16vw;
+          max-height: 13vh;
+        }
+      }
+    }
+  }
+
+  .divider {
+    border-bottom: 2px solid $secondary;
+  }
+}
+
+// blog post individual styles
+
+.blog-post {
+  color: $light;
+  margin-top: 4vh;
+  .jumbotron {
+
+  }
+  .page-img {
+    display: flex;
+    justify-content: center;
+    img {
+      max-height: 12em;
+      margin: 0 1em;
+      // spreads out images
     }
   }
 }
 
-.card-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-
-  .card {
-    // border: 2px solid blue;
-    max-width: 25em;
-    min-height: 18em;
-    margin: 2em 0.5em;
-    padding: 0.5em;
-    border: 1px solid $primary;
-  }
-
-  img {
-    max-height: 8em;
-    width: auto;
-  }
-}
-
-.page-img {
-  display: flex;
-  justify-content: center;
-  img {
-    max-height: 12em;
-    margin: 0 1em;
-    // spreads out images
-  }
-}
 
 // SASS for common site footer
 .site-footer {
-  * {
-    border: 1px solid red;
-  }
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
@@ -258,8 +334,14 @@ body {
   }
 
   a {
-    color: white;
+    color: $light;
     margin: 1em 1em 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      margin-left: 0.75em;
+    }
   }
 
   h2 {
@@ -269,5 +351,9 @@ body {
 
   p {
     max-width: 37.5em;
+  }
+
+  .btn {
+    font-size: $fs-blog-subheader;
   }
 }

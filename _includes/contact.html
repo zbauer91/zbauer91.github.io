@@ -1,10 +1,20 @@
-<a href='http://www.linkedin.com/in/{{ site.linkedin_username }}' target="_blank" class='{% if {{include.dropdown}} %} dropdown-item {% endif %}'>
-  <i class='fab fa-linkedin'></i> LinkedIn</a>
-<a href='http://www.github.com/{{site.github_username}}' target="_blank" class='{% if {{include.dropdown}} %} dropdown-item {% endif %}'>
-  <i class='fab fa-github-square'></i> GitHub</a>
-<a href='http://www.twitter.com/{{site.twitter_username}}' target="_blank" class='{% if {{include.dropdown}} %} dropdown-item {% endif %}'>
-  <i class='fab fa-twitter-square'></i> Twitter</a>
-<a href='tel:{{site.phone}}' class='{% if {{include.dropdown}} %} dropdown-item {% else %} contact-link {% endif %}'>
-  <i class='fas fa-phone-square'></i> Phone</a>
-<a href='mailto:{{site.email}}' class='{% if {{include.dropdown}} %} dropdown-item {% endif %}'>
-  <i class='fas fa-envelope'></i> Email</a>
+<a class='btn btn-dark' role='button' href='http://www.linkedin.com/in/{{ site.linkedin_username }}' target="_blank">
+  <i class='fab fa-linkedin fa-2x'></i>
+  <span>LinkedIn</span>
+</a>
+<a class='btn btn-dark' role='button' href='http://www.github.com/{{site.github_username}}' target="_blank">
+  <i class='fab fa-github-square fa-2x'></i>
+  <span>GitHub</span>
+</a>
+<a class='btn btn-dark' role='button' href='http://www.twitter.com/{{site.twitter_username}}' target="_blank">
+  <i class='fab fa-twitter-square fa-2x'></i>
+  <span>Twitter</span>
+</a>
+<a class='btn btn-dark' role='button' href='tel:{{site.phone}}'>
+  <i class='fas fa-phone-square fa-2x'></i>
+  <span>Phone</span>
+</a>
+<a class='btn btn-dark' role='button' href='mailto:{{site.email}}'>
+  <i class='fas fa-envelope fa-2x'></i>
+  <span>Email</span>
+</a>

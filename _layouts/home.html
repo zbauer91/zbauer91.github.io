@@ -48,38 +48,14 @@ description: The personal profile of Zach Bauer, chronicalling his journey from 
 
 {% include footer.html title=layout.title description=layout.description %}
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector("#learnMore").addEventListener("click", function() {
-      easingFunction(".about-me",)
-    })
-    document.querySelector("#myWork").addEventListener("click", function() {
-      easingFunction(".my-work")
-    })
-    document.querySelectorAll("#contact").forEach(function(item) {
-      item.addEventListener("click", function() {
-        contactEasing()
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("#learnMore").addEventListener("click", function () {
+          easingFunction(".about-me", )
+        })
+        document.querySelector("#myWork").addEventListener("click", function () {
+          easingFunction(".my-work")
+        })
       })
-    })
-  })
-
-  function easingFunction (query) {
-    // anime.remove("html", "body")
-    anime({
-      duration: 1000,
-      targets: "html, body",
-      scrollTop: [window.pageYOffset, document.querySelector(query).offsetTop],
-      easing: 'easeInOutSine'
-    })
-  }
-  function contactEasing () {
-    // anime.remove("html", "body")
-    anime({
-      duration: 1000,
-      targets: "html, body",
-      scrollTop: $(document).height(),
-      easing: 'easeInOutSine'
-    })
-  }
-</script>
+    </script>
 

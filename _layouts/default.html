@@ -19,6 +19,35 @@
     <script src="{{ site.baseurl }}/assets/vendor/popper.min.js"></script>
     <script src="{{ site.baseurl }}/assets/vendor/bootstrap.min.js"></script>
     <script src="{{ site.baseurl }}/assets/anime.min.js"></script>
+
+
+    <script>
+      document.querySelectorAll("#contact").forEach(function (item) {
+        item.addEventListener("click", function () {
+          contactEasing()
+        })
+      })
+
+      function easingFunction(query) {
+        // anime.remove("html", "body")
+        anime({
+          duration: 1000,
+          targets: "html, body",
+          scrollTop: [window.pageYOffset, document.querySelector(query).offsetTop],
+          easing: 'easeInOutSine'
+        })
+      }
+
+      function contactEasing() {
+        // anime.remove("html", "body")
+        anime({
+          duration: 1000,
+          targets: "html, body",
+          scrollTop: $(document).height(),
+          easing: 'easeInOutSine'
+        })
+      }
+    </script>
   </body>
 
 </html>
