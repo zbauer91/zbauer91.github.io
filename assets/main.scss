@@ -173,6 +173,62 @@ body {
     background-size: cover;
   }
 }
+
+// blog post listing styles
+.blog {
+  .post {
+    .img-excerpt {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      img {
+        max-height: 100px;
+        // ?????
+      }
+    }
+
+    h2 {
+      color: $orange;
+      font-size: $fs-section-header;
+    }
+
+    h6 {
+      text-transform: uppercase;
+      font-family: $roboto;
+    }
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  .card {
+    // border: 2px solid blue;
+    max-width: 25em;
+    min-height: 18em;
+    margin: 2em 0.5em;
+    padding: 0.5em;
+    border: 1px solid $primary;
+  }
+
+  img {
+    max-height: 8em;
+    width: auto;
+  }
+}
+
+.page-img {
+  display: flex;
+  justify-content: center;
+  img {
+    max-height: 12em;
+    margin: 0 1em;
+    // spreads out images
+  }
+}
+
 // SASS for common site footer
 .site-footer {
   * {
@@ -213,55 +269,5 @@ body {
 
   p {
     max-width: 37.5em;
-  }
-}
-
-// blog post listing styles
-
-.blog {
-
-  h2 {
-    font-size: $fs-section-header;
-  }
-
-  h4 {
-    
-  }
-
-  h6 {
-    
-  }
-
-}
-
-.card-container{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-
-  .card {
-    // border: 2px solid blue;
-    max-width: 25em;
-    min-height: 18em;
-    margin: 2em 0.5em;
-    padding: 0.5em;
-    border: 1px solid $primary;
-
-  }
-
-  img {
-    max-height: 8em;
-    width: auto;
-  }
-  
-}
-
-.page-img {
-  display: flex;
-  justify-content: center;
-  img {
-    max-height: 12em;
-    margin: 0 1em;
-    // spreads out images
   }
 }
