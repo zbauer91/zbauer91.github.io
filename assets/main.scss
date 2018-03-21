@@ -40,6 +40,10 @@ body {
     margin-bottom: 25em;
     padding-bottom: 5em;
   }
+
+  main {
+    height: 100%;
+  }
 }
 
 // landing page
@@ -127,11 +131,13 @@ body {
 
 // Page detailing my work
 .my-work {
+  z-index: 2;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   div {
+    z-index: 2;
     margin: 2vh 2vw;
     width: 80vw;
     height: 40vh;
@@ -139,7 +145,11 @@ body {
     flex-flow: column nowrap;
     justify-content: flex-end;
     a {
-      opacity: 0;
+      @media screen and (min-width: 600px){
+        opacity: 0;
+      }
+      opacity: 0.5;
+      background-color: #000;
       height: 100%;
       width: 100%;
       display: flex;
@@ -160,11 +170,11 @@ body {
     }
   }
   .projects {
-    background: url('{{site.projects.project_image}}') no-repeat center top;
+    background: url('{{site.my_work.project_image}}') no-repeat center top;
     background-size: cover;
   }
   .blog {
-    background: url('{{site.projects.blog_image}}') no-repeat center top;
+    background: url('{{site.my_work.blog_image}}') no-repeat center top;
     background-size: cover;
   }
 }

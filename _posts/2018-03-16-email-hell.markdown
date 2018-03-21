@@ -15,7 +15,7 @@ I recently decided to try and migrate my Google information between accounts. Th
 
 Ok, so if you're like me, then at some point in your life you created an email that read something like SassyBoy89@gmail.com (<--not my email). Unfortunately, if you're also like me, you didn't plan ahead before integrating your life into the google ecosphere with that address. So now your main inbox is there, your maps history is there, contacts, project fi, etc. You see the conundrum.
 
-So now I have an email, zbauer91@gmail.com (<--definitely my email), and I want to migrate things over. Much easier said than done. I'll keep the scope to GMail for this post and come back to a few others later. 
+So now I have a new email, zbauer91@gmail.com (<--definitely my email), and I want to migrate things over. Much easier said than done. I'll keep the scope to GMail for this post and come back to a few others later. 
 
 
 {:.section-header .container}

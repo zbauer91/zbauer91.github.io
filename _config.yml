@@ -24,6 +24,10 @@ twitter_username: PixelRabbitCode
 github_username:  zbauer91
 linkedin_username: zachbauer
 phone: 6145193442
+# project collection
+collections:
+  - posts
+  - projects
 # Start of information fror the about me section. Just to give a timeline on this.
 # I first abstracted it out of HTML into an JS object. Now it's finding it's home in my YAML config file.
 # Times sure do change :P
@@ -36,7 +40,7 @@ about_me:
   photo_alt: "A photo of Zach's cute face!"
   tagline: "An expert at turning caffeine and lack of sleep into code"
   brand: "I'm always on the lookout for new, creative ways to solve problems. Whether that be in the work I do professionally, or at home, I'm a practiced MacGyver of programming."
-projects:
+my_work:
   project_image: "/assets/images/barberhub.png"
   blog_image: "/assets/images/jekyll.png"
 

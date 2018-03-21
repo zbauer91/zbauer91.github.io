@@ -1,0 +1,38 @@
+--- 
+layout: default 
+title: PixelRabbit's Projects
+description: A showcase of some of the cool things I've worked on!
+---
+
+{% include header.html  blog=true %}
+
+
+<div class='blog'>
+  {{ content }} 
+  {% if site.projects.size > 0 %}
+  {% for project in site.projects %}
+  <div class='post container'>
+    <a href='{{ project.url | relative_url }}'>
+      <h2>{{project.title | escape }}</h2>
+    </a>
+    <div class='img-excerpt'>
+      {% if site.show_excerpts %}
+        <div>
+          <p>{{ project.excerpt }}</p>
+        </div>
+      {% endif %} 
+      {% if project.img %}
+        <div>
+          <a href='{{ project.url | relative_url }}'>
+            <img src="{{ project.img }}" alt="{{ project.title | escape }}">
+          </a>
+        </div>
+      {% endif %}
+    </div>
+    <div class='divider container'></div>
+  </div>
+  {% endfor %} 
+  {% endif %}
+</div>
+
+{% include footer.html title=layout.title description=layout.description%}
