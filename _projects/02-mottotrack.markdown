@@ -4,7 +4,7 @@ title:  "Recursing My Way into Elixir"
 img: "/assets/images/hanoi.png"
 ---
 
-Tower of Hanoi built in HTMl, CSS, and JS
+A VueJS + Vuetify
 
 <span class="page-img container">![elixir]({{page.img}})</span>
 

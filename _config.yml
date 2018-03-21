@@ -26,8 +26,8 @@ linkedin_username: zachbauer
 phone: 6145193442
 # project collection
 collections:
-  - posts
-  - projects
+  projects:
+    output: true
 # Start of information fror the about me section. Just to give a timeline on this.
 # I first abstracted it out of HTML into an JS object. Now it's finding it's home in my YAML config file.
 # Times sure do change :P

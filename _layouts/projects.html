@@ -15,6 +15,11 @@ description: A showcase of some of the cool things I've worked on!
     <a href='{{ project.url | relative_url }}'>
       <h2>{{project.title | escape }}</h2>
     </a>
+    {% if project.subtitle %}
+    <a href='{{ project.url | relative_url }}'>
+      <h4>{{ project.subtitle | escape }}</h4>
+    </a>
+    {% endif %}
     <div class='img-excerpt'>
       {% if site.show_excerpts %}
         <div>
