@@ -139,22 +139,17 @@ body {
     flex-flow: column nowrap;
     justify-content: flex-end;
     a {
+      opacity: 0;
       height: 100%;
       width: 100%;
       display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
+      justify-content: center;
+      align-items: center;
       text-decoration: none;
       z-index: 2;
       span {
         font-size: $fs-project;
         font-weight: bolder;
-        padding-top: 2px;
-        letter-spacing: 0.7em;
-        background-color: black;
-        height: 15%;
-        width: 100%;
-        text-align: right;
       }
       &:hover {
         cursor: pointer;
@@ -292,7 +287,7 @@ body {
 
 .blog-post {
   color: $light;
-  margin-top: 4vh;
+  margin-top: 8vh;
   .jumbotron {
 
   }
@@ -304,6 +299,9 @@ body {
       margin: 0 1em;
       // spreads out images
     }
+  }
+  .section-header {
+    border-bottom: 2px solid $secondary;
   }
 }
 

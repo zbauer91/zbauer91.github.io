@@ -4,9 +4,7 @@ title: PixelRabbit's Profile
 description: The personal profile of Zach Bauer, chronicalling his journey from basic HTML and CSS, to a full blog and portolio website built with Jekyll to show off his work!
 ---
 
-
-
- {% include header.html %}
+{% include header.html %}
 
 <section class='hero-image'>
   <section>
@@ -34,12 +32,12 @@ description: The personal profile of Zach Bauer, chronicalling his journey from 
 
 <section class='my-work'>
   <div class='projects'>
-    <a href='{{site.baseurl}}/projects'>
+    <a class="hover-reveal" href='{{site.baseurl}}/projects'>
       <span class="text-light">Projects</span>
     </a>
   </div>
   <div class='blog'>
-    <a href='{{site.baseurl}}/blog'>
+    <a class="hover-reveal" href='{{site.baseurl}}/blog'>
       <span class="text-light">Blog</span>
     </a>
   </div>
@@ -55,6 +53,26 @@ description: The personal profile of Zach Bauer, chronicalling his journey from 
         })
         document.querySelector("#myWork").addEventListener("click", function () {
           easingFunction(".my-work")
+        })
+        document.querySelectorAll(".hover-reveal").forEach(function(item) {
+          item.addEventListener('mouseenter', function() {
+            anime({
+              targets: this,
+              duration: 500,
+              opacity: 0.8,
+              backgroundColor: '#000',
+              easing: 'easeOutCubic'
+            })
+          })
+          item.addEventListener('mouseleave', function() {
+            anime({
+              targets: this,
+              duration: 500,
+              opacity: 0,
+              backgroundColor: '#000',
+              easing: 'easeInCubic'
+            })
+          })
         })
       })
     </script>
