@@ -35,7 +35,7 @@ I want to work for a company where the employees are enthusiastic about their wo
 ###### _What I got_
 The three people I interviewed with didn't seem all too enthusiastic about discussing work. They talked extensively with me about my background and did a short coding challenge to show I could work with loops and recursion. They told me about their long commutes and how it's getting more expensive to live in their city. Overall, the entire experience was underwhelming. 
 
-One huge red flag I got was when clearing up a few questions on the phone. I specifically asked about the apparent lack of enthusiasm, and was told about the people I interviewed with that "their enthusiasm might not show on their faces, but it show in the work they do." That's a no-go for me. I've never been passionate about a single thing in my life and not have it show on my face.
+I gave them a phone call to clear up a few outstanding questions. One of them was about the apparent lack of enthusiasm when talking with their employees about their work. I was told that "their enthusiasm might not show on their faces, but it shows in the work they do." That's a bit of a red flag for me. Even if you're having a bad day at work, or your project is particularly tough, it's important to make potential employees feel like the work environment isn't going to difficult to go to every day for 8+ hours. 
 
 
 #### Location
