@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Email Hell"
-subtitle: "What do with 50,000+ emails?"
+subtitle: "What do I do with 50,000+ emails?"
 date:   2018-03-16 09:00:00 -0500
 categories: email
 tags: hoarding
@@ -13,7 +13,7 @@ I recently decided to try and migrate my Google information between accounts. Th
 {:.section-header .container}
 ### The Problem
 
-Ok, so if you're like me, then at some point in your life you created an email that read something like SassyBoy89@gmail.com (<--not my email). Unfortunately, if you're also like me, you didn't plan ahead before integrating your life into the google ecosphere with that address. So now your main inbox is there, your maps history is there, contacts, project fi, etc. You see the conundrum.
+Ok, so if you're like me, then at some point in your life you created an email that read something like CrazySurfer89@gmail.com (<--not my email). Unfortunately, if you're also like me, you didn't plan ahead before integrating your life into the google ecosphere with that address. So now your main inbox is there, your maps history is there, contacts, project fi, etc. You see the conundrum.
 
 So now I have a new email, zbauer91@gmail.com (<--definitely my email), and I want to migrate things over. Much easier said than done. I'll keep the scope to GMail for this post and come back to a few others later. 
 

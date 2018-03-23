@@ -2,11 +2,9 @@
   <div class='container'>
     <h2 class="footer-heading text-dark">{{ include.title }}</h2>
     {% if include.description %}
-    <div class="text-dark">
-      <p>{{ include.description }}</p>
-    </div>
+    <p class="text-dark">{{ include.description }}</p>
     {% endif %}
-    <div class="contact-links text-dark list-group">
+    <div class="contact-links text-dark">
       {% include contact.html dropdown=false %}
     </div>
   </div>

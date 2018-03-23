@@ -3,24 +3,15 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarContent">
-    <ul class='navbar-nav ml-auto'>
-      <li class='nav-item'>
-        <a href='/{{site.baseurl}}' class={% if page.name=='index.md' %} "nav-link active" {% else %} "nav-link" {% endif %}>Home</a>
-      </li>
-      <li class='nav-item'>
-        <a href='/blog' class={% if page.name=='blog.md' %} "nav-link active" {% else %} "nav-link" {% endif %}>Blog</a>
-      </li>
-      <li class='nav-item'>
-        <a href='{{site.baseurl}}/projects' class={% if page.name=='projects.md' %} "nav-link active" {% else %} "nav-link" {% endif
-          %}>Projects</a>
-      </li>
-      <li class='nav-item'>
-        <button id="contact" class="nav-link bg-secondary">Contact</button>
-      </li>
-    </ul>
+    <div class='navbar-nav ml-auto'>
+      <a href='/' class="{% if layout.type=='profile' %}active{% endif %} nav-link nav-item">Home</a>
+      <a href='/blog' class="{% if layout.type=='blog' %}active{% endif %} nav-link nav-item">Blog</a>
+      <a href='/projects' class="{% if layout.type=='project' %}active{% endif %} nav-link nav-item">Projects</a>
+      <a id="contact" class="nav-link">Contact</a>
+    </div>
   </div>
 </nav>
 
-{% if include.blog==true %}
+{% comment %} {% if include.blog==true %}
 <div class='branding'>{{ layout.title }}</div>
-{% endif %}
+{% endif %} {% endcomment %}
