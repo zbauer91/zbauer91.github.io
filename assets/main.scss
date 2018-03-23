@@ -336,9 +336,17 @@ body {
   opacity: 0.99;
   text-align: center;
 
+  * {
+    border: 1px solid white;
+  }
+
   .container {
     margin-top: 1em;
     height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .contact-links {
@@ -346,13 +354,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin-top: 2em;
   }
 
   a {
     color: $light;
     margin: 1em 1em 0 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     span {
       margin-left: 0.75em;
@@ -366,6 +375,7 @@ body {
 
   p {
     max-width: 37.5em;
+    text-align: center;
   }
 
   .btn {
