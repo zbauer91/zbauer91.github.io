@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "First Job Offer"
-subtitle: "Reston, VA"
+subtitle: "Suburb of DC in VA"
 date:   2018-03-11 11:00:00 -0500
 categories: job
 tags: offer interview
@@ -29,31 +29,31 @@ This list is very subjective and specific to me, but I think all three are valid
 
 #### Company Culture
 
-###### _What I wanted_
-I need a business I'm excited about working for. When I walk in your front door, I want to see smiling faces, enthusiasm in their work, and a passion when they talk about what they do to people they've never met. Some may call this an aspect of startup culture, but I don't think this needs to be relegated solely to tiny businesses with inflated aspirations. Every business can and should be a place that their employees look forward to spending their time at every day. If you can't meet this basic need, it makes getting up in the morning a chore. 
+###### _What I was looking for_
+I want to work for a company where the employees are enthusiastic about their work. When I walk in your front door, I want to see smiling faces, enthusiasm in their work, and a passion when they talk about what they do to people they've never met. Some may call this an aspect of startup culture, but I don't think this needs to be relegated solely to tiny businesses with inflated aspirations. Every business can and should be a place that their employees look forward to spending their time at every day. If you can't meet this basic need, it makes getting up in the morning a chore. 
 
 ###### _What I got_
-The three people I interviewed with didn't seem all too enthusiastic about discussing work. They talked extensively with me about my background and did a short coding challenge to show I could work with loops and recursion. They told me about their long commutes and how it's getting more expensive to live in Reston. Overall, the entire experience was underwhelming. 
+The three people I interviewed with didn't seem all too enthusiastic about discussing work. They talked extensively with me about my background and did a short coding challenge to show I could work with loops and recursion. They told me about their long commutes and how it's getting more expensive to live in their city. Overall, the entire experience was underwhelming. 
 
 One huge red flag I got was when clearing up a few questions on the phone. I specifically asked about the apparent lack of enthusiasm, and was told about the people I interviewed with that "their enthusiasm might not show on their faces, but it show in the work they do." That's a no-go for me. I've never been passionate about a single thing in my life and not have it show on my face.
 
 
 #### Location
 
-###### _What I wanted_
+###### _What I was looking for_
 I wanted a place that would allow me the freedom to see friends regularly, bike-commute to work, and even be able to walk around and do literally anything without worrying about driving and parking. I wanted to attend meetups and have a variety of networking events and personal events to choose from. I wanted to live in a place where I could find like-minded people to share in my experiences with. in short, I wanted a big city: Any big city.  
 
 
 ###### _What I got_
-This is something I didn't think through thoroughly before moving to DC. Before coming here, I would have said location wasn't a huge deal, but once I found out just how a city like Reston is lacking in so many areas, I realized location wasn't just about distance, but about personal and professional opportunity
+This is something I didn't think through thoroughly before moving to DC. Before coming here, I would have said location wasn't a huge deal, but once I found out just how a city like this misses a lot of what I want, I realized location wasn't just about distance, but about personal and professional opportunity
 
-Distance from DC aside, Reston was a bad place for me for a lot of reasons. For one, it's pretty much the suburbs. Pretentious, stone-facade town centers, nothing is walkable, biking is difficult, winding roads that don't follow a pattern, golf courses, lakes, etc. I don't like most of these things. I've lived in areas like this all of my life, and have relished living in a big city for the first time. Why would I give that up for a middle-of-the-road salary and maybe saving a little bit on housing?
+Distance from DC aside, This city was a bad place for me for a lot of reasons. For one, it's pretty much the suburbs. Pretentious, stone-facade town centers, nothing is walkable, biking is difficult, winding roads that don't follow a pattern, golf courses, lakes, etc. I don't like most of these things. I've lived in areas like this all of my life, and have relished living in a big city for the first time. Why would I give that up for a middle-of-the-road salary and maybe saving a little bit on housing?
 
 Now, don't me wrong, it's not _just_ DC that I like, it's any sizeable city that meets the above criteria. I used to think I loved Pittsburgh, and that living right on the edge of town would be acceptable. Even there I found that I was unsatisfied with how I couldn't walk out my door and do stuff. I wouldn't even bike anywhere because the city is so fragmented with respect to bike lanes and bike friendly roads. 
 
 #### Opportunity
 
-###### _What I wanted_
+###### _What I was looking for_
 This one is a little more abstract to define outside of location. What I want is an opportunity to always learn new things in a way that contributes both to the team and to furthering my career. I want some sort of upward mobility as well, and don't want to be stuck at a particular _level_ for the rest of my career. I want telecommuting to be an option for down the line, and for businesses to be trusting of their employees in that regard. I tend to lump all of these things into _opportunity_.
 
 ###### _What I got_
