@@ -320,7 +320,16 @@ body {
   .section-header {
     border-bottom: 2px solid $secondary;
   }
+  a {
+    text-decoration: underline;
+    color: $light;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
+
+
 
 // SASS for common site footer
 .site-footer {
