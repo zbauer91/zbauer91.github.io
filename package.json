@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "animejs": "^2.2.0",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"
   },
